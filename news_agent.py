@@ -70,6 +70,32 @@ class AgentBrain:
         
         genai.configure(api_key=self.api_key)
         self.model = genai.GenerativeModel('gemini-2.5-flash')
+        self.history_file = "news_history.json"
+
+    def load_history(self):
+        if os.path.exists(self.history_file):
+            try:
+                with open(self.history_file, 'r', encoding='utf-8') as f:
+                    return json.load(f)
+            except Exception as e:
+                logging.error(f"讀取歷史紀錄失敗: {e}")
+        return []
+
+    def save_history(self, report_text):
+        history = self.load_history()
+        # 儲存前 200 字作為摘要即可，避免檔案過大
+        summary = report_text[:200].replace('\n', ' ')
+        history.append({
+            "date": datetime.now().strftime("%Y-%m-%d"),
+            "summary": summary
+        })
+        # 只保留最近 10 次紀錄
+        history = history[-10:]
+        try:
+            with open(self.history_file, 'w', encoding='utf-8') as f:
+                json.dump(history, f, ensure_ascii=False, indent=2)
+        except Exception as e:
+            logging.error(f"儲存歷史紀錄失敗: {e}")
 
     def generate_daily_report(self, news_items):
         """
@@ -77,6 +103,12 @@ class AgentBrain:
         """
         logging.info("開始生成 AI 架構師日報...")
         
+        # 讀取歷史紀錄
+        past_history = self.load_history()
+        history_text = "\n".join([f"- {h['date']}: {h['summary']}" for h in past_history])
+        if not history_text:
+            history_text = "無"
+
         # 將新聞轉換為文本以供 prompt 使用
         news_text = ""
         for i, item in enumerate(news_items, 1):
@@ -92,33 +124,33 @@ class AgentBrain:
         2. NVIDIA/Apple 首席資深架構師 (Principal Architect)：你是晶片層級的偏執狂，崇尚「第一原理思考」。你透徹理解先進封裝 (CoWoS)、HBM 記憶體牆、NVLink 互連架構以及 PPA (功耗、效能、面積) 的極致權衡。
         3. 矽谷科技巨頭技術長 (CTO) 與產業戰略家：你具備宏觀的生態系思維，能敏銳洞察開源戰略、地緣政治、供應鏈重組與商業模式變革如何重塑全球科技產業的長遠格局。
 
-        請閱讀以下今天的科技新聞，並撰寫一份專業的科技日報。請注意讀者皆為「電機系 (EE) 背景」。
+        【嚴格禁止事項與歷史紀錄】
+        1. 避免重複：以下是過去幾天已經報告過的主題摘要：
+        {history_text}
+        請絕對不要報告與上述相似或重複的新聞（例如某公司又宣稱短時間 tape-out 等），請尋找全新的突破。
+        2. 停止科普基礎常識：針對電機系讀者，絕對不要解釋以下基礎名詞：SOC、EDA、RTL、PPA、製程節點 (Process Node)、臺積電 CoWoS / 3D Fabric 等先進封裝技術、HBM、Memory Wall。這些都是基本常識。你唯一需要科普的是問世不到一兩年的「全新」技術。
+
+        請閱讀以下今天的科技新聞，並撰寫一份專業的科技日報。
         
         【篩選與撰寫嚴格準則】
         1. 數量限制：每天「只挑選一件」真正具備「重大影響力」或「技術突破」的關鍵新聞。
-        2. 拒絕空泛：絕對禁止使用空泛的過渡句或公關辭彙（例如「今日我們觀察到...」、「這與我們的願景高度契合」、「挑戰日益嚴峻」等廢話）。
-        3. 陳述事實與重大影響：
-           - 首先，以「具體事實」破題（如果是技術進展，必須包含具體的數據如功耗、傳輸速率等；如果是產業大事件如建廠、開源模型、法規，必須具體敘述事件內容）。
-           - 其次，說明「這件事為什麼重要」。例如：它帶來了什麼重大影響？是否與過往做法完全不同？是否會改變產業格局、顛覆技術典範、或重大改變人們的生活？
-        4. 寧缺勿濫：如果今天的所有新聞都沒有重大影響力或全新突破，請直接輸出「今日無具備重大影響力之新聞。」並結束回答，絕對不要挑選瑣碎或無關緊要的新聞來湊數。
-        5. 專業術語科普：只要在文中提到專業術語（例如 PCIe 5.0、Kioxia BG8、NVIDIA GB10、TSMC N2 等），必須在新聞描述後方獨立一段進行「科普」，為 EE 背景讀者簡要解釋該技術的規格或意義。
-        6. 連結格式：新聞來源連結只能顯示文字標題 `[標題](連結)`，絕對不可以出現任何圖片。
+        2. 提升內容品質與實質內涵：拒絕空泛的公關行銷廢話（例如「展望聚焦於未來製程節點的演進」、「持續提升 PPA」等大家都知道的常識）。報告必須聚焦於「紮實的技術細節」，例如：新架構解決了什麼瓶頸？新材料有什麼物理特性突破？具體的論文數據為何？
+        3. 寧缺勿濫與主動分享論文：如果今天提供的新聞全部都是空泛的行銷話語或沒有具體技術細節，請「完全放棄」這些新聞，當天不要發一般的新聞內容。取而代之，請利用你的知識，主動分享並科普一篇近期（近一兩年內）在「固態電子、電池技術、電波領域或 AI 底層硬體架構」的「最新突破性論文」或「全新技術」，進行深度的技術探討。
+        4. 連結格式：如果有引用新聞，連結只能顯示文字標題 `[標題](連結)`，絕對不可以出現任何圖片。若是自行分享論文，請盡量提供真實的論文名稱或可搜尋的關鍵字。
 
         【輸出排版格式】（請嚴格遵循以下格式，不要有任何開場白）
 
-        **今日重點新聞:**
-        (直接切入事實描述，包含具體數據或具體事件。接著精煉說明此事件的重大影響力或技術突破點)
+        **今日重點（技術突破 / 最新論文分享）:**
+        (直接切入事實描述，包含具體技術細節、數據或新技術的物理/架構特性。接著精煉說明此技術的顛覆性與實質影響)
 
-        **技術科普 (Technical Background):**
-        - **[術語A]**: (針對 EE 讀者的原理解釋)
-        - **[術語B]**: (針對 EE 讀者的原理解釋)
+        **技術科普 (Technical Deep Dive):**
+        - **[全新技術名詞/論文核心概念]**: (針對 EE 讀者的原理解釋，僅限非基礎常識的全新技術)
 
-        [新聞來源標題1](連結1)
-        [新聞來源標題2](連結2) (若有相關來源)
+        [參考來源標題](連結) (若有相關來源，或自行分享的論文名稱)
 
         ---
         **每日延伸思考:**
-        (針對今日的重點新聞，給電機系讀者出一個思考問題，或是指定一項需要去查閱的底層硬體/晶片設計/系統架構相關的背景知識，幫助讀者深化技術視野。)
+        (針對今日分享的技術或論文，給電機系讀者出一個思考問題，或指定一項底層硬體/系統架構的進階背景知識去查閱。)
 
         今日新聞資料：
         {news_text}
@@ -127,6 +159,11 @@ class AgentBrain:
         try:
             response = self.model.generate_content(prompt)
             logging.info("日報生成完成。")
+            
+            # 若不是無新聞，則儲存至歷史紀錄
+            if "今日無具備重大影響力之新聞" not in response.text:
+                self.save_history(response.text)
+
             return response.text
         except Exception as e:
             logging.error(f"Gemini API 呼叫失敗: {e}")
