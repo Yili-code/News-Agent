@@ -9,6 +9,8 @@ on:
 jobs:
   run-agent:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
     - name: Checkout Repository
@@ -31,3 +33,11 @@ jobs:
         DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
       run: |
         python news_agent.py
+        
+    - name: Commit and Push History
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git add *.json
+        git diff-index --quiet HEAD || git commit -m "chore: update history.json"
+        git push
