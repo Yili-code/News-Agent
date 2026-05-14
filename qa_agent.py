@@ -53,9 +53,11 @@ class DiscordQA:
                     
                 msg_time = datetime.fromisoformat(msg['timestamp'])
                 if msg_time > cutoff_time:
-                    author = msg['author']['username']
                     content = msg['content']
-                    user_messages.append(f"{author}: {content}")
+                    # 只處理有提到「阿福」的訊息
+                    if "阿福" in content:
+                        author = msg['author']['username']
+                        user_messages.append(f"{author}: {content}")
                     
             return user_messages
         except Exception as e:

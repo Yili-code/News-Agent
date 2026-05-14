@@ -2,8 +2,8 @@ name: Discord Q&A Bot
 
 on:
   schedule:
-    # 04:00, 10:00, 14:00 UTC 等於台灣時間 12:00, 18:00, 22:00
-    - cron: '0 4,10,14 * * *'
+    # 每小時執行一次
+    - cron: '0 * * * *'
   workflow_dispatch: # 允許手動觸發
 
 jobs:
