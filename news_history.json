@@ -2,5 +2,9 @@
   {
     "date": "2026-05-13",
     "summary": "**今日重點（技術突破 / 最新論文分享）:** 今天我們看到一項在 AI 推理效率上具備潛在顛覆性的突破，來自 Berkeley AI Research 的「**自適應平行推理 (Adaptive Parallel Reasoning, APR)**」典範轉移。傳統的 AI 推理流程，無論是大型語言模型 (LLMs) 或是其他複雜任務，其計算圖譜的分解與平行化往往是靜態或預先定義的，這在面對多樣"
+  },
+  {
+    "date": "2026-05-14",
+    "summary": "**今日重點（技術突破 / 最新論文分享）:** 今天我們將聚焦於加州大學柏克萊分校 AI 研究團隊的一項重要突破：**GRASP (Gradient-based Planning for World Models at Longer Horizons)**。這項技術旨在解決在具備學習動態 (learned dynamics) 的世界模型 (world models) 中，**長週期規劃 (lon"
   }
 ]
