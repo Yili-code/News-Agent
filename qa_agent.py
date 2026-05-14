@@ -24,24 +24,33 @@ class DiscordQA:
             "Content-Type": "application/json"
         }
 
-    def fetch_recent_messages(self, hours_back=8):
-        """讀取最近的訊息"""
-        url = f"https://discord.com/api/v10/channels/{self.channel_id}/messages?limit=30"
+    def fetch_recent_messages(self, max_hours_back=24):
+        """讀取最近的訊息，只抓取在機器人上次發言「之後」的讀者訊息"""
+        url = f"https://discord.com/api/v10/channels/{self.channel_id}/messages?limit=50"
         try:
             response = requests.get(url, headers=self.headers)
             response.raise_for_status()
             messages = response.json()
             
-            # 過濾時間與機器人本身的訊息
-            cutoff_time = datetime.now(timezone.utc) - timedelta(hours=hours_back)
+            # Discord API 回傳的訊息是「由新到舊」排序
+            # 找到機器人自己「最後一次發言」的時間
+            last_bot_msg_time = None
+            for msg in messages:
+                if msg.get('author', {}).get('bot') and msg['author']['username'] == 'News AI Agent':
+                    last_bot_msg_time = datetime.fromisoformat(msg['timestamp'])
+                    break
+            
+            # 如果找不到機器人發言，或者機器人很久沒發言，最多往回看 24 小時
+            fallback_cutoff = datetime.now(timezone.utc) - timedelta(hours=max_hours_back)
+            cutoff_time = last_bot_msg_time if last_bot_msg_time and last_bot_msg_time > fallback_cutoff else fallback_cutoff
+            
             user_messages = []
             
-            for msg in messages:
-                # 判斷是否為機器人發送的
+            # 反轉順序，變成「由舊到新」，比較符合對話邏輯
+            for msg in reversed(messages):
                 if msg.get('author', {}).get('bot'):
                     continue
                     
-                # Discord 時間為 ISO format (e.g. 2026-05-12T04:25:00.000000+00:00)
                 msg_time = datetime.fromisoformat(msg['timestamp'])
                 if msg_time > cutoff_time:
                     author = msg['author']['username']
@@ -72,20 +81,15 @@ class DiscordQA:
         {chat_log}
         
         任務：
-        1. 判斷對話中是否包含對「今天的新聞、技術、學術論文或任何科技知識」的提問。
-        2. 如果【沒有任何提問】或是只是閒聊，請嚴格只輸出「NO_QUESTIONS」，不要有任何其他文字。
-        3. 如果【有提問】，請以你「三核心」的專業角色，針對他們的問題給出精煉、具體、基於第一原理的解答。
-           - 語氣：專業、深邃、自信，直接切入技術本質。
-           - 排版要求：為了高可讀性，請分成 2~3 個簡短段落，段落之間務必留空行。重要的名詞、數據請用 **粗體** 標示，讓讀者能一眼抓住重點。
+        請針對讀者的發言給予回覆。不論他們是問問題、閒聊、還是提出無厘頭的要求，你都要以「三核心」的專業角色來回應。
+        - 語氣：專業、深邃、自信，直接切入技術本質，但若遇到閒聊也能幽默應對。
+        - 排版要求：為了高可讀性，請分成 2~3 個簡短段落，段落之間務必留空行。重要的名詞、數據請用 **粗體** 標示。
         """
         
         try:
             response = self.model.generate_content(prompt)
             reply = response.text.strip()
             
-            if reply == "NO_QUESTIONS":
-                logging.info("讀者沒有提出問題，無需回覆。")
-                return None
             return reply
         except Exception as e:
             logging.error(f"Gemini API 呼叫失敗: {e}")
@@ -110,8 +114,8 @@ def main():
     try:
         logging.info("開始檢查讀者提問...")
         qa_agent = DiscordQA()
-        # 往前看 8 小時內的訊息 (涵蓋 08:00~12:00, 12:00~18:00, 18:00~22:00)
-        recent_msgs = qa_agent.fetch_recent_messages(hours_back=8)
+        # 往前看最多 24 小時內的訊息，但會自動扣除機器人已經回覆過的部分
+        recent_msgs = qa_agent.fetch_recent_messages(max_hours_back=24)
         
         if recent_msgs:
             logging.info(f"找到 {len(recent_msgs)} 則讀者訊息，開始分析...")
