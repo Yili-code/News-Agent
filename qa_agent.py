@@ -36,7 +36,10 @@ class DiscordQA:
             # 找到機器人自己「最後一次發言」的時間
             last_bot_msg_time = None
             for msg in messages:
-                if msg.get('author', {}).get('bot') and msg['author']['username'] == 'News AI Agent':
+                # 判斷是否為機器人發言，且「排除」每天早上的新聞日報（避免被新聞洗掉提問）
+                is_bot = msg.get('author', {}).get('bot')
+                is_news = "🚀 AI & Silicon Architect Daily Brief" in msg.get('content', '')
+                if is_bot and not is_news:
                     last_bot_msg_time = datetime.fromisoformat(msg['timestamp'])
                     break
             
