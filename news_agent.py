@@ -13,19 +13,25 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 # 載入環境變數 (本地端測試使用)
 load_dotenv()
 
-# 設定新聞來源 (L1, L2, L3)
+# 設定新聞來源
 NEWS_SOURCES = {
-    "L1_Hardware_Silicon": [
-        "https://www.servethehome.com/feed/",
-        "https://semiwiki.com/feed/"
+    "半導體與 AI 晶片架構": [
+        "https://www.semianalysis.com/feed"
     ],
-    "L2_AI_Software": [
-        "https://bair.berkeley.edu/blog/feed.xml", # BAIR Blog (Alternative for top AI research)
+    "AI 巨頭內幕與商業獨家": [
+        "https://www.theinformation.com/feed"
+    ],
+    "AI Agent、新創融資與產品動態": [
         "https://techcrunch.com/category/artificial-intelligence/feed/"
     ],
-    "L3_Ecosystem_Business": [
-        "https://stratechery.com/feed/",
-        "https://www.theverge.com/rss/index.xml"
+    "企業級 AI 應用與 LLM 模型評測": [
+        "https://venturebeat.com/category/ai/feed/"
+    ],
+    "模型技術細節與硬體解析": [
+        "https://feeds.arstechnica.com/arstechnica/index"
+    ],
+    "前沿論文、RSI 自我迭代與 AGI 趨勢": [
+        "https://www.technologyreview.com/feed/"
     ]
 }
 
@@ -118,36 +124,25 @@ class AgentBrain:
             news_text += f"摘要: {item['summary']}\n\n"
 
         prompt = f"""
-        你現在是我的「三核心 AI 科技日報 Agent」。
-        你的靈魂完美融合了三位頂尖專家的思維模型：
-        1. Anthropic 首席 AI 系統工程師：你深諳 Scaling Laws 的極限，專精於 Transformer 底層優化、MoE (Mixture of Experts) 設計、以及極度節能且精準的 Agentic Workflow 建構。
-        2. NVIDIA/Apple 首席資深架構師 (Principal Architect)：你是晶片層級的偏執狂，崇尚「第一原理思考」。你透徹理解先進封裝 (CoWoS)、HBM 記憶體牆、NVLink 互連架構以及 PPA (功耗、效能、面積) 的極致權衡。
-        3. 矽谷科技巨頭技術長 (CTO) 與產業戰略家：你具備宏觀的生態系思維，能敏銳洞察開源戰略、地緣政治、供應鏈重組與商業模式變革如何重塑全球科技產業的長遠格局。
-    
+        你現在是我的「科技日報 Agent」，我是一個電機系的學生。
 
         【嚴格禁止事項與歷史紀錄】
         1. 避免重複：以下是過去幾天已經報告過的主題摘要：
         {history_text}
-        請絕對不要報告與上述相似或重複的新聞（例如某公司又宣稱短時間 tape-out 等），請尋找全新的突破。
-        2. 停止科普基礎常識：針對電機系讀者，絕對不要解釋以下基礎名詞：SOC、EDA、RTL、PPA、製程節點 (Process Node)、臺積電 CoWoS / 3D Fabric 等先進封裝技術、HBM、Memory Wall。這些都是基本常識。你唯一需要科普的是問世不到一兩年的「全新」技術。
+        請絕對不要報告與上述相似或重複的新聞，請尋找全新的突破。
 
         請閱讀以下今天的科技新聞，並撰寫一份專業的科技日報。
         
         【篩選與撰寫嚴格準則】
-        1. 數量限制：每天「只挑選一件」真正具備「重大影響力」或「技術突破」的關鍵新聞。
-        2. 提升內容品質與實質內涵：拒絕空泛的公關行銷廢話（例如「展望聚焦於未來製程節點的演進」、「持續提升 PPA」等大家都知道的常識）。報告必須聚焦於「紮實的技術細節」，例如：新架構解決了什麼瓶頸？新材料有什麼物理特性突破？具體的論文數據為何？
-        3. 寧缺勿濫與主動分享論文：如果今天提供的新聞全部都是空泛的行銷話語或沒有具體技術細節，請「完全放棄」這些新聞，當天不要發一般的新聞內容。取而代之，請利用你的知識，主動分享並科普一篇近期（近一兩年內）在「固態電子、電池技術、電波領域或 AI 底層硬體架構」的「最新突破性論文」或「全新技術」，進行深度的技術探討。
-        4. 連結格式：如果有引用新聞，連結只能顯示文字標題 `[標題](連結)`，絕對不可以出現任何圖片。若是自行分享論文，請盡量提供真實的論文名稱或可搜尋的關鍵字。
+        1. 數量與挑選邏輯：每天「只挑選一件」對「電機系學生」最有幫助的新聞。不管今天的新聞多寡或影響力大小，請務必挑出一篇最好的來播報。
+        2. 連結格式：如果有引用新聞，連結只能顯示文字標題 `[標題](連結)`，絕對不可以出現任何圖片。若是自行分享論文，請盡量提供真實的論文名稱或可搜尋的關鍵字。
+        3. 內容呈現：我希望你給的內容是直接擷取網站的內容，但篇幅上不要超過我給你的字數限制，你要自己斟酌與取捨，並讓內容看起來自然流暢。
 
         【輸出排版格式與可讀性要求】（請嚴格遵循以下格式，不要有任何開場白）
-        1. 字數與分段：總字數請嚴格控制在 300 字以內。內容固定分為「兩段」，每段約 150 字，段落之間務必留空行，不要將文字擠成一團。
+        1. 字數與分段：總字數控制在 400 字內（可依實際新聞長度增減）。適時分段與縮排，提升可讀性。
         2. 專業中文表達（嚴格執行）：內文敘述請盡量使用純中文。**【絕對禁止】** 在任何中文名詞後面加上括號附註英文！絕對不可以出現類似 `稀疏激活 (Sparse Activation)`、`路由器 (Router)`、`延展性 (Scalability)` 的寫法。請直接寫「稀疏激活」、「路由器」、「延展性」即可。對於產業通用的技術縮寫（如 GPU, AI, MoE, HBM），請直接單獨寫英文（例如寫 MoE 即可，絕對不要寫 `MoE (Mixture-of-Experts)`）。
-        3. 重點強調：重要的技術突破點、數據或名詞，請務必使用 **粗體** 標示。
 
-        **今日重點（技術突破 / 最新論文分享）:**
-        (直接切入事實描述，嚴格限制在 2 段內，每段約 150 字。適度留白並使用粗體強調關鍵字。內容必須為純中文，描述該技術的物理/架構特性與影響)
-
-        [參考來源標題](連結) (若有相關來源，或自行分享的論文名稱)
+        [參考來源標題](連結)
 
         今日新聞資料：
         {news_text}
@@ -157,9 +152,8 @@ class AgentBrain:
             response = self.model.generate_content(prompt)
             logging.info("日報生成完成。")
             
-            # 若不是無新聞，則儲存至歷史紀錄
-            if "今日無具備重大影響力之新聞" not in response.text:
-                self.save_history(response.text)
+            # 每天必定有新聞，直接儲存至歷史紀錄
+            self.save_history(response.text)
 
             return response.text
         except Exception as e:
