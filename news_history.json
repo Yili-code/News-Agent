@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-07-11",
-    "summary": "**今日重點（技術突破 / 最新論文分享）:** 臺積電於 2026 年 VLSI Symposium 上發表了其 **A16 製程技術**，標誌著業界首次將埃米級 CMOS 平台與 **增強型奈米片環繞閘極電晶體 (nanosheet GAAFETs)** 及 **背面供電 (Backside Power Delivery, BPD)** 技術結合。A16 的核心創新在於導入 **Super P"
-  },
-  {
     "date": "2026-07-12",
     "summary": "**今日重點（技術突破 / 最新論文分享）:**  人工智慧運算的爆炸式增長，正使傳統馮諾曼架構面臨記憶體與處理器間資料傳輸的巨大瓶頸。為突破此「資料牆」，**電阻式隨機存取記憶體 (RRAM)** 正成為類比記憶體內運算的核心候選技術。RRAM 的運作原理基於電介質材料的**電阻切換**特性，其電導值可在多個非揮發性狀態間精確調節。這使其能直接儲存類神經網路的類比權重，並在記憶體單元內執行**乘"
   },
@@ -38,5 +34,9 @@
   {
     "date": "2026-07-20",
     "summary": "**今日重點（技術突破 / 最新論文分享）:** 在高效能運算與人工智慧爆炸式增長的時代，記憶體牆仍是系統效能關鍵瓶頸。最新伺服器記憶體技術突破，預計將大幅緩解此挑戰。Micron 展示了 **DDR5-8000 RDIMMs**，而 Samsung 更推出性能驚人的 **第二代 MRDIMM**，其傳輸速率達前所未有的 **12800 MT/s**。MRDIMM 透過獨特架構設計，顯著提升伺服器"
+  },
+  {
+    "date": "2026-07-21",
+    "summary": "[Another Giant Leap: The Rubin CPX Specialized Accelerator & Rack](https://semianalysis.com/2025/09/10/another-giant-leap-the-rubin-cpx-specialized-accelerator-rack/)  今日重點（技術突破 / 最新論文分享）:  Nvidia 近日發"
   }
 ]
