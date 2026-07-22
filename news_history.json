@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-07-12",
-    "summary": "**今日重點（技術突破 / 最新論文分享）:**  人工智慧運算的爆炸式增長，正使傳統馮諾曼架構面臨記憶體與處理器間資料傳輸的巨大瓶頸。為突破此「資料牆」，**電阻式隨機存取記憶體 (RRAM)** 正成為類比記憶體內運算的核心候選技術。RRAM 的運作原理基於電介質材料的**電阻切換**特性，其電導值可在多個非揮發性狀態間精確調節。這使其能直接儲存類神經網路的類比權重，並在記憶體單元內執行**乘"
-  },
-  {
     "date": "2026-07-13",
     "summary": "**今日重點（技術突破 / 最新論文分享）:**  Apple的自動駕駛汽車計畫雖然最終未能商業化，卻在內部意外催生了公司在 **AI晶片設計** 領域的顯著領先優勢。該專案對 **邊緣AI推論** 有著極端嚴苛的要求，包括毫秒級的延遲、極高的資料吞吐量以及嚴格的功耗限制。為滿足這些挑戰，Apple的架構師們被迫從 **第一原理思考**，深入設計優化晶片層級的AI加速器，而非僅依賴傳統通用處理器。"
   },
@@ -38,5 +34,9 @@
   {
     "date": "2026-07-21",
     "summary": "[Another Giant Leap: The Rubin CPX Specialized Accelerator & Rack](https://semianalysis.com/2025/09/10/another-giant-leap-the-rubin-cpx-specialized-accelerator-rack/)  今日重點（技術突破 / 最新論文分享）:  Nvidia 近日發"
+  },
+  {
+    "date": "2026-07-22",
+    "summary": "[Advancing next-gen AI with materials science innovation](https://www.technologyreview.com/2026/07/21/1140602/advancing-next-gen-ai-with-materials-science-innovation/)  今日重點（技術突破 / 最新論文分享）:  隨著人工智慧領域的"
   }
 ]
