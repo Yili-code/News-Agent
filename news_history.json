@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-07-16",
-    "summary": "**今日重點（技術突破 / 最新論文分享）:** 先進半導體製程已步入埃米世代，然而晶片內部的資料傳輸效率，尤其是多晶片整合的互連瓶頸，正成為延續摩爾定律的關鍵挑戰。傳統透過微凸塊實現的 3D 堆疊，其互連密度受限於凸塊間距。最新的 **混合鍵合技術 (Hybrid Bonding)** 正在徹底革新晶片間的垂直互連方式，其核心在於透過 **銅對銅直接鍵合**，在極微小間距下實現前所未有的連結密度"
-  },
-  {
     "date": "2026-07-17",
     "summary": "**今日重點（技術突破 / 最新論文分享）:** AI 運算爆炸式增長，對資料互連頻寬與延遲提出前所未有的挑戰。傳統的網路架構在面對 GPU 叢集間海量的模型權重與激活資料傳輸時，其瓶頸日益顯著。**PCIe 7** 作為新一代互連標準，透過大幅提升原始頻寬，初步緩解了部分壓力。然而，單純提高速率不足以應對多租戶環境下複雜的 AI 工作負載。尤其是，確保不同 AI 加速器間能高效、無衝突地共享總線"
   },
@@ -38,5 +34,9 @@
   {
     "date": "2026-07-25",
     "summary": "[Prentis，由 Reid Hoffman 與 Mark Pincus 共同創立的新 AI 實驗室正洽談募資 1 億美元](https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/)  今日重點（技術趨勢 / 產業發展）:"
+  },
+  {
+    "date": "2026-07-26",
+    "summary": "[One fallen power line exposed a growing AI data center problem. Here’s how to fix it.](https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fi"
   }
 ]
