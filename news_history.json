@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-07-19",
-    "summary": "**今日重點（技術突破 / 最新論文分享）:** 一項名為「**適應性平行推理**」的全新範式正革新人工智慧的推理效率與擴展性。傳統大型語言模型在處理複雜問題時，往往以序列方式運行，導致效率低下且無法充分利用並行運算資源。此技術的核心突破在於賦予推理模型自主決策的能力，使其能夠根據當前問題的性質，**動態地分解獨立子任務**，並決定應啟動多少並行執行緒，進而有效協調這些並行流程，大幅提升解決問題的"
-  },
-  {
     "date": "2026-07-20",
     "summary": "**今日重點（技術突破 / 最新論文分享）:** 在高效能運算與人工智慧爆炸式增長的時代，記憶體牆仍是系統效能關鍵瓶頸。最新伺服器記憶體技術突破，預計將大幅緩解此挑戰。Micron 展示了 **DDR5-8000 RDIMMs**，而 Samsung 更推出性能驚人的 **第二代 MRDIMM**，其傳輸速率達前所未有的 **12800 MT/s**。MRDIMM 透過獨特架構設計，顯著提升伺服器"
   },
@@ -38,5 +34,9 @@
   {
     "date": "2026-07-28",
     "summary": "[How lasers could help provide fuel for nuclear reactors](https://www.technologyreview.com/2026/07/27/1140798/laser-nuclear-enrichment/)  今日重點（技術突破 / 最新論文分享）:  隨著全球對潔淨能源需求的增長，核能作為穩定且低碳的電力來源，其重要性日益提升。然"
+  },
+  {
+    "date": "2026-07-29",
+    "summary": "[Ars Technica - Reaction wheel failures leave Swift rescue mission spinning in orbit](https://arstechnica.com/space/2026/07/reaction-wheel-failures-leave-swift-rescue-mission-spinning-in-orbit/)  今日重點"
   }
 ]
