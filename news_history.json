@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-07-20",
-    "summary": "**今日重點（技術突破 / 最新論文分享）:** 在高效能運算與人工智慧爆炸式增長的時代，記憶體牆仍是系統效能關鍵瓶頸。最新伺服器記憶體技術突破，預計將大幅緩解此挑戰。Micron 展示了 **DDR5-8000 RDIMMs**，而 Samsung 更推出性能驚人的 **第二代 MRDIMM**，其傳輸速率達前所未有的 **12800 MT/s**。MRDIMM 透過獨特架構設計，顯著提升伺服器"
-  },
-  {
     "date": "2026-07-21",
     "summary": "[Another Giant Leap: The Rubin CPX Specialized Accelerator & Rack](https://semianalysis.com/2025/09/10/another-giant-leap-the-rubin-cpx-specialized-accelerator-rack/)  今日重點（技術突破 / 最新論文分享）:  Nvidia 近日發"
   },
@@ -38,5 +34,9 @@
   {
     "date": "2026-07-29",
     "summary": "[Ars Technica - Reaction wheel failures leave Swift rescue mission spinning in orbit](https://arstechnica.com/space/2026/07/reaction-wheel-failures-leave-swift-rescue-mission-spinning-in-orbit/)  今日重點"
+  },
+  {
+    "date": "2026-07-30",
+    "summary": "[How an overlooked geothermal plant got a second chance](https://www.technologyreview.com/2026/07/29/1140896/geothermal-second-chance/)  今日重點（技術突破 / 產業發展）:  隨著全球對潔淨能源的需求日益增長，地熱發電作為一種穩定且低碳的電力來源，其重要性日益提"
   }
 ]
