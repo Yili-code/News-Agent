@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-07-25",
-    "summary": "[Prentis，由 Reid Hoffman 與 Mark Pincus 共同創立的新 AI 實驗室正洽談募資 1 億美元](https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/)  今日重點（技術趨勢 / 產業發展）:"
-  },
-  {
     "date": "2026-07-26",
     "summary": "[One fallen power line exposed a growing AI data center problem. Here’s how to fix it.](https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fi"
   },
@@ -38,5 +34,9 @@
   {
     "date": "2026-08-03",
     "summary": "[xAI’s Colossus 2 – First Gigawatt Datacenter In The World, Unique RL Methodology, Capital Raise](https://semianalysis.com/2025/09/16/xais-colossus-2-first-gigawatt-datacenter/)  今日重點（技術突破 / 產業發展）:  人"
+  },
+  {
+    "date": "2026-08-04",
+    "summary": "[Huawei Ascend Production Ramp: Die Banks, TSMC Continued Production, HBM is The Bottleneck](https://semianalysis.com/2025/09/08/huawei-ascend-production-ramp/)  今日重點（產業發展 / 半導體製造）：  隨著全球人工智慧算力需求的爆炸性增"
   }
 ]
