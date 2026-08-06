@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-07-27",
-    "summary": "[Are brain waves the next unlock for physical AI?](https://techcrunch.com/2026/07/26/are-brain-waves-the-next-unlock-for-physical-ai/)  今日重點（技術突破 / 最新論文分享）:  隨著人工智慧模型不斷深入物理世界，其訓練數據的需求變得日益複雜與龐大。傳統上，訓練物"
-  },
-  {
     "date": "2026-07-28",
     "summary": "[How lasers could help provide fuel for nuclear reactors](https://www.technologyreview.com/2026/07/27/1140798/laser-nuclear-enrichment/)  今日重點（技術突破 / 最新論文分享）:  隨著全球對潔淨能源需求的增長，核能作為穩定且低碳的電力來源，其重要性日益提升。然"
   },
@@ -38,5 +34,9 @@
   {
     "date": "2026-08-05",
     "summary": "[德州因電力需求過高暫停資料中心電網連接](https://arstechnica.com/ai/2026/08/texas-halts-data-center-connections-to-power-grid-amid-overwhelming-demand/)  德州電力可靠性委員會 (ERCOT) 近期宣布，由於人工智慧和加密貨幣挖礦設施的「壓倒性需求」，將暫停新的資料中心連接電網。此舉與"
+  },
+  {
+    "date": "2026-08-06",
+    "summary": "[數千台伺服器恐因主機板控制器漏洞遭植入後門](https://arstechnica.com/security/2026/08/thousands-of-servers-can-be-backdoored-by-exploiting-buggy-motherboard-controllers/)  全球主要的伺服器製造商所生產的數千台伺服器，正面臨來自其基板管理控制器（BMC）的嚴重安全風險。報"
   }
 ]
