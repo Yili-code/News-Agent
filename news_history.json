@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-07-28",
-    "summary": "[How lasers could help provide fuel for nuclear reactors](https://www.technologyreview.com/2026/07/27/1140798/laser-nuclear-enrichment/)  今日重點（技術突破 / 最新論文分享）:  隨著全球對潔淨能源需求的增長，核能作為穩定且低碳的電力來源，其重要性日益提升。然"
-  },
-  {
     "date": "2026-07-29",
     "summary": "[Ars Technica - Reaction wheel failures leave Swift rescue mission spinning in orbit](https://arstechnica.com/space/2026/07/reaction-wheel-failures-leave-swift-rescue-mission-spinning-in-orbit/)  今日重點"
   },
@@ -38,5 +34,9 @@
   {
     "date": "2026-08-06",
     "summary": "[數千台伺服器恐因主機板控制器漏洞遭植入後門](https://arstechnica.com/security/2026/08/thousands-of-servers-can-be-backdoored-by-exploiting-buggy-motherboard-controllers/)  全球主要的伺服器製造商所生產的數千台伺服器，正面臨來自其基板管理控制器（BMC）的嚴重安全風險。報"
+  },
+  {
+    "date": "2026-08-07",
+    "summary": "[The Download: NASA’s new telescope and Chinese tech import curbs](https://www.technologyreview.com/2026/08/05/1141212/the-download-nasa-telescope-chinese-tech-import-curbs/)  今日重點（太空探索 / 精密儀器）： 美國太空總"
   }
 ]
