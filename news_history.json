@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-07-29",
-    "summary": "[Ars Technica - Reaction wheel failures leave Swift rescue mission spinning in orbit](https://arstechnica.com/space/2026/07/reaction-wheel-failures-leave-swift-rescue-mission-spinning-in-orbit/)  今日重點"
-  },
-  {
     "date": "2026-07-30",
     "summary": "[How an overlooked geothermal plant got a second chance](https://www.technologyreview.com/2026/07/29/1140896/geothermal-second-chance/)  今日重點（技術突破 / 產業發展）:  隨著全球對潔淨能源的需求日益增長，地熱發電作為一種穩定且低碳的電力來源，其重要性日益提"
   },
@@ -38,5 +34,9 @@
   {
     "date": "2026-08-07",
     "summary": "[The Download: NASA’s new telescope and Chinese tech import curbs](https://www.technologyreview.com/2026/08/05/1141212/the-download-nasa-telescope-chinese-tech-import-curbs/)  今日重點（太空探索 / 精密儀器）： 美國太空總"
+  },
+  {
+    "date": "2026-08-08",
+    "summary": "[OpenAI因安全考量放緩Astra模型開發](https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/)  OpenAI 近期宣布，其仍在積極開發中的 Astra 模型已達到一個「關鍵網路安全門檻」。這項進展意味著 Astra 模型展現出能夠獨立"
   }
 ]
