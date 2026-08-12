@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-08-02",
-    "summary": "[Judge denies xAI’s request to block Minnesota ban on ‘nudify’ apps](https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/)  今日重點（AI 倫理 / 法律規範）: 針對人工智慧公司 x"
-  },
-  {
     "date": "2026-08-03",
     "summary": "[xAI’s Colossus 2 – First Gigawatt Datacenter In The World, Unique RL Methodology, Capital Raise](https://semianalysis.com/2025/09/16/xais-colossus-2-first-gigawatt-datacenter/)  今日重點（技術突破 / 產業發展）:  人"
   },
@@ -38,5 +34,9 @@
   {
     "date": "2026-08-11",
     "summary": "[AI for science needs reasoning, not just data](https://www.technologyreview.com/2026/08/10/1141384/ai-agents-for-science/)  儘管人工智慧已透過資料處理革新了眾多領域，但其在科學研究中的應用，需要從單純的資料分析轉向融入推理能力。前 Google 執行長及 Schmidt S"
+  },
+  {
+    "date": "2026-08-12",
+    "summary": "[Another Giant Leap: The Rubin CPX Specialized Accelerator & Rack](https://semianalysis.com/2025/09/10/another-giant-leap-the-rubin-cpx-specialized-accelerator-rack/)  Nvidia 近期宣布推出 Rubin CPX，這是一款專為優化"
   }
 ]
