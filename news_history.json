@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-08-04",
-    "summary": "[Huawei Ascend Production Ramp: Die Banks, TSMC Continued Production, HBM is The Bottleneck](https://semianalysis.com/2025/09/08/huawei-ascend-production-ramp/)  今日重點（產業發展 / 半導體製造）：  隨著全球人工智慧算力需求的爆炸性增"
-  },
-  {
     "date": "2026-08-05",
     "summary": "[德州因電力需求過高暫停資料中心電網連接](https://arstechnica.com/ai/2026/08/texas-halts-data-center-connections-to-power-grid-amid-overwhelming-demand/)  德州電力可靠性委員會 (ERCOT) 近期宣布，由於人工智慧和加密貨幣挖礦設施的「壓倒性需求」，將暫停新的資料中心連接電網。此舉與"
   },
@@ -38,5 +34,9 @@
   {
     "date": "2026-08-13",
     "summary": "[The web’s newest weapon against AI scrapers is a font](https://arstechnica.com/ai/2026/08/new-font-turns-ordinary-webpages-into-nonsense-for-ai-scrapers/)  一種名為「ShieldFont」的新字體被開發出來，旨在成為網路對抗AI內容抓取的新武"
+  },
+  {
+    "date": "2026-08-14",
+    "summary": "[xAI’s Colossus 2 – First Gigawatt Datacenter In The World, Unique RL Methodology, Capital Raise](https://semianalysis.com/2025/09/16/xais-colossus-2-first-gigawatt-datacenter/)  全球首座千兆瓦資料中心「xAI Colos"
   }
 ]
