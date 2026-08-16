@@ -1,59 +1,188 @@
-# News AI Agent (電機系專屬自動化科技日報) 🚀
+# News Agent
 
-這是一個基於 Google Gemini 2.5 Flash 模型驅動的自動化 AI 科技日報系統。
-目前的 Agent 定位已經全面升級為**「專為電機系 (EE) 學生打造的科技日報」**，旨在每天為您提供最具啟發性、最有幫助的技術突破與產業新聞。
+一個新聞聚合與 Q&A 系統，提供科技資訊聚合、日報生成、以及 Discord 互動功能。
 
-## 🎯 專案定位與核心邏輯
+## 功能概覽
 
-本系統的核心設計理念是「對電機系學生到底有沒有幫助」：
-1. **每日必報 (Unconditional Reporting)**：無論當天的新聞多寡或影響力大小，系統每天都會雷打不動地為您挑選出「最好的一篇」進行播報，確保您每天都有新知可以吸收。
-2. **專屬挑選邏輯**：AI 在篩選新聞時，會自動過濾掉公關行銷廢話，聚焦於技術細節、晶片架構突破、模型底層設計或實務應用。
-3. **純中文易讀排版**：嚴格限制輸出在 400 字以內，並採用純中文敘述（不會出現 `中文 (English)` 的冗餘括號），提升閱讀流暢度。
+### 1. **新聞聚合與每日簡報** (`news_agent.py`)
+- 自動從 6 個高質量 RSS 源聚合新聞
+- 生成每日新聞簡報
+- 去重機制，避免重複報導相同主題
+- 通過 Telegram Bot 推送每日簡報
+- 保留新聞歷史記錄，自動保存最近 10 次簡報
 
-## 📰 嚴選新聞來源
+### 2. **Discord 互動** (`qa_agent.py`)
+- 監控 Discord 頻道中提及「阿福」的提問
+- 生成回答並推送到頻道
+- 過濾已回答的問題，避免重複回應
+- 支持 24 小時時間窗口內的消息檢索
 
-本專案全面棄用一般的泛科技新聞，改用以下六大高含金量來源：
-1. **SemiAnalysis**：專攻半導體產業、晶圓代工、HBM 記憶體與 AI 晶片架構。
-2. **The Information**：矽谷獨家新聞天花板，掌握 AI 巨頭內幕與商業獨家。
-3. **TechCrunch (AI 專區)**：AI Agent、新創融資與產品動態最前線。
-4. **VentureBeat (AI 專區)**：企業級 AI 應用與 LLM 模型評測。
-5. **Ars Technica**：模型技術細節與硬體深度解析。
-6. **MIT Technology Review**：前沿論文、AGI 趨勢與技術長期影響。
+### 3. **API 連接測試** (`test_key.py`)
+- 測試 API 連接
+- 驗證設定的有效性
 
-## ⚙️ 系統操作與運作方式
+## 新聞來源
 
-1. **新聞擷取 (NewsFetcher)**：透過 Python 腳本自動抓取上述六大 RSS 來源。
-2. **推論核心 (AgentBrain)**：將抓取到的新聞餵給 Gemini，AI 會根據歷史紀錄 (`news_history.json`) 避免重複，並嚴格選出一篇對電機系最有幫助的內容。
-3. **Discord 推播 (DiscordNotifier)**：將生成的精簡報告推送至指定的 Discord 頻道。
-4. **自動化執行 (GitHub Actions)**：透過 `.github/workflows` 進行每日排程自動執行，無需人工介入。
+系統聚合以下 6 個科技新聞源：
 
-## 💻 本地端測試與開發
+| 分類 | 來源 |
+|-----|------|
+| 科技產業 | SemiAnalysis |
+| 科技新聞 | The Information |
+| 科技創新 | TechCrunch |
+| 商業科技 | VentureBeat |
+| 技術深度 | ArsTechnica |
+| 科技前沿 | MIT Technology Review |
 
-若您希望在本地端執行此程式：
+## 安裝步驟
 
-1. **安裝依賴套件**：
-   ```bash
-   pip install -r requirements.txt
-   ```
+### 前置需求
+- Python 3.8+
+- API 密鑰（用於內容生成）
+- Telegram Bot Token 與 Chat ID（可選，用於推送功能）
+- Discord Bot Token 與 Channel ID（可選，用於互動功能）
 
-2. **設定環境變數**：
-   在專案根目錄下建立 `.env` 檔案，並填寫以下資訊：
-   ```env
-   GEMINI_API_KEY="your_gemini_api_key_here"
-   DISCORD_WEBHOOK_URL="your_discord_webhook_url_here"
-   ```
-   *(注意：`.env` 檔案已加入 `.gitignore`，請勿將金鑰 Push 到 GitHub 上。)*
+### 1. 克隆或下載項目
+```bash
+cd news_agent
+```
 
-3. **執行程式**：
-   ```bash
-   python news_agent.py
-   ```
+### 2. 安裝依賴
+```bash
+pip install -r requirements.txt
+```
 
-## ☁️ 部署至 GitHub Actions
+### 3. 配置環境變數
 
-本專案已配置好 GitHub Actions。
-請確保在您的 GitHub Repository 中設定了以下 **Repository Secrets**：
-- `GEMINI_API_KEY`
-- `DISCORD_WEBHOOK_URL`
+在項目根目錄創建 `.env` 文件：
 
-設定完成後，系統即會在每日定時為您送上專屬於電機系的科技日報！
+```env
+GEMINI_API_KEY=your_api_key_here
+TELEGRAM_BOT_TOKEN=your_bot_token_here
+TELEGRAM_CHAT_ID=your_chat_id_here
+DISCORD_BOT_TOKEN=your_bot_token_here
+DISCORD_CHANNEL_ID=your_channel_id_here
+```
+
+### 4. 測試連接（可選）
+```bash
+python test_key.py
+```
+
+## 使用方法
+
+### 生成每日簡報
+```bash
+python news_agent.py
+```
+
+該命令將：
+1. 從所有 RSS 源聚合最新新聞（每個源最多 3 條）
+2. 生成簡報
+3. 通過 Telegram 推送
+4. 保存摘要到歷史記錄
+
+### 監控 Discord
+```bash
+python qa_agent.py
+```
+
+該命令將：
+1. 獲取 Discord 頻道最近 24 小時內的消息
+2. 識別提及「阿福」的提問
+3. 生成回答
+4. 推送回答到 Discord
+
+### 推薦的定時執行
+
+使用系統的任務排程工具（如 cron 或 Windows Task Scheduler）定時執行：
+
+**Windows (Task Scheduler):**
+```
+Program: python.exe
+Arguments: C:\path\to\news_agent.py
+Schedule: Daily at 08:00 AM
+```
+
+**Linux/macOS (cron):**
+```bash
+0 8 * * * cd /path/to/news_agent && python news_agent.py
+0 */2 * * * cd /path/to/news_agent && python qa_agent.py
+```
+
+## 📄 文件結構
+
+```
+news_agent/
+├── news_agent.py          # 新聞聚合與簡報
+├── qa_agent.py            # Discord 互動
+├── test_key.py            # 連接測試
+├── news_history.json      # 簡報歷史記錄（自動生成）
+├── requirements.txt       # Python 依賴
+└── README.md             # 本文件
+```
+
+## 🔧 配置說明
+
+### news_agent.py 配置
+
+- **`limit_per_source`**：每個 RSS 源每次獲取的新聞數量，默認為 3
+- **歷史記錄**：自動保留最近 10 次簡報摘要
+- **Telegram 推送**：支持 HTML 格式，如解析失敗則自動降級為純文字
+
+### qa_agent.py 配置
+
+- **`max_hours_back`**：查詢消息的時間窗口，默認為 24 小時
+- **過濾重複**：排除已回答的問題
+- **新聞過濾**：排除每日新聞簡報
+
+## 🔐 安全建議
+
+- **環境變數管理**：API 密鑰等敏感信息應存儲在 `.env` 文件中，避免在代碼中硬編碼
+- **`.env` 文件保護**：將 `.env` 添加到 `.gitignore`，避免提交到版本控制系統
+- **密鑰輪換**：定期更新 API 密鑰和 Bot Token
+
+## 🐛 故障排除
+
+### Telegram 推送失敗
+- 確認 `TELEGRAM_BOT_TOKEN` 和 `TELEGRAM_CHAT_ID` 正確
+- 檢查 Bot 是否已添加到目標頻道並擁有發送消息權限
+
+### Discord 消息讀取失敗
+- 確認 `DISCORD_BOT_TOKEN` 和 `DISCORD_CHANNEL_ID` 正確
+- 確保 Bot 在 Discord 伺服器中擁有讀取和發送消息的權限
+
+### API 連接失敗
+- 確認 API 密鑰有效
+- 檢查網絡連接
+
+### 中文顯示亂碼
+- 確保終端編碼為 UTF-8（尤其是 Windows PowerShell）
+- 檢查 Telegram/Discord 客戶端的字體設置
+
+## 📦 依賴說明
+
+| 套件 | 版本 | 用途 |
+|------|------|------|
+| google-generativeai | 0.8.3 | API 調用 |
+| requests | 2.32.3 | HTTP 請求（Telegram/Discord API） |
+| feedparser | 6.0.11 | RSS 源解析 |
+| python-dotenv | 1.0.1 | 環境變數管理 |
+
+## 📝 日誌
+
+程式使用 Python logging 記錄執行情況：
+
+- **INFO**：正常操作流程
+- **WARNING**：非關鍵問題
+- **ERROR**：關鍵錯誤
+
+日誌格式：`[時間戳] - [日誌等級] - [消息內容]`
+
+## 📄 許可證
+
+本項目采用 MIT 許可證。
+
+---
+
+**最後更新**：2026-08-16

@@ -1,43 +1,49 @@
-name: Daily News Agent
+name: Daily Tech News Agent
 
 on:
   schedule:
-    # 00:00 UTC 等於台灣/北京時間 08:00 AM
     - cron: '0 0 * * *'
-  workflow_dispatch: # 允許手動觸發測試
+  workflow_dispatch:
 
 jobs:
-  run-agent:
+  run-news-agent:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    
+
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v4
-      
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.10'
-        cache: 'pip' # 啟用 pip 快取加速執行
-        
-    - name: Install Dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-        
-    - name: Run News Agent
-      env:
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-      run: |
-        python news_agent.py
-        
-    - name: Commit and Push History
-      run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add *.json
-        git diff-index --quiet HEAD || git commit -m "chore: update history.json"
-        git push
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; else pip install feedparser requests google-generativeai python-dotenv; fi
+
+      - name: Pull latest history and changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git pull origin main || true
+
+      - name: Run News Agent
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python news_agent.py
+
+      - name: Commit and push updated news_history.json
+        run: |
+          git add news_history.json
+          if git status --porcelain | grep -q "news_history.json"; then
+            git commit -m "chore: update news_history.json [skip ci]"
+            git push
+          else
+            echo "No changes to news_history.json"
+          fi
