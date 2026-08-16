@@ -86,17 +86,33 @@ class AgentBrain:
             raise ValueError("找不到 GEMINI_API_KEY，請確認環境變數設定。")
         
         genai.configure(api_key=GEMINI_API_KEY)
-        self.model = genai.GenerativeModel('gemini-3.5-flash')
+        self.model = genai.GenerativeModel('gemini-3.5-flash-lite')
         self.history_file = "news_history.json"
 
     def load_history(self):
-        if os.path.exists(self.history_file):
+        if not os.path.exists(self.history_file):
+            return []
+
+        try:
+            with open(self.history_file, 'r', encoding='utf-8') as f:
+                content = f.read().strip()
+
+            if not content:
+                return []
+
+            history = json.loads(content)
+            if not isinstance(history, list):
+                raise ValueError("history file is not a JSON list")
+            return history
+        except Exception as e:
+            logging.error(f"讀取歷史紀錄失敗: {e}")
             try:
-                with open(self.history_file, 'r', encoding='utf-8') as f:
-                    return json.load(f)
-            except Exception as e:
-                logging.error(f"讀取歷史紀錄失敗: {e}")
-        return []
+                backup_path = f"{self.history_file}.corrupt-{datetime.now().strftime('%Y%m%d-%H%M%S')}"
+                os.replace(self.history_file, backup_path)
+                logging.warning(f"已備份損壞的歷史紀錄到 {backup_path}")
+            except Exception:
+                pass
+            return []
 
     def save_history(self, report_text):
         history = self.load_history()
@@ -107,8 +123,10 @@ class AgentBrain:
         })
         history = history[-10:]
         try:
-            with open(self.history_file, 'w', encoding='utf-8') as f:
+            temp_path = f"{self.history_file}.tmp"
+            with open(temp_path, 'w', encoding='utf-8') as f:
                 json.dump(history, f, ensure_ascii=False, indent=2)
+            os.replace(temp_path, self.history_file)
         except Exception as e:
             logging.error(f"儲存歷史紀錄失敗: {e}")
 
@@ -188,30 +206,38 @@ def send_telegram_message(text: str):
 
     return response
 
-def main():
+
+def run_news_agent():
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         logging.error("缺少 TELEGRAM_BOT_TOKEN 或 TELEGRAM_CHAT_ID 環境變數！")
-        return
+        return False
 
     fetcher = NewsFetcher(limit_per_source=3)
     news_items = fetcher.fetch_news()
-        
+
     if not news_items:
         logging.warning("今日無新聞可供處理。")
-        return
+        return False
 
     brain = AgentBrain()
     report = brain.generate_daily_report(news_items)
-        
+
     today_str = datetime.now().strftime("%Y-%m-%d")
     final_report = f"<b>Daily Brief ({today_str})</b>\n\n" + report
 
     result = send_telegram_message(final_report)
-    
+
     if result.get("ok"):
         logging.info("今日排程執行完畢，成功發送至 Telegram。")
-    else:
-        logging.error(f"Telegram 訊息發送失敗: {result}")
+        return True
+
+    logging.error(f"Telegram 訊息發送失敗: {result}")
+    return False
+
+
+def main():
+    return run_news_agent()
+
 
 if __name__ == "__main__":
     main()
