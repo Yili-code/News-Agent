@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-08-06",
-    "summary": "[數千台伺服器恐因主機板控制器漏洞遭植入後門](https://arstechnica.com/security/2026/08/thousands-of-servers-can-be-backdoored-by-exploiting-buggy-motherboard-controllers/)  全球主要的伺服器製造商所生產的數千台伺服器，正面臨來自其基板管理控制器（BMC）的嚴重安全風險。報"
-  },
-  {
     "date": "2026-08-07",
     "summary": "[The Download: NASA’s new telescope and Chinese tech import curbs](https://www.technologyreview.com/2026/08/05/1141212/the-download-nasa-telescope-chinese-tech-import-curbs/)  今日重點（太空探索 / 精密儀器）： 美國太空總"
   },
@@ -38,5 +34,9 @@
   {
     "date": "2026-08-15",
     "summary": "[Huawei Ascend Production Ramp: Die Banks, TSMC Continued Production, HBM is The Bottleneck](https://semianalysis.com/2025/09/08/huawei-ascend-production-ramp/)  人工智慧的發展核心是算力，誰掌握了算力，誰就能主導AI領域並從中獲益。美國科"
+  },
+  {
+    "date": "2026-08-16",
+    "summary": "[So much solar: Digging into the list of every US power plant that went online this year](https://arstechnica.com/science/2026/08/so-much-solar-digging-into-the-list-of-every-us-power-plant-that-went-"
   }
 ]
