@@ -19,8 +19,8 @@ TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 NEWS_SOURCES = {
-    "半導體與 AI 晶片架構": [
-        "https://www.semianalysis.com/feed"
+    "LLM 與 AI 研究論文": [
+        "http://export.arxiv.org/rss/cs.CL"
     ],
     "AI 巨頭內幕與商業獨家": [
         "https://www.theinformation.com/feed"
@@ -28,16 +28,36 @@ NEWS_SOURCES = {
     "AI Agent、新創融資與產品動態": [
         "https://techcrunch.com/category/artificial-intelligence/feed/"
     ],
+    "新創募資與商業模式": [
+        "https://techcrunch.com/category/startups/feed/"
+    ],
     "企業級 AI 應用與 LLM 模型評測": [
         "https://venturebeat.com/category/ai/feed/"
     ],
-    "模型技術細節與硬體解析": [
-        "https://feeds.arstechnica.com/arstechnica/index"
-    ],
-    "前沿論文、RSI 自我迭代與 AGI 趨勢": [
-        "https://www.technologyreview.com/feed/"
+    "軟體架構與資工工程實務": [
+        "https://www.infoq.com/feed/"
     ]
 }
+
+# 純硬體/供應鏈關鍵字：若新聞同時缺乏軟體、AI 相關字眼，則視為偏硬體新聞而降低優先度
+HARDWARE_ONLY_KEYWORDS = [
+    "晶圓", "半導體代工", "光刻", "製程", "奈米製程", "wafer", "foundry",
+    "server rack", "散熱", "cooling system", "power supply", "電源供應",
+    "資料中心建設", "data center construction", "GPU 供應鏈", "chip shortage",
+    "封裝", "packaging technology", "記憶體晶片", "memory chip"
+]
+SOFTWARE_AI_CONTEXT_KEYWORDS = [
+    "LLM", "model", "模型", "AI", "algorithm", "算法", "演算法", "software",
+    "軟體", "framework", "inference", "推理", "training", "訓練", "agent",
+    "startup", "新創", "API", "open source", "開源"
+]
+
+def is_hardware_heavy(item: dict) -> bool:
+    """判斷新聞是否為純硬體/供應鏈題材（缺乏軟體或 AI 應用脈絡）。"""
+    text = f"{item.get('title', '')} {item.get('summary', '')}".lower()
+    has_hardware_term = any(kw.lower() in text for kw in HARDWARE_ONLY_KEYWORDS)
+    has_software_context = any(kw.lower() in text for kw in SOFTWARE_AI_CONTEXT_KEYWORDS)
+    return has_hardware_term and not has_software_context
 
 def clean_html_tags(raw_html: str) -> str:
     if not raw_html:
@@ -66,14 +86,20 @@ class NewsFetcher:
                     for entry in entries:
                         raw_summary = entry.get("summary", "") or entry.get("description", "")
                         cleaned_summary = clean_html_tags(raw_summary)[:500]
-                        
-                        aggregated_news.append({
+
+                        news_item = {
                             "category": category,
                             "source": source_title,
                             "title": entry.get("title", "No Title"),
                             "link": entry.get("link", ""),
                             "summary": cleaned_summary
-                        })
+                        }
+
+                        if is_hardware_heavy(news_item):
+                            logging.info(f"略過偏硬體新聞: {news_item['title']}")
+                            continue
+
+                        aggregated_news.append(news_item)
                 except Exception as e:
                     logging.error(f"擷取 {url} 時發生錯誤: {e}")
 
@@ -244,7 +270,9 @@ class AgentBrain:
         請閱讀底部的【今日新聞資料】，挑選「恰好一篇」最有價值的技術突破或架構創新，撰寫一份精煉的每日科技簡報。
 
         ### 篩選與撰寫準則
-        1. **精確挑選**：不論資料量多少，每天只挑選 1 篇對資工系學生最具技術價值（如：系統架構、算法突破、硬體與模型協同優化）的新聞或論文。
+        1. **精確挑選**：不論資料量多少，每天只挑選 1 篇對資工系學生最具技術價值的新聞或論文。
+        - **優先領域**：軟體工程、AI 演算法與模型架構、LLM 技術突破、AI Agent 與應用產品、新創公司動態、知名科技企業的商業與技術決策。
+        - **降低優先度**：純硬體規格、晶片製程、資料中心土建、供應鏈新聞。除非該硬體突破直接且顯著改變了 AI 模型的訓練或推理方式（例如新的平行運算架構如何讓 LLM 訓練效率大幅提升），否則不要選擇這類新聞。
         2. **去重機制**：絕對禁止播報與【歷史紀錄】重複或相似的主題：
         {history_text}
         3. **內容結構**：簡報必須嚴格包含以下四個區塊：

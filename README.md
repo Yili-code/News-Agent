@@ -4,7 +4,7 @@
 
 ## 功能概覽
 
-- 自動從 6 個科技新聞來源聚合新聞
+- 自動從 6 個科技新聞來源聚合新聞，並側重「軟體」而非「硬體」題材
 - 依據歷史內容去重，避免重複主題
 - 使用 Gemini 生成每日技術簡報
 - 以 Telegram HTML 格式發送到指定聊天
@@ -13,16 +13,22 @@
 
 ## 新聞來源
 
-系統聚合以下 6 個科技新聞源：
+系統聚合以下 6 個新聞源，主軸放在軟體工程、AI 演算法／模型架構、Agent 與新創動態：
 
 | 分類 | 來源 |
 |-----|------|
-| 科技產業 | SemiAnalysis |
-| 科技新聞 | The Information |
-| 科技創新 | TechCrunch |
-| 商業科技 | VentureBeat |
-| 技術深度 | ArsTechnica |
-| 科技前沿 | MIT Technology Review |
+| LLM 與 AI 研究論文 | arXiv (cs.CL) |
+| AI 巨頭內幕與商業獨家 | The Information |
+| AI Agent、新創融資與產品動態 | TechCrunch (AI) |
+| 新創募資與商業模式 | TechCrunch (Startups) |
+| 企業級 AI 應用與 LLM 模型評測 | VentureBeat |
+| 軟體架構與資工工程實務 | InfoQ |
+
+### 硬體新聞降權機制
+
+`news_agent.py` 內建一個關鍵字過濾器（`is_hardware_heavy`）：若一則新聞同時符合「純硬體關鍵字」（如晶圓、製程、封裝、資料中心土建等）且完全沒有出現任何軟體／AI 相關字眼（如 LLM、algorithm、framework、agent 等），就會在擷取階段直接捨棄。除此之外，送給 Gemini 的挑選 prompt 也明確要求優先軟體工程、演算法、Agent 與商業動態，並將純硬體規格新聞列為低優先度（除非該硬體突破直接、顯著改變了模型訓練或推理方式）。
+
+如果之後想調整強弱，可以編輯 `news_agent.py` 中的 `HARDWARE_ONLY_KEYWORDS` / `SOFTWARE_AI_CONTEXT_KEYWORDS` 兩份清單，或修改 `generate_daily_report` 裡的「優先領域／降低優先度」段落。
 
 ## 前置需求
 
