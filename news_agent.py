@@ -38,7 +38,6 @@ NEWS_SOURCES = {
 }
 
 def clean_html_tags(raw_html: str) -> str:
-    """去除 RSS summary 中的 HTML 標籤，只保留純文字"""
     if not raw_html:
         return ""
     clean_text = re.sub(r'<[^>]+>', '', raw_html)
@@ -49,9 +48,6 @@ class NewsFetcher:
         self.limit = limit_per_source
 
     def fetch_news(self):
-        """
-        從定義的 RSS Feeds 擷取新聞，每家來源最多取 Top 3。
-        """
         logging.info("開始擷取科技新聞...")
         aggregated_news = []
 
@@ -206,7 +202,6 @@ def send_telegram_message(text: str):
 
     return response
 
-
 def run_news_agent():
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         logging.error("缺少 TELEGRAM_BOT_TOKEN 或 TELEGRAM_CHAT_ID 環境變數！")
@@ -234,10 +229,8 @@ def run_news_agent():
     logging.error(f"Telegram 訊息發送失敗: {result}")
     return False
 
-
 def main():
     return run_news_agent()
-
 
 if __name__ == "__main__":
     main()

@@ -2,35 +2,39 @@ import json
 import logging
 import os
 import time
-from datetime import datetime, timezone
 
 import google.generativeai as genai
 import requests
 from dotenv import load_dotenv
 
-import news_agent  # 確保 news_agent.py 內有提供對應的調用函式
+import news_agent
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 load_dotenv(override=True)
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+gemini_api_key = os.getenv("GEMINI_API_KEY")
+
+def load_telegram_config():
+    telegram_bot_token = os.getenv("TELEGRAM_BOT_TOKEN")
+    telegram_chat_id = os.getenv("TELEGRAM_CHAT_ID")
+
+    if not all([telegram_bot_token, telegram_chat_id, gemini_api_key]):
+        raise ValueError("缺少必要的環境變數 (TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, GEMINI_API_KEY)")
+
+    return {
+        "gemini_api_key": gemini_api_key,
+        "telegram_bot_token": telegram_bot_token,
+        "telegram_chat_id": telegram_chat_id,
+    }
 
 
-class TelegramQA:
-    def __init__(self):
+class TelegramClient:
+    def __init__(self, bot_token: str, chat_id: str):
         self.state_file = "telegram_last_update_id.json"
-
-        if not all([TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, GEMINI_API_KEY]):
-            raise ValueError("缺少必要的環境變數 (TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, GEMINI_API_KEY)")
-
-        genai.configure(api_key=GEMINI_API_KEY)
-        self.model = genai.GenerativeModel('gemini-3.5-flash-lite')
-        self.base_url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}"
+        self.chat_id = str(chat_id)
+        self.base_url = f"https://api.telegram.org/bot{bot_token}"
 
     def load_last_update_id(self) -> int:
-        """讀取上次處理到的 update_id"""
         if not os.path.exists(self.state_file):
             return 0
         try:
@@ -42,7 +46,6 @@ class TelegramQA:
             return 0
 
     def save_last_update_id(self, update_id: int):
-        """保存最後處理的 update_id"""
         try:
             with open(self.state_file, 'w', encoding='utf-8') as f:
                 json.dump({"last_update_id": update_id}, f, ensure_ascii=False, indent=2)
@@ -50,7 +53,6 @@ class TelegramQA:
             logging.warning(f"保存狀態檔失敗: {e}")
 
     def fetch_new_messages(self):
-        """從 Telegram 擷取所有未處理的私訊訊息"""
         last_update_id = self.load_last_update_id()
         offset = last_update_id + 1 if last_update_id > 0 else 0
 
@@ -70,6 +72,7 @@ class TelegramQA:
         max_update_id = last_update_id
 
         for update in updates:
+            print(update.get("update_id"), update.get("message", {}).get("text"))
             current_update_id = update.get("update_id", 0)
             if current_update_id > max_update_id:
                 max_update_id = current_update_id
@@ -82,8 +85,7 @@ class TelegramQA:
                 continue
 
             chat_id = str(msg.get("chat", {}).get("id", ""))
-            
-            if str(TELEGRAM_CHAT_ID) and chat_id != str(TELEGRAM_CHAT_ID):
+            if self.chat_id and chat_id != self.chat_id:
                 continue
 
             text = msg.get("text") or msg.get("caption") or ""
@@ -102,10 +104,30 @@ class TelegramQA:
 
         return messages
 
+    def post_reply(self, chat_id: str, reply_text: str, reply_to_message_id: int = None):
+        """推送回答至 Telegram"""
+        if not reply_text:
+            return
+
+        payload = {"chat_id": chat_id, "text": reply_text, "disable_web_page_preview": True}
+        if reply_to_message_id:
+            payload["reply_to_message_id"] = reply_to_message_id
+
+        try:
+            response = requests.post(f"{self.base_url}/sendMessage", json=payload, timeout=20)
+            response.raise_for_status()
+            logging.info("已成功回覆")
+        except Exception as e:
+            logging.error(f"推播回答至 Telegram 失敗: {e}")
+
+
+class IntentAnalyzer:
+    def __init__(self, gemini_api_key: str):
+        genai.configure(api_key=gemini_api_key)
+        self.model = genai.GenerativeModel('gemini-3.5-flash-lite')
+
     def analyze_intent(self, user_text: str, user_name: str) -> dict | None:
         """分析意圖並透過 Response Schema 強制回傳合法 JSON"""
-        
-        # 1. 定義標準 JSON Schema
         intent_schema = {
             "type": "OBJECT",
             "properties": {
@@ -121,7 +143,6 @@ class TelegramQA:
             "required": ["intent", "reply"]
         }
 
-        # 2. Prompt 移除模稜兩可的語法範例，專注於任務說明
         prompt = f"""
 你現在是「JARVIS」，頂尖數位管家。
 
@@ -141,7 +162,6 @@ class TelegramQA:
 {user_text}
 """
         try:
-            # 3. 傳入 response_schema 讓 Gemini 在底層強迫符合 Schema
             response = self.model.generate_content(
                 prompt,
                 generation_config={
@@ -154,60 +174,55 @@ class TelegramQA:
             logging.error(f"Gemini API 解析失敗: {e}")
             return None
 
-    def post_reply(self, chat_id: str, reply_text: str, reply_to_message_id: int = None):
-        """推送回答至 Telegram"""
-        if not reply_text:
+
+class TelegramBot:
+    def __init__(self, telegram_client: TelegramClient, intent_analyzer: IntentAnalyzer, news_runner=None):
+        self.telegram_client = telegram_client
+        self.intent_analyzer = intent_analyzer
+        self.news_runner = news_runner or news_agent.run_news_agent
+
+    def handle_message(self, msg: dict):
+        logging.info(f"收到來自{msg['from']}的訊息: {msg['text']}")
+
+        result = self.intent_analyzer.analyze_intent(msg["text"], msg["from"])
+        if not result:
             return
 
-        payload = {"chat_id": chat_id, "text": reply_text, "disable_web_page_preview": True}
-        if reply_to_message_id:
-            payload["reply_to_message_id"] = reply_to_message_id
+        intent = result.get("intent")
+        reply = result.get("reply")
 
-        try:
-            response = requests.post(f"{self.base_url}/sendMessage", json=payload, timeout=20)
-            response.raise_for_status()
-            logging.info(f"已成功回覆")
-        except Exception as e:
-            logging.error(f"推播回答至 Telegram 失敗: {e}")
+        if reply:
+            self.telegram_client.post_reply(msg["chat_id"], reply, msg["message_id"])
+
+        if intent == "TRIGGER_NEWS":
+            logging.info("觸發 news_agent 執行...")
+            try:
+                news_content = self.news_runner()
+                self.telegram_client.post_reply(msg["chat_id"], news_content)
+            except Exception as e:
+                logging.error(f"執行 news_agent 時發生錯誤: {e}")
+                self.telegram_client.post_reply(msg["chat_id"], "擷取新聞時發生異常，Sir。")
+
+    def run(self, polling_interval: int = 2):
+        logging.info("Jarvis 已啟動，開始監聽私人訊息...")
+
+        while True:
+            try:
+                new_msgs = self.telegram_client.fetch_new_messages()
+                for msg in new_msgs:
+                    self.handle_message(msg)
+            except Exception as e:
+                logging.error(f"監聽過程發生未預期錯誤: {e}")
+
+            time.sleep(polling_interval)
 
 
 def main():
-    qa_agent = TelegramQA()
-    logging.info("Jarvis 已啟動，開始監聽私人訊息...")
-
-    while True:
-        try:
-            new_msgs = qa_agent.fetch_new_messages()
-            for msg in new_msgs:
-                logging.info(f"收到來自{msg['from']}的訊息: {msg['text']}")
-                
-                # 1. 進行意圖分析
-                result = qa_agent.analyze_intent(msg["text"], msg["from"])
-                if not result:
-                    continue
-
-                intent = result.get("intent")
-                reply = result.get("reply")
-
-                # 2. 先推送即時回應（例如：「正在為您抓取最新新聞，Sir。」）
-                if reply:
-                    qa_agent.post_reply(msg["chat_id"], reply, msg["message_id"])
-
-                # 3. 根據 Intent 派發任務 (Task Dispatching)
-                if intent == "TRIGGER_NEWS":
-                    logging.info("觸發 news_agent 執行...")
-                    try:
-                        # 呼叫 news_agent 模組內對應的進入點函式 (請確認 function 名稱)
-                        news_content = news_agent.run_news_agent()
-                        qa_agent.post_reply(msg["chat_id"], news_content)
-                    except Exception as e:
-                        logging.error(f"執行 news_agent 時發生錯誤: {e}")
-                        qa_agent.post_reply(msg["chat_id"], "擷取新聞時發生異常，Sir。")
-
-        except Exception as e:
-            logging.error(f"監聽過程發生未預期錯誤: {e}")
-
-        time.sleep(2)
+    config = load_telegram_config()
+    telegram_client = TelegramClient(config["telegram_bot_token"], config["telegram_chat_id"])
+    intent_analyzer = IntentAnalyzer(config["gemini_api_key"])
+    bot = TelegramBot(telegram_client, intent_analyzer)
+    bot.run()
 
 
 if __name__ == "__main__":
