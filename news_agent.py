@@ -7,6 +7,7 @@ import feedparser
 import requests
 import google.generativeai as genai
 from datetime import datetime
+from difflib import SequenceMatcher
 from dotenv import load_dotenv
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -110,13 +111,83 @@ class AgentBrain:
                 pass
             return []
 
-    def save_history(self, report_text):
+    def normalize_text(self, text):
+        if not text:
+            return ""
+        clean = html.unescape(str(text))
+        clean = re.sub(r'<[^>]+>', '', clean)
+        clean = re.sub(r'[^\w\u4e00-\u9fff]+', '', clean.lower())
+        return clean.strip()
+
+    def dedupe_news_items(self, news_items, history=None):
+        if history is None:
+            history = self.load_history()
+
+        history_links = set()
+        history_titles = []
+
+        for entry in history:
+            if isinstance(entry, dict):
+                link = (entry.get('link') or '').strip()
+                if link:
+                    history_links.add(link)
+
+                for value in [entry.get('title'), entry.get('summary')]:
+                    if value:
+                        history_titles.append(self.normalize_text(value))
+            elif isinstance(entry, str):
+                history_titles.append(self.normalize_text(entry))
+
+        deduped = []
+        for item in news_items:
+            link = (item.get('link') or '').strip()
+            title = self.normalize_text(item.get('title'))
+            summary = self.normalize_text(item.get('summary'))
+
+            duplicate = False
+            if link and link in history_links:
+                duplicate = True
+
+            if not duplicate:
+                candidates = [title, summary]
+                for candidate in candidates:
+                    if not candidate:
+                        continue
+                    for historical in history_titles:
+                        if not historical:
+                            continue
+                        if candidate == historical or candidate in historical or historical in candidate:
+                            duplicate = True
+                            break
+                        if SequenceMatcher(None, candidate, historical).ratio() >= 0.8:
+                            duplicate = True
+                            break
+                    if duplicate:
+                        break
+
+            if not duplicate:
+                deduped.append(item)
+
+        return deduped
+
+    def save_history(self, report_text, source_item=None):
         history = self.load_history()
         summary = report_text[:200].replace('\n', ' ')
-        history.append({
+
+        record = {
             "date": datetime.now().strftime("%Y-%m-%d"),
             "summary": summary
-        })
+        }
+
+        if source_item:
+            record.update({
+                "title": source_item.get('title', ''),
+                "link": source_item.get('link', ''),
+                "category": source_item.get('category', ''),
+                "source": source_item.get('source', '')
+            })
+
+        history.append(record)
         history = history[-10:]
         try:
             temp_path = f"{self.history_file}.tmp"
@@ -128,14 +199,23 @@ class AgentBrain:
 
     def generate_daily_report(self, news_items):
         logging.info("開始呼叫 Gemini 生成每日科技日報...")
-        
+
+        deduped_news = self.dedupe_news_items(news_items)
+        if not deduped_news:
+            logging.warning("所有新聞都與歷史重複，今日不發送新報導。")
+            return ""
+
         past_history = self.load_history()
-        history_text = "\n".join([f"- {h['date']}: {h['summary']}" for h in past_history])
+        history_text = "\n".join([
+            f"- {h.get('date', 'unknown')}: {h.get('title') or h.get('summary', '')}"
+            if isinstance(h, dict) else f"- {h}"
+            for h in past_history
+        ])
         if not history_text:
             history_text = "無"
 
         news_text = ""
-        for i, item in enumerate(news_items, 1):
+        for i, item in enumerate(deduped_news, 1):
             news_text += f"[{i}] {item['category']} - {item['source']}\n"
             news_text += f"標題: {item['title']}\n"
             news_text += f"連結: {item['link']}\n"
@@ -175,8 +255,18 @@ class AgentBrain:
         try:
             response = self.model.generate_content(prompt)
             logging.info("Gemini 回應生成成功。")
-            
-            self.save_history(response.text)
+
+            match = re.search(r'<a href="([^"]+)">([^<]+)</a>', response.text)
+            selected_item = None
+            if match:
+                link = match.group(1)
+                title = match.group(2)
+                for item in deduped_news:
+                    if item.get('link') == link or self.normalize_text(item.get('title')) == self.normalize_text(title):
+                        selected_item = item
+                        break
+
+            self.save_history(response.text, source_item=selected_item)
 
             return response.text
         except Exception as e:
