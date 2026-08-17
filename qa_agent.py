@@ -3,7 +3,8 @@ import logging
 import os
 import time
 
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 import requests
 from dotenv import load_dotenv
 
@@ -123,8 +124,8 @@ class TelegramClient:
 
 class IntentAnalyzer:
     def __init__(self, gemini_api_key: str):
-        genai.configure(api_key=gemini_api_key)
-        self.model = genai.GenerativeModel('gemini-3.5-flash-lite')
+        self.client = genai.Client(api_key=gemini_api_key)
+        self.model_name = 'gemini-3.5-flash-lite'
 
     def analyze_intent(self, user_text: str, user_name: str) -> dict | None:
         """分析意圖並透過 Response Schema 強制回傳合法 JSON"""
@@ -162,12 +163,13 @@ class IntentAnalyzer:
 {user_text}
 """
         try:
-            response = self.model.generate_content(
-                prompt,
-                generation_config={
-                    "response_mime_type": "application/json",
-                    "response_schema": intent_schema
-                }
+            response = self.client.models.generate_content(
+                model=self.model_name,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    response_schema=intent_schema
+                )
             )
             return json.loads(response.text.strip())
         except Exception as e:
@@ -197,8 +199,13 @@ class TelegramBot:
         if intent == "TRIGGER_NEWS":
             logging.info("觸發 news_agent 執行...")
             try:
-                news_content = self.news_runner()
-                self.telegram_client.post_reply(msg["chat_id"], news_content)
+                # run_news_agent() 回傳 bool，且成功時已經自行把簡報發到 Telegram，
+                # 這裡只需要在「沒有新內容」或「失敗」時額外告知使用者。
+                success = self.news_runner()
+                if not success:
+                    self.telegram_client.post_reply(
+                        msg["chat_id"], "目前沒有新內容可播報，或發送失敗，Sir。"
+                    )
             except Exception as e:
                 logging.error(f"執行 news_agent 時發生錯誤: {e}")
                 self.telegram_client.post_reply(msg["chat_id"], "擷取新聞時發生異常，Sir。")

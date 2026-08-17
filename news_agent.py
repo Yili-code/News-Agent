@@ -5,7 +5,8 @@ import logging
 import html
 import feedparser
 import requests
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 from datetime import datetime
 from difflib import SequenceMatcher
 from dotenv import load_dotenv
@@ -55,7 +56,9 @@ class NewsFetcher:
         for category, feeds in NEWS_SOURCES.items():
             for url in feeds:
                 try:
-                    parsed = feedparser.parse(url)
+                    resp = requests.get(url, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
+                    resp.raise_for_status()
+                    parsed = feedparser.parse(resp.content)
                     entries = parsed.entries[:self.limit]
                     
                     source_title = parsed.feed.title if 'title' in parsed.feed else url
@@ -81,9 +84,9 @@ class AgentBrain:
     def __init__(self):
         if not GEMINI_API_KEY:
             raise ValueError("找不到 GEMINI_API_KEY，請確認環境變數設定。")
-        
-        genai.configure(api_key=GEMINI_API_KEY)
-        self.model = genai.GenerativeModel('gemini-3.5-flash-lite')
+
+        self.client = genai.Client(api_key=GEMINI_API_KEY)
+        self.model_name = 'gemini-3.5-flash-lite'
         self.history_file = "news_history.json"
 
     def load_history(self):
@@ -138,11 +141,25 @@ class AgentBrain:
             elif isinstance(entry, str):
                 history_titles.append(self.normalize_text(entry))
 
+        seen_exact = set()
         deduped = []
         for item in news_items:
             link = (item.get('link') or '').strip()
             title = self.normalize_text(item.get('title'))
             summary = self.normalize_text(item.get('summary'))
+
+            exact_key = None
+            if link:
+                exact_key = ('link', link)
+            elif title and summary:
+                exact_key = ('title_summary', title, summary)
+            elif title:
+                exact_key = ('title', title)
+
+            if exact_key is not None:
+                if exact_key in seen_exact:
+                    continue
+                seen_exact.add(exact_key)
 
             duplicate = False
             if link and link in history_links:
@@ -253,10 +270,17 @@ class AgentBrain:
         """
 
         try:
-            response = self.model.generate_content(prompt)
+            response = self.client.models.generate_content(
+                model=self.model_name,
+                contents=prompt
+            )
+            report_text = (response.text or "").strip()
+            if not report_text:
+                logging.warning("Gemini 回傳空內容（可能被安全機制擋下），今日不發送。")
+                return ""
             logging.info("Gemini 回應生成成功。")
 
-            match = re.search(r'<a href="([^"]+)">([^<]+)</a>', response.text)
+            match = re.search(r'<a href="([^"]+)">([^<]+)</a>', report_text)
             selected_item = None
             if match:
                 link = match.group(1)
@@ -266,9 +290,9 @@ class AgentBrain:
                         selected_item = item
                         break
 
-            self.save_history(response.text, source_item=selected_item)
+            self.save_history(report_text, source_item=selected_item)
 
-            return response.text
+            return report_text
         except Exception as e:
             logging.error(f"Gemini API 呼叫失敗: {e}")
             raise
@@ -283,12 +307,12 @@ def send_telegram_message(text: str):
         "disable_web_page_preview": False  
     } 
 
-    response = requests.post(url, json=payload).json()
-    
+    response = requests.post(url, json=payload, timeout=20).json()
+
     if not response.get("ok"):
         logging.warning(f"Telegram HTML 解析失敗 ({response.get('description')})，嘗試發送純文字...")
         payload.pop("parse_mode", None)
-        response = requests.post(url, json=payload).json()
+        response = requests.post(url, json=payload, timeout=20).json()
 
     return response
 
@@ -307,8 +331,12 @@ def run_news_agent():
     brain = AgentBrain()
     report = brain.generate_daily_report(news_items)
 
+    if not report:
+        logging.info("今日沒有新內容可供播報，略過發送。")
+        return False
+
     today_str = datetime.now().strftime("%Y-%m-%d")
-    final_report = f"<b>Daily Brief ({today_str})</b>\n\n" + report
+    final_report = f"<b> Hello, Sir. ({today_str})</b>\n\n" + report
 
     result = send_telegram_message(final_report)
 

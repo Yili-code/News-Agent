@@ -119,7 +119,7 @@ news_agent/
 
 | 套件 | 版本 | 用途 |
 |------|------|------|
-| google-generativeai | 0.8.3 | Gemini API 調用 |
+| google-genai | 1.28.0 | Gemini API 調用（google-generativeai 已棄用，改用官方統一 SDK） |
 | requests | 2.32.3 | HTTP 請求 |
 | feedparser | 6.0.11 | RSS 解析 |
 | python-dotenv | 1.0.1 | 環境變數管理 |

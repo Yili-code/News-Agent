@@ -36,6 +36,18 @@ class NewsDeduplicationTests(unittest.TestCase):
 
         self.assertEqual([item['title'] for item in filtered], ['Alpha', 'Beta'])
 
+    def test_filters_exact_same_article_from_same_source(self):
+        items = [
+            {"title": "Same title", "link": "https://example.com/same", "summary": "duplicate body", "source": "TechX"},
+            {"title": "Same title", "link": "https://example.com/same", "summary": "duplicate body", "source": "TechX"},
+            {"title": "Fresh title", "link": "https://example.com/fresh", "summary": "new content", "source": "TechX"},
+        ]
+
+        filtered = self.brain.dedupe_news_items(items, [])
+
+        self.assertEqual([item['title'] for item in filtered], ['Same title', 'Fresh title'])
+        self.assertEqual(len(filtered), 2)
+
 
 if __name__ == '__main__':
     unittest.main()
