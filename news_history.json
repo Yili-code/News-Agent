@@ -14,5 +14,13 @@
     "link": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
     "category": "AI Agent、新創融資與產品動態",
     "source": "AI News & Artificial Intelligence | TechCrunch"
+  },
+  {
+    "date": "2026-08-18",
+    "summary": "<b>[<a href=\"https://arxiv.org/abs/2608.13571\">Not All Tokens Are Equal: Inflation-Aware Routing for Agentic LLM Systems</a>]</b>  <b>簡單說明</b> 傳統系統只看單次呼叫的 API 價格來決定使用哪種 LLM，而最新研究發現 Agent 在執行任務失敗重試時會產生",
+    "title": "Not All Tokens Are Equal: Inflation-Aware Routing for Agentic LLM Systems",
+    "link": "https://arxiv.org/abs/2608.13571",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
