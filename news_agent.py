@@ -369,7 +369,7 @@ def run_news_agent():
         return False
 
     today_str = datetime.now().strftime("%Y-%m-%d")
-    final_report = f"<b> Hello, Sir. ({today_str})</b>\n\n" + report
+    final_report = f"<b>{today_str}</b>\n" + report
 
     result = send_telegram_message(final_report)
 
