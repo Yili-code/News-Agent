@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-08-17",
-    "summary": "<b><a href=\"https://semianalysis.com/2025/09/08/huawei-ascend-production-ramp/\">Huawei Ascend Production Ramp: Die Banks, TSMC Continued Production, HBM is The Bottleneck</a></b>  <b> 簡單說明 </b>：過去 AI ",
-    "title": "Huawei Ascend Production Ramp: Die Banks, TSMC Continued Production, HBM is The Bottleneck",
-    "link": "https://semianalysis.com/2025/09/08/huawei-ascend-production-ramp/",
-    "category": "半導體與 AI 晶片架構",
-    "source": "SemiAnalysis"
-  },
-  {
-    "date": "2026-08-17",
     "summary": "<b>[新聞標題與連結]</b>：<a href=\"https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/\">Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+<",
     "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
     "link": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
@@ -76,6 +68,14 @@
     "summary": "<b>(以 <a href=\"https://arxiv.org/abs/2608.17050\">Cross-Model Memory Transfer via Target-Side Reader Adaptation</a> 呈現)</b>  <b>簡單說明 </b>：傳統替 LLM 補充知識不是得靠肥大的外部檢索系統拖慢速度，就是得把資料硬塞進模型權重裡難以更新；這篇論文透過在目標端外掛輕量",
     "title": "Cross-Model Memory Transfer via Target-Side Reader Adaptation",
     "link": "https://arxiv.org/abs/2608.17050",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-08-19",
+    "summary": "<b><a href=\"https://arxiv.org/abs/2608.17051\">Institution-Specific LLM Prompting Recovers PHI That De-identification Systems and Their Gold Standards Both Miss</a></b>  <b>簡單說明 </b>：傳統去識別化系統僅依賴固定規則或標準",
+    "title": "Institution-Specific LLM Prompting Recovers PHI That De-identification Systems and Their Gold Standards Both Miss",
+    "link": "https://arxiv.org/abs/2608.17051",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
   }
