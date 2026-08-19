@@ -70,5 +70,13 @@
     "link": "https://www.infoq.com/news/2026/08/whatsapp-scam-alert-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-08-19",
+    "summary": "<b>(以 <a href=\"https://arxiv.org/abs/2608.17050\">Cross-Model Memory Transfer via Target-Side Reader Adaptation</a> 呈現)</b>  <b>簡單說明 </b>：傳統替 LLM 補充知識不是得靠肥大的外部檢索系統拖慢速度，就是得把資料硬塞進模型權重裡難以更新；這篇論文透過在目標端外掛輕量",
+    "title": "Cross-Model Memory Transfer via Target-Side Reader Adaptation",
+    "link": "https://arxiv.org/abs/2608.17050",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
