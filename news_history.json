@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-08-18",
-    "summary": "<b>[<a href=\"https://arxiv.org/abs/2608.14551\">Auxiliary uncertainty signals for LLM-assisted systematic review screening: a benchmark across eight Cohen drug-class reviews</a>]</b>  <b>簡單說明</b> 傳統上直接",
-    "title": "Auxiliary uncertainty signals for LLM-assisted systematic review screening: a benchmark across eight Cohen drug-class reviews",
-    "link": "https://arxiv.org/abs/2608.14551",
-    "category": "LLM 與 AI 研究論文",
-    "source": "cs.CL updates on arXiv.org"
-  },
-  {
-    "date": "2026-08-18",
     "summary": "<b>[新聞標題與連結]</b> <a href=\"https://www.infoq.com/news/2026/08/eu-ai-content-watermark/\">Major Frontier Model Providers Adopt Watermarking Tech to Comply with EU Regulation</a>  <b> 簡單說明 </b> 傳統 LLM 輸出內",
     "title": "Major Frontier Model Providers Adopt Watermarking Tech to Comply with EU Regulation",
     "link": "https://www.infoq.com/news/2026/08/eu-ai-content-watermark/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -78,5 +70,13 @@
     "link": "https://www.infoq.com/news/2026/08/docker-vmm-layer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-08-20",
+    "summary": "<b><a href=\"https://arxiv.org/abs/2608.18084\">Compiler-Guided Adaptive Proof Search with Cross-Model Synergy on Context-Dependent Theorem Proving</a></b>  <b>簡單說明 </b>： 傳統自動定理證明器在面對大型軟體專案時，往往因無法妥善利用編譯",
+    "title": "Compiler-Guided Adaptive Proof Search with Cross-Model Synergy on Context-Dependent Theorem Proving",
+    "link": "https://arxiv.org/abs/2608.18084",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
