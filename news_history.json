@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-08-19",
-    "summary": "<b>[<a href=\"https://www.infoq.com/news/2026/08/cloudflare-writeguard-mcp-safety/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Cloudflare WriteGuard Brings Fine-Grained",
-    "title": "Cloudflare WriteGuard Brings Fine-Grained Security Controls for MCP Servers",
-    "link": "https://www.infoq.com/news/2026/08/cloudflare-writeguard-mcp-safety/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-08-19",
     "summary": "<b>[新聞標題與連結]</b>：<a href=\"https://www.infoq.com/news/2026/08/aws-bedrock-agentcore-runtime/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Multi Agent Collaboration Gets ",
     "title": "Multi Agent Collaboration Gets Persistent Compute in Bedrock AgentCore",
     "link": "https://www.infoq.com/news/2026/08/aws-bedrock-agentcore-runtime/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -74,5 +66,13 @@
     "link": "https://www.infoq.com/news/2026/08/vercel-next-js-16-3/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-08-21",
+    "summary": "<b><a href=\"https://arxiv.org/abs/2608.19199\">A Virtual Member of a Community of Practice for the Society of Petroleum Engineers: From Prototype to Deployment</a></b>  <b>簡單說明 </b>： 過去垂直領域的知識管理多依賴靜態搜尋",
+    "title": "A Virtual Member of a Community of Practice for the Society of Petroleum Engineers: From Prototype to Deployment",
+    "link": "https://arxiv.org/abs/2608.19199",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
