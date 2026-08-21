@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-08-18",
-    "summary": "<b>[新聞標題與連結]</b> <a href=\"https://www.infoq.com/news/2026/08/eu-ai-content-watermark/\">Major Frontier Model Providers Adopt Watermarking Tech to Comply with EU Regulation</a>  <b> 簡單說明 </b> 傳統 LLM 輸出內",
-    "title": "Major Frontier Model Providers Adopt Watermarking Tech to Comply with EU Regulation",
-    "link": "https://www.infoq.com/news/2026/08/eu-ai-content-watermark/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-08-19",
     "summary": "<b>[新聞標題與連結]</b>：<a href=\"https://techcrunch.com/2026/08/18/cursor-capitalizes-on-github-frustration-launches-rival-hosting-platform/\">Cursor capitalizes on GitHub frustration, launches rival hosting ",
     "title": "Cursor capitalizes on GitHub frustration, launches rival hosting platform",
@@ -78,5 +70,9 @@
     "link": "https://arxiv.org/abs/2608.18084",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-08-21",
+    "summary": "<b><a href=\"https://www.infoq.com/presentations/local-first-sync-engine/\">Why Fetch When You Can Sync? Building Local-First Apps on a Sync Engine Architecture</a></b>  <b>簡單說明 </b>： 傳統前端架構依賴指令式的資料請求與伺"
   }
 ]
