@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-08-19",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/whatsapp-scam-alert-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">WhatsApp Tests on Device ML for Scam Detection wit",
-    "title": "Whatsapp Tests on Device ML for Scam Detection with Privacy Preserving Analytics",
-    "link": "https://www.infoq.com/news/2026/08/whatsapp-scam-alert-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-08-19",
     "summary": "<b>(以 <a href=\"https://arxiv.org/abs/2608.17050\">Cross-Model Memory Transfer via Target-Side Reader Adaptation</a> 呈現)</b>  <b>簡單說明 </b>：傳統替 LLM 補充知識不是得靠肥大的外部檢索系統拖慢速度，就是得把資料硬塞進模型權重裡難以更新；這篇論文透過在目標端外掛輕量",
     "title": "Cross-Model Memory Transfer via Target-Side Reader Adaptation",
     "link": "https://arxiv.org/abs/2608.17050",
@@ -74,5 +66,13 @@
     "link": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
     "category": "AI Agent、新創融資與產品動態",
     "source": "AI News & Artificial Intelligence | TechCrunch"
+  },
+  {
+    "date": "2026-08-22",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/21/cloudflare-ai-enforcement/\">Cloudflare Turns Engineering Standards Into an AI-Enforced Control System</a></b>  <b>簡單說明 </b>： 團隊過去依賴寫在 Wiki 上的靜態文件來約束開發",
+    "title": "Cloudflare Turns Engineering Standards Into an AI-Enforced Control System",
+    "link": "https://www.infoq.com/news/2026/08/cloudflare-ai-enforcement/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
