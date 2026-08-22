@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-08-19",
-    "summary": "<b>[新聞標題與連結]</b>：<a href=\"https://www.infoq.com/news/2026/08/aws-bedrock-agentcore-runtime/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Multi Agent Collaboration Gets ",
-    "title": "Multi Agent Collaboration Gets Persistent Compute in Bedrock AgentCore",
-    "link": "https://www.infoq.com/news/2026/08/aws-bedrock-agentcore-runtime/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-08-19",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/whatsapp-scam-alert-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">WhatsApp Tests on Device ML for Scam Detection wit",
     "title": "Whatsapp Tests on Device ML for Scam Detection with Privacy Preserving Analytics",
     "link": "https://www.infoq.com/news/2026/08/whatsapp-scam-alert-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -74,5 +66,13 @@
     "link": "https://arxiv.org/abs/2608.19199",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-08-22",
+    "summary": "<b><a href=\"https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/\">Nvidia just showed that the harness, not the AI model, is now the real hero</a",
+    "title": "Nvidia just showed that the harness, not the AI model, is now the real hero",
+    "link": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
+    "category": "AI Agent、新創融資與產品動態",
+    "source": "AI News & Artificial Intelligence | TechCrunch"
   }
 ]
