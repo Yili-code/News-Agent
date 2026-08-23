@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-08-20",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/19/docker-vmm-layer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Docker Launches Fully Rebuilt Virtualization Layer to B",
-    "title": "Docker Launches Fully Rebuilt Virtualization Layer to Boost Performance and Improve Dev Experience",
-    "link": "https://www.infoq.com/news/2026/08/docker-vmm-layer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-08-20",
     "summary": "<b><a href=\"https://arxiv.org/abs/2608.18084\">Compiler-Guided Adaptive Proof Search with Cross-Model Synergy on Context-Dependent Theorem Proving</a></b>  <b>簡單說明 </b>： 傳統自動定理證明器在面對大型軟體專案時，往往因無法妥善利用編譯",
     "title": "Compiler-Guided Adaptive Proof Search with Cross-Model Synergy on Context-Dependent Theorem Proving",
     "link": "https://arxiv.org/abs/2608.18084",
@@ -70,5 +62,13 @@
   {
     "date": "2026-08-23",
     "summary": "<b><a href=\"https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-in-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/\">Inherent推出Faraday，挑戰自動化科學研究複製</a>"
+  },
+  {
+    "date": "2026-08-23",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/amd-memory-exploit/\">DRAM Controller Register Manipulation Breaks CPU Memory Isolation</a></b>  <b>簡單說明 </b>： 傳統防禦主要依賴 CPU 的權限等級來隔離行程，最新研究則是直接透過修改記憶體控制器暫",
+    "title": "DRAM Controller Register Manipulation Breaks CPU Memory Isolation",
+    "link": "https://www.infoq.com/news/2026/08/amd-memory-exploit/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
