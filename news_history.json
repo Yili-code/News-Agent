@@ -1,10 +1,6 @@
 [
   {
     "date": "2026-08-21",
-    "summary": "<b><a href=\"https://www.infoq.com/presentations/local-first-sync-engine/\">Why Fetch When You Can Sync? Building Local-First Apps on a Sync Engine Architecture</a></b>  <b>簡單說明 </b>： 傳統前端架構依賴指令式的資料請求與伺"
-  },
-  {
-    "date": "2026-08-21",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/vercel-next-js-16-3/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Next.js 16.3: Instant Navigations, Up to 90% Less Dev M",
     "title": "Next.js 16.3: Instant Navigations, Up to 90% Less Dev Memory and Faster Builds",
     "link": "https://www.infoq.com/news/2026/08/vercel-next-js-16-3/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -66,5 +62,13 @@
   {
     "date": "2026-08-24",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/google-heir-homomorphic-llm/\">Google推動HEIR專案，將同態加密推向一鍵式編譯部署</a></b>  <b>簡單說明 </b>： 傳統AI模型只能在未加密的明文資料上進行推論運算，若要保護隱私必須先解密；而Google推出的最新編譯器工具鏈，能直接將預訓練模型轉換為在加"
+  },
+  {
+    "date": "2026-08-24",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/cloudflare-os-ai-platform-secure/\">Cloudflare OS: Cloudflare's Open-Source Corporate AI Platform Built on a Capability-Based Model</a></b>  <b>簡單說明 </b>：",
+    "title": "Cloudflare OS: Cloudflare's Open-Source Corporate AI Platform Built on a Capability-Based Model",
+    "link": "https://www.infoq.com/news/2026/08/cloudflare-os-ai-platform-secure/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
