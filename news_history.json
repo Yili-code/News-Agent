@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-08-21",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/vercel-next-js-16-3/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Next.js 16.3: Instant Navigations, Up to 90% Less Dev M",
-    "title": "Next.js 16.3: Instant Navigations, Up to 90% Less Dev Memory and Faster Builds",
-    "link": "https://www.infoq.com/news/2026/08/vercel-next-js-16-3/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-08-21",
     "summary": "<b><a href=\"https://arxiv.org/abs/2608.19199\">A Virtual Member of a Community of Practice for the Society of Petroleum Engineers: From Prototype to Deployment</a></b>  <b>簡單說明 </b>： 過去垂直領域的知識管理多依賴靜態搜尋",
     "title": "A Virtual Member of a Community of Practice for the Society of Petroleum Engineers: From Prototype to Deployment",
     "link": "https://arxiv.org/abs/2608.19199",
@@ -70,5 +62,13 @@
     "link": "https://www.infoq.com/news/2026/08/cloudflare-os-ai-platform-secure/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-08-24",
+    "summary": "<b><a href=\"https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/\">Who’s behind the new ‘stealth model’ Ox Alpha?</a></b>  <b>簡單說明 </b>： 業界過去面對神秘新模型多數僅能透過盲測猜測其背景，而 Ox Alpha 透過突",
+    "title": "Who’s behind the new ‘stealth model’ Ox Alpha?",
+    "link": "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/",
+    "category": "AI Agent、新創融資與產品動態",
+    "source": "AI News & Artificial Intelligence | TechCrunch"
   }
 ]
