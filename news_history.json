@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-08-22",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/21/cloudflare-ai-enforcement/\">Cloudflare Turns Engineering Standards Into an AI-Enforced Control System</a></b>  <b>簡單說明 </b>： 團隊過去依賴寫在 Wiki 上的靜態文件來約束開發",
-    "title": "Cloudflare Turns Engineering Standards Into an AI-Enforced Control System",
-    "link": "https://www.infoq.com/news/2026/08/cloudflare-ai-enforcement/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-08-22",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/aws-bench-agent-evaluation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">AWS Releases Aws-Bench to Evaluate Agents on Clo",
     "title": "AWS Releases Aws-Bench to Evaluate Agents on Cloud Tasks",
     "link": "https://www.infoq.com/news/2026/08/aws-bench-agent-evaluation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -68,6 +60,14 @@
     "summary": "<b><a href=\"https://www.infoq.com/articles/rightsizing-platform-engineering/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Rightsizing Platform Engineering: Building the",
     "title": "Article: Rightsizing Platform Engineering: Building the Platform Your Organization Actually Needs",
     "link": "https://www.infoq.com/articles/rightsizing-platform-engineering/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-08-25",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/cursor-origin-alternative-github/\">Cursor Releases Origin as an Agent-Native Alternative to GitHub</a></b>  <b>簡單說明 </b>： 傳統程式碼托管平台是以人類協作為中心設計的 Git 倉庫，而 ",
+    "title": "Cursor Releases Origin as an Agent-Native Alternative to GitHub",
+    "link": "https://www.infoq.com/news/2026/08/cursor-origin-alternative-github/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
