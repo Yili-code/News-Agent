@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-08-22",
-    "summary": "<b><a href=\"https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/\">Nvidia just showed that the harness, not the AI model, is now the real hero</a",
-    "title": "Nvidia just showed that the harness, not the AI model, is now the real hero",
-    "link": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/",
-    "category": "AI Agent、新創融資與產品動態",
-    "source": "AI News & Artificial Intelligence | TechCrunch"
-  },
-  {
-    "date": "2026-08-22",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/21/cloudflare-ai-enforcement/\">Cloudflare Turns Engineering Standards Into an AI-Enforced Control System</a></b>  <b>簡單說明 </b>： 團隊過去依賴寫在 Wiki 上的靜態文件來約束開發",
     "title": "Cloudflare Turns Engineering Standards Into an AI-Enforced Control System",
     "link": "https://www.infoq.com/news/2026/08/cloudflare-ai-enforcement/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -68,6 +60,14 @@
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/microsoft-ai-governance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Microsoft Moves AI Governance From Policy to Runtim",
     "title": "Microsoft Moves AI Governance From Policy to Runtime Enforcement",
     "link": "https://www.infoq.com/news/2026/08/microsoft-ai-governance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-08-25",
+    "summary": "<b><a href=\"https://www.infoq.com/articles/rightsizing-platform-engineering/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Rightsizing Platform Engineering: Building the",
+    "title": "Article: Rightsizing Platform Engineering: Building the Platform Your Organization Actually Needs",
+    "link": "https://www.infoq.com/articles/rightsizing-platform-engineering/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
