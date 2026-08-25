@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-08-21",
-    "summary": "<b><a href=\"https://arxiv.org/abs/2608.19199\">A Virtual Member of a Community of Practice for the Society of Petroleum Engineers: From Prototype to Deployment</a></b>  <b>簡單說明 </b>： 過去垂直領域的知識管理多依賴靜態搜尋",
-    "title": "A Virtual Member of a Community of Practice for the Society of Petroleum Engineers: From Prototype to Deployment",
-    "link": "https://arxiv.org/abs/2608.19199",
-    "category": "LLM 與 AI 研究論文",
-    "source": "cs.CL updates on arXiv.org"
-  },
-  {
     "date": "2026-08-22",
     "summary": "<b><a href=\"https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/\">Nvidia just showed that the harness, not the AI model, is now the real hero</a",
     "title": "Nvidia just showed that the harness, not the AI model, is now the real hero",
@@ -70,5 +62,13 @@
     "link": "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/",
     "category": "AI Agent、新創融資與產品動態",
     "source": "AI News & Artificial Intelligence | TechCrunch"
+  },
+  {
+    "date": "2026-08-25",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/microsoft-ai-governance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Microsoft Moves AI Governance From Policy to Runtim",
+    "title": "Microsoft Moves AI Governance From Policy to Runtime Enforcement",
+    "link": "https://www.infoq.com/news/2026/08/microsoft-ai-governance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
