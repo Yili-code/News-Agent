@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-08-23",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/cloudflare-kitesurf-browser/\">Cloudflare Announces Kitesurf, a Browser Engine for Agents</a></b>  <b>簡單說明 </b>： 過去讓AI操作瀏覽器必須執行肥大的完整瀏覽器，最新作法則是將核心元件改寫並運行於輕",
-    "title": "Cloudflare Announces Kitesurf, a Browser Engine for Agents",
-    "link": "https://www.infoq.com/news/2026/08/cloudflare-kitesurf-browser/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-08-23",
     "summary": "<b><a href=\"https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-in-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/\">Inherent推出Faraday，挑戰自動化科學研究複製</a>"
   },
   {
@@ -70,5 +62,9 @@
     "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
     "category": "企業級 AI 應用與 LLM 模型評測",
     "source": "AI | VentureBeat"
+  },
+  {
+    "date": "2026-08-26",
+    "summary": "<b><a href=\"https://techcrunch.com/2026/08/25/indias-ringg-gets-backing-from-peak-xv-as-id-pushes-voice-ai-past-the-phone-call/\">Ringg獲得Peak XV投資，推動Voice AI突破傳統電話語音限制</a></b>  <b>簡單說明 </b>： 傳統Voice AI"
   }
 ]
