@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-08-23",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/amd-memory-exploit/\">DRAM Controller Register Manipulation Breaks CPU Memory Isolation</a></b>  <b>簡單說明 </b>： 傳統防禦主要依賴 CPU 的權限等級來隔離行程，最新研究則是直接透過修改記憶體控制器暫",
-    "title": "DRAM Controller Register Manipulation Breaks CPU Memory Isolation",
-    "link": "https://www.infoq.com/news/2026/08/amd-memory-exploit/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-08-24",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/google-heir-homomorphic-llm/\">Google推動HEIR專案，將同態加密推向一鍵式編譯部署</a></b>  <b>簡單說明 </b>： 傳統AI模型只能在未加密的明文資料上進行推論運算，若要保護隱私必須先解密；而Google推出的最新編譯器工具鏈，能直接將預訓練模型轉換為在加"
   },
@@ -68,6 +60,14 @@
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/diagrid-catalyst-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Diagrid Catalyst 2.0 Adds Durable and Verifiable",
     "title": "Diagrid Catalyst 2.0 Adds Durable and Verifiable Execution for AI Agents",
     "link": "https://www.infoq.com/news/2026/08/diagrid-catalyst-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-08-27",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/aws-spec-driven-data-workflow/\">AWS Introduces Specification Driven Composition for Flexible Data Workflows</a></b>  <b>簡單說明 </b>： 傳統資料管線通常將業務邏輯與處理流程緊密耦合",
+    "title": "AWS Introduces Specification Driven Composition for Flexible Data Workflows",
+    "link": "https://www.infoq.com/news/2026/08/aws-spec-driven-data-workflow/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
