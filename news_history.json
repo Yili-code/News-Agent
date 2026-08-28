@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-08-24",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/cloudflare-os-ai-platform-secure/\">Cloudflare OS: Cloudflare's Open-Source Corporate AI Platform Built on a Capability-Based Model</a></b>  <b>簡單說明 </b>：",
-    "title": "Cloudflare OS: Cloudflare's Open-Source Corporate AI Platform Built on a Capability-Based Model",
-    "link": "https://www.infoq.com/news/2026/08/cloudflare-os-ai-platform-secure/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-08-24",
     "summary": "<b><a href=\"https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/\">Who’s behind the new ‘stealth model’ Ox Alpha?</a></b>  <b>簡單說明 </b>： 業界過去面對神秘新模型多數僅能透過盲測猜測其背景，而 Ox Alpha 透過突",
     "title": "Who’s behind the new ‘stealth model’ Ox Alpha?",
     "link": "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/",
@@ -70,5 +62,13 @@
   {
     "date": "2026-08-27",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/astro-satteri-rust/\">Astro推出以Rust打造的Sätteri處理器，實現高達百分之六十的建構效能提升</a></b>  <b>簡單說明 </b>： 傳統網頁框架依賴 JavaScript 生態系的解析器來處理 Markdown 與 MDX 檔案，而最新推出的 Sätteri 改用"
+  },
+  {
+    "date": "2026-08-28",
+    "summary": "<b><a href=\"https://arxiv.org/abs/2608.26112\">TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding</a></b>  <b>簡單說明 </b>： 傳統 Speculative Decoding 使用單一預測模型來生成候選路徑，但在速度與準確率之間陷入",
+    "title": "TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding",
+    "link": "https://arxiv.org/abs/2608.26112",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
