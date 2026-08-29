@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-08-25",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/microsoft-ai-governance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Microsoft Moves AI Governance From Policy to Runtim",
-    "title": "Microsoft Moves AI Governance From Policy to Runtime Enforcement",
-    "link": "https://www.infoq.com/news/2026/08/microsoft-ai-governance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-08-25",
     "summary": "<b><a href=\"https://www.infoq.com/articles/rightsizing-platform-engineering/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Rightsizing Platform Engineering: Building the",
     "title": "Article: Rightsizing Platform Engineering: Building the Platform Your Organization Actually Needs",
     "link": "https://www.infoq.com/articles/rightsizing-platform-engineering/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -70,5 +62,9 @@
     "link": "https://www.infoq.com/news/2026/08/uber-gitfarm-git-as-a-service/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-08-29",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/freetoken-local-inference/\">FreeToken解鎖邊緣運算潛能，實現消費級硬體上的高效MoE模型推理</a></b>  <b>簡單說明 </b>： 過去需要在伺服器端的高階GPU才能流暢運行的MoE模型，透過最新的動態排程與權重管理技術，現在能夠直接在消費級硬體上實現高效的推理"
   }
 ]
