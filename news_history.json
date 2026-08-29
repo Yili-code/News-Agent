@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-08-24",
-    "summary": "<b><a href=\"https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/\">Who’s behind the new ‘stealth model’ Ox Alpha?</a></b>  <b>簡單說明 </b>： 業界過去面對神秘新模型多數僅能透過盲測猜測其背景，而 Ox Alpha 透過突",
-    "title": "Who’s behind the new ‘stealth model’ Ox Alpha?",
-    "link": "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/",
-    "category": "AI Agent、新創融資與產品動態",
-    "source": "AI News & Artificial Intelligence | TechCrunch"
-  },
-  {
     "date": "2026-08-25",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/microsoft-ai-governance/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Microsoft Moves AI Governance From Policy to Runtim",
     "title": "Microsoft Moves AI Governance From Policy to Runtime Enforcement",
@@ -70,5 +62,13 @@
     "link": "https://arxiv.org/abs/2608.26112",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-08-29",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/uber-gitfarm-git-as-a-service/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Uber打造GitFarm集中式服務，解決大型Monorepo的Git運算瓶頸</a></",
+    "title": "Uber Builds GitFarm to Run Git Operations as a Service for Large-Scale Monorepos",
+    "link": "https://www.infoq.com/news/2026/08/uber-gitfarm-git-as-a-service/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
