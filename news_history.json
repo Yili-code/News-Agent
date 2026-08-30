@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-08-26",
-    "summary": "<b><a href=\"https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud\">Railway Secures $100 Million to Challenge AWS with AI-Native Cloud Infrastructu",
-    "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
-    "link": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud",
-    "category": "企業級 AI 應用與 LLM 模型評測",
-    "source": "AI | VentureBeat"
-  },
-  {
-    "date": "2026-08-26",
     "summary": "<b><a href=\"https://techcrunch.com/2026/08/25/indias-ringg-gets-backing-from-peak-xv-as-id-pushes-voice-ai-past-the-phone-call/\">Ringg獲得Peak XV投資，推動Voice AI突破傳統電話語音限制</a></b>  <b>簡單說明 </b>： 傳統Voice AI"
   },
   {
@@ -58,5 +50,13 @@
   {
     "date": "2026-08-30",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/kiro-crew-coding-agents/?utm_campaign=infoq_content&utm_source=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">AWS開源Kiro Crew，實現非同步多人協作Co"
+  },
+  {
+    "date": "2026-08-30",
+    "summary": "<b><a href=\"https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/\">NVIDIA的AI優勢正從GPU硬體延伸至資料中心流量控制</a></b>  <b>簡單說明 </b>： 過去資料中心依賴堆疊更多運算處理器來提升效能，最新架構則改以更聰明的流量控制系統來提高整體運算效率。  <",
+    "title": "Nvidia’s AI advantage is moving beyond the GPU",
+    "link": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
+    "category": "AI Agent、新創融資與產品動態",
+    "source": "AI News & Artificial Intelligence | TechCrunch"
   }
 ]
