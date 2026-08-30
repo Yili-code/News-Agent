@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-08-25",
-    "summary": "<b><a href=\"https://www.infoq.com/articles/rightsizing-platform-engineering/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Rightsizing Platform Engineering: Building the",
-    "title": "Article: Rightsizing Platform Engineering: Building the Platform Your Organization Actually Needs",
-    "link": "https://www.infoq.com/articles/rightsizing-platform-engineering/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-08-25",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/cursor-origin-alternative-github/\">Cursor Releases Origin as an Agent-Native Alternative to GitHub</a></b>  <b>簡單說明 </b>： 傳統程式碼托管平台是以人類協作為中心設計的 Git 倉庫，而 ",
     "title": "Cursor Releases Origin as an Agent-Native Alternative to GitHub",
     "link": "https://www.infoq.com/news/2026/08/cursor-origin-alternative-github/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -66,5 +58,9 @@
   {
     "date": "2026-08-29",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/freetoken-local-inference/\">FreeToken解鎖邊緣運算潛能，實現消費級硬體上的高效MoE模型推理</a></b>  <b>簡單說明 </b>： 過去需要在伺服器端的高階GPU才能流暢運行的MoE模型，透過最新的動態排程與權重管理技術，現在能夠直接在消費級硬體上實現高效的推理"
+  },
+  {
+    "date": "2026-08-30",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/workers-inbound-tcp-grpc/\">Cloudflare Workers支援Inbound TCP與gRPC連線</a></b>  <b>簡單說明 </b>： 過去Serverless運算平台僅能處理HTTP請求，而最新架構讓Cloudflare Workers能夠直接接收原始TCP連線"
   }
 ]
