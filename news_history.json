@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-08-25",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/cursor-origin-alternative-github/\">Cursor Releases Origin as an Agent-Native Alternative to GitHub</a></b>  <b>簡單說明 </b>： 傳統程式碼托管平台是以人類協作為中心設計的 Git 倉庫，而 ",
-    "title": "Cursor Releases Origin as an Agent-Native Alternative to GitHub",
-    "link": "https://www.infoq.com/news/2026/08/cursor-origin-alternative-github/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-08-26",
     "summary": "<b><a href=\"https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud\">Railway Secures $100 Million to Challenge AWS with AI-Native Cloud Infrastructu",
     "title": "Railway secures $100 million to challenge AWS with AI-native cloud infrastructure",
@@ -62,5 +54,9 @@
   {
     "date": "2026-08-30",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/workers-inbound-tcp-grpc/\">Cloudflare Workers支援Inbound TCP與gRPC連線</a></b>  <b>簡單說明 </b>： 過去Serverless運算平台僅能處理HTTP請求，而最新架構讓Cloudflare Workers能夠直接接收原始TCP連線"
+  },
+  {
+    "date": "2026-08-30",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/kiro-crew-coding-agents/?utm_campaign=infoq_content&utm_source=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">AWS開源Kiro Crew，實現非同步多人協作Co"
   }
 ]
