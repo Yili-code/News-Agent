@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-08-26",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/diagrid-catalyst-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Diagrid Catalyst 2.0 Adds Durable and Verifiable",
-    "title": "Diagrid Catalyst 2.0 Adds Durable and Verifiable Execution for AI Agents",
-    "link": "https://www.infoq.com/news/2026/08/diagrid-catalyst-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-08-27",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/aws-spec-driven-data-workflow/\">AWS Introduces Specification Driven Composition for Flexible Data Workflows</a></b>  <b>簡單說明 </b>： 傳統資料管線通常將業務邏輯與處理流程緊密耦合",
     "title": "AWS Introduces Specification Driven Composition for Flexible Data Workflows",
@@ -58,5 +50,13 @@
   {
     "date": "2026-08-31",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/cloudflare-ai-search/\">Cloudflare推出AI Search，為AI Agent提供整合式自訂資料檢索服務</a></b>  <b>簡單說明 </b>： 過去開發者需要自行搭建複雜的RAG管線來處理自訂資料搜尋，而Cloudflare直接內建了現成的搜尋與檢索引擎，讓AI Ag"
+  },
+  {
+    "date": "2026-08-31",
+    "summary": "<b><a href=\"https://arxiv.org/abs/2608.27460\">Accelerating LLM Inference via Vector Index Based Output Embeddings</a></b>  <b>簡單說明 </b>： 傳統LLM在解碼階段需要透過龐大的詞彙表矩陣進行密集計算，造成嚴重的記憶體頻寬瓶頸；而這項研究改用向量檢索引擎，直接在 Tok",
+    "title": "Accelerating LLM Inference via Vector Index Based Output Embeddings",
+    "link": "https://arxiv.org/abs/2608.27460",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
