@@ -1,10 +1,6 @@
 [
   {
     "date": "2026-08-26",
-    "summary": "<b><a href=\"https://techcrunch.com/2026/08/25/indias-ringg-gets-backing-from-peak-xv-as-id-pushes-voice-ai-past-the-phone-call/\">Ringg獲得Peak XV投資，推動Voice AI突破傳統電話語音限制</a></b>  <b>簡單說明 </b>： 傳統Voice AI"
-  },
-  {
-    "date": "2026-08-26",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/diagrid-catalyst-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Diagrid Catalyst 2.0 Adds Durable and Verifiable",
     "title": "Diagrid Catalyst 2.0 Adds Durable and Verifiable Execution for AI Agents",
     "link": "https://www.infoq.com/news/2026/08/diagrid-catalyst-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -58,5 +54,9 @@
     "link": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
     "category": "AI Agent、新創融資與產品動態",
     "source": "AI News & Artificial Intelligence | TechCrunch"
+  },
+  {
+    "date": "2026-08-31",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/cloudflare-ai-search/\">Cloudflare推出AI Search，為AI Agent提供整合式自訂資料檢索服務</a></b>  <b>簡單說明 </b>： 過去開發者需要自行搭建複雜的RAG管線來處理自訂資料搜尋，而Cloudflare直接內建了現成的搜尋與檢索引擎，讓AI Ag"
   }
 ]
