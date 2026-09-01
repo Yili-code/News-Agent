@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-08-27",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/astro-satteri-rust/\">Astro推出以Rust打造的Sätteri處理器，實現高達百分之六十的建構效能提升</a></b>  <b>簡單說明 </b>： 傳統網頁框架依賴 JavaScript 生態系的解析器來處理 Markdown 與 MDX 檔案，而最新推出的 Sätteri 改用"
-  },
-  {
     "date": "2026-08-28",
     "summary": "<b><a href=\"https://arxiv.org/abs/2608.26112\">TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding</a></b>  <b>簡單說明 </b>： 傳統 Speculative Decoding 使用單一預測模型來生成候選路徑，但在速度與準確率之間陷入",
     "title": "TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding",
@@ -58,5 +54,13 @@
     "link": "https://www.infoq.com/news/2026/08/doordash-flux-cloud-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-09-01",
+    "summary": "<b><a href=\"https://arxiv.org/abs/2608.28609\">Parametric Multimodal User Memory: Storing What Captions Cannot Carry</a></b>  <b>簡單說明 </b>： 過去的個人化 AI 系統僅能將使用者記憶轉換為文字（例如對話逐字稿或圖片標籤）透過相似度檢索，而最新研究改用參數化多模態記",
+    "title": "Parametric Multimodal User Memory: Storing What Captions Cannot Carry",
+    "link": "https://arxiv.org/abs/2608.28609",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
