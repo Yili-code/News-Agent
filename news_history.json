@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-08-27",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/aws-spec-driven-data-workflow/\">AWS Introduces Specification Driven Composition for Flexible Data Workflows</a></b>  <b>簡單說明 </b>： 傳統資料管線通常將業務邏輯與處理流程緊密耦合",
-    "title": "AWS Introduces Specification Driven Composition for Flexible Data Workflows",
-    "link": "https://www.infoq.com/news/2026/08/aws-spec-driven-data-workflow/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-08-27",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/astro-satteri-rust/\">Astro推出以Rust打造的Sätteri處理器，實現高達百分之六十的建構效能提升</a></b>  <b>簡單說明 </b>： 傳統網頁框架依賴 JavaScript 生態系的解析器來處理 Markdown 與 MDX 檔案，而最新推出的 Sätteri 改用"
   },
   {
@@ -58,5 +50,13 @@
     "link": "https://arxiv.org/abs/2608.27460",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-09-01",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/doordash-flux-cloud-agent/?utm_campaign=infoq_content&utm_source=infoq_content&utm_medium=feed&utm_term=global\">DoorDash’s Flux Runs 130,000 Engineering ",
+    "title": "DoorDash’s Flux Runs 130,000 Engineering Tasks Through Cloud-Based Agents",
+    "link": "https://www.infoq.com/news/2026/08/doordash-flux-cloud-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
