@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-08-29",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/uber-gitfarm-git-as-a-service/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Uber打造GitFarm集中式服務，解決大型Monorepo的Git運算瓶頸</a></",
-    "title": "Uber Builds GitFarm to Run Git Operations as a Service for Large-Scale Monorepos",
-    "link": "https://www.infoq.com/news/2026/08/uber-gitfarm-git-as-a-service/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-08-29",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/freetoken-local-inference/\">FreeToken解鎖邊緣運算潛能，實現消費級硬體上的高效MoE模型推理</a></b>  <b>簡單說明 </b>： 過去需要在伺服器端的高階GPU才能流暢運行的MoE模型，透過最新的動態排程與權重管理技術，現在能夠直接在消費級硬體上實現高效的推理"
   },
   {
@@ -62,5 +54,13 @@
     "link": "https://techcrunch.com/2026/09/01/sequoia-incubated-empirik-launches-with-21m-to-predict-outages-before-they-happen/",
     "category": "新創募資與商業模式",
     "source": "Startups | TechCrunch"
+  },
+  {
+    "date": "2026-09-02",
+    "summary": "<b><a href=\"https://arxiv.org/abs/2609.00038\">trajectory-judge: What Outcome-Only LLM Judges Miss on Agent Trajectories</a></b>  <b>簡單說明 </b>： 傳統評估AI Agent只看終點結果對不對，而最新研究改為審查整段執行軌跡，能抓出過程錯誤但結果剛好對的盲點。  ",
+    "title": "trajectory-judge: What Outcome-Only LLM Judges Miss on Agent Trajectories",
+    "link": "https://arxiv.org/abs/2609.00038",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
