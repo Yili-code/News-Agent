@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-08-28",
-    "summary": "<b><a href=\"https://arxiv.org/abs/2608.26112\">TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding</a></b>  <b>簡單說明 </b>： 傳統 Speculative Decoding 使用單一預測模型來生成候選路徑，但在速度與準確率之間陷入",
-    "title": "TreeGraft: Adaptive Multi-Drafter Grafting for Tree-Based Speculative Decoding",
-    "link": "https://arxiv.org/abs/2608.26112",
-    "category": "LLM 與 AI 研究論文",
-    "source": "cs.CL updates on arXiv.org"
-  },
-  {
     "date": "2026-08-29",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/uber-gitfarm-git-as-a-service/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Uber打造GitFarm集中式服務，解決大型Monorepo的Git運算瓶頸</a></",
     "title": "Uber Builds GitFarm to Run Git Operations as a Service for Large-Scale Monorepos",
@@ -62,5 +54,13 @@
     "link": "https://arxiv.org/abs/2608.28609",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-09-02",
+    "summary": "<b><a href=\"https://techcrunch.com/2026/09/01/sequoia-incubated-empirik-launches-with-21m-to-predict-outages-before-they-happen/\">Empirik推出以預測IT基礎設施故障為核心的平台</a></b>  <b>簡單說明 </b>： 過去IT維運依賴事後告警與手動排查，而新",
+    "title": "Sequoia-incubated Empirik launches with $21M to predict outages before they happen",
+    "link": "https://techcrunch.com/2026/09/01/sequoia-incubated-empirik-launches-with-21m-to-predict-outages-before-they-happen/",
+    "category": "新創募資與商業模式",
+    "source": "Startups | TechCrunch"
   }
 ]
