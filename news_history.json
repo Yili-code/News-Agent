@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-08-29",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/freetoken-local-inference/\">FreeToken解鎖邊緣運算潛能，實現消費級硬體上的高效MoE模型推理</a></b>  <b>簡單說明 </b>： 過去需要在伺服器端的高階GPU才能流暢運行的MoE模型，透過最新的動態排程與權重管理技術，現在能夠直接在消費級硬體上實現高效的推理"
-  },
-  {
     "date": "2026-08-30",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/workers-inbound-tcp-grpc/\">Cloudflare Workers支援Inbound TCP與gRPC連線</a></b>  <b>簡單說明 </b>： 過去Serverless運算平台僅能處理HTTP請求，而最新架構讓Cloudflare Workers能夠直接接收原始TCP連線"
   },
@@ -62,5 +58,13 @@
     "link": "https://arxiv.org/abs/2609.00038",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-09-03",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/openai-gpt-live/\">OpenAI Details GPT-Live’s Architecture for Continuous Stateful Voice Interaction</a></b>  <b>簡單說明 </b>： 過去即時語音服務常因將所有運算邏輯綁在單一管線而導致延遲過高，",
+    "title": "OpenAI Details GPT-Live’s Architecture for Continuous Stateful Voice Interaction",
+    "link": "https://www.infoq.com/news/2026/09/openai-gpt-live/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
