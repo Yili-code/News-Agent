@@ -1,10 +1,6 @@
 [
   {
     "date": "2026-08-30",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/kiro-crew-coding-agents/?utm_campaign=infoq_content&utm_source=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">AWS開源Kiro Crew，實現非同步多人協作Co"
-  },
-  {
-    "date": "2026-08-30",
     "summary": "<b><a href=\"https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/\">NVIDIA的AI優勢正從GPU硬體延伸至資料中心流量控制</a></b>  <b>簡單說明 </b>： 過去資料中心依賴堆疊更多運算處理器來提升效能，最新架構則改以更聰明的流量控制系統來提高整體運算效率。  <",
     "title": "Nvidia’s AI advantage is moving beyond the GPU",
     "link": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
@@ -68,6 +64,14 @@
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/cohere-multimodal-parse/?utm_campaign=infoq_content&utm_source=infoq_content&utm_medium=feed&utm_term=global\">Cohere’s Parse 5 Promises Efficient Multi-M",
     "title": "Cohere’s Parse 5 Promises Efficient Multi-Modal Information Extraction From Complex Documents",
     "link": "https://www.infoq.com/news/2026/09/cohere-multimodal-parse/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-09-05",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/airbnb-server-driven-login/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Airbnb Cuts Authentication Code by 60% with Serv",
+    "title": "Airbnb Cuts Authentication Code by 60% with Server Driven Architecture",
+    "link": "https://www.infoq.com/news/2026/09/airbnb-server-driven-login/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
