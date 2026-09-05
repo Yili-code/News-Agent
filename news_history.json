@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-08-30",
-    "summary": "<b><a href=\"https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/\">NVIDIA的AI優勢正從GPU硬體延伸至資料中心流量控制</a></b>  <b>簡單說明 </b>： 過去資料中心依賴堆疊更多運算處理器來提升效能，最新架構則改以更聰明的流量控制系統來提高整體運算效率。  <",
-    "title": "Nvidia’s AI advantage is moving beyond the GPU",
-    "link": "https://techcrunch.com/2026/08/29/nvidias-ai-advantage-is-moving-beyond-the-gpu/",
-    "category": "AI Agent、新創融資與產品動態",
-    "source": "AI News & Artificial Intelligence | TechCrunch"
-  },
-  {
     "date": "2026-08-31",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/cloudflare-ai-search/\">Cloudflare推出AI Search，為AI Agent提供整合式自訂資料檢索服務</a></b>  <b>簡單說明 </b>： 過去開發者需要自行搭建複雜的RAG管線來處理自訂資料搜尋，而Cloudflare直接內建了現成的搜尋與檢索引擎，讓AI Ag"
   },
@@ -74,5 +66,9 @@
     "link": "https://www.infoq.com/news/2026/09/airbnb-server-driven-login/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-09-05",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/google-beyond-zero/\">Google發布Beyond Zero安全模型，將Zero Trust延伸至AI Agent</a></b>  <b>簡單說明 </b>： 過去的網路安全架構僅針對人類用戶進行身份驗證與授權，而Beyond Zero改為直接對每一個底層資源與具體動作進行即時控管，"
   }
 ]
