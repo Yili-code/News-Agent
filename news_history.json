@@ -1,10 +1,6 @@
 [
   {
     "date": "2026-08-31",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/cloudflare-ai-search/\">Cloudflare推出AI Search，為AI Agent提供整合式自訂資料檢索服務</a></b>  <b>簡單說明 </b>： 過去開發者需要自行搭建複雜的RAG管線來處理自訂資料搜尋，而Cloudflare直接內建了現成的搜尋與檢索引擎，讓AI Ag"
-  },
-  {
-    "date": "2026-08-31",
     "summary": "<b><a href=\"https://arxiv.org/abs/2608.27460\">Accelerating LLM Inference via Vector Index Based Output Embeddings</a></b>  <b>簡單說明 </b>： 傳統LLM在解碼階段需要透過龐大的詞彙表矩陣進行密集計算，造成嚴重的記憶體頻寬瓶頸；而這項研究改用向量檢索引擎，直接在 Tok",
     "title": "Accelerating LLM Inference via Vector Index Based Output Embeddings",
     "link": "https://arxiv.org/abs/2608.27460",
@@ -70,5 +66,13 @@
   {
     "date": "2026-09-05",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/google-beyond-zero/\">Google發布Beyond Zero安全模型，將Zero Trust延伸至AI Agent</a></b>  <b>簡單說明 </b>： 過去的網路安全架構僅針對人類用戶進行身份驗證與授權，而Beyond Zero改為直接對每一個底層資源與具體動作進行即時控管，"
+  },
+  {
+    "date": "2026-09-06",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/blume-docs-ai/\">Blume: Zero-Config Docs Framework That Turns a Markdown Folder into an AI-Ready Website</a></b>  <b>簡單說明 </b>： 過去開發者需要手動設定複雜的網站框架與SEO來建立說",
+    "title": "Blume: Zero-Config Docs Framework That Turns a Markdown Folder into an AI-Ready Website",
+    "link": "https://www.infoq.com/news/2026/09/blume-docs-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
