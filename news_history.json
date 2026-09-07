@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-09-01",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/08/doordash-flux-cloud-agent/?utm_campaign=infoq_content&utm_source=infoq_content&utm_medium=feed&utm_term=global\">DoorDash’s Flux Runs 130,000 Engineering ",
-    "title": "DoorDash’s Flux Runs 130,000 Engineering Tasks Through Cloud-Based Agents",
-    "link": "https://www.infoq.com/news/2026/08/doordash-flux-cloud-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-09-01",
     "summary": "<b><a href=\"https://arxiv.org/abs/2608.28609\">Parametric Multimodal User Memory: Storing What Captions Cannot Carry</a></b>  <b>簡單說明 </b>： 過去的個人化 AI 系統僅能將使用者記憶轉換為文字（例如對話逐字稿或圖片標籤）透過相似度檢索，而最新研究改用參數化多模態記",
     "title": "Parametric Multimodal User Memory: Storing What Captions Cannot Carry",
     "link": "https://arxiv.org/abs/2608.28609",
@@ -72,6 +64,14 @@
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/figma-security-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">How Figma Uses AI Agents for Security</a></b>  <b>簡單說",
     "title": "How Figma Uses AI Agents for Security",
     "link": "https://www.infoq.com/news/2026/09/figma-security-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-09-07",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/google-mantis-vulnerability-scan/\">Google Mantis: An Agentic Vulnerability Scanning Harness for Reducing False Positives</a></b>  <b>簡單說明 </b>： 傳統的漏洞掃描工具",
+    "title": "Google Mantis: An Agentic Vulnerability Scanning Harness for Reducing False Positives",
+    "link": "https://www.infoq.com/news/2026/09/google-mantis-vulnerability-scan/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
