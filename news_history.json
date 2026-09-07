@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-09-01",
-    "summary": "<b><a href=\"https://arxiv.org/abs/2608.28609\">Parametric Multimodal User Memory: Storing What Captions Cannot Carry</a></b>  <b>簡單說明 </b>： 過去的個人化 AI 系統僅能將使用者記憶轉換為文字（例如對話逐字稿或圖片標籤）透過相似度檢索，而最新研究改用參數化多模態記",
-    "title": "Parametric Multimodal User Memory: Storing What Captions Cannot Carry",
-    "link": "https://arxiv.org/abs/2608.28609",
-    "category": "LLM 與 AI 研究論文",
-    "source": "cs.CL updates on arXiv.org"
-  },
-  {
     "date": "2026-09-02",
     "summary": "<b><a href=\"https://techcrunch.com/2026/09/01/sequoia-incubated-empirik-launches-with-21m-to-predict-outages-before-they-happen/\">Empirik推出以預測IT基礎設施故障為核心的平台</a></b>  <b>簡單說明 </b>： 過去IT維運依賴事後告警與手動排查，而新",
     "title": "Sequoia-incubated Empirik launches with $21M to predict outages before they happen",
@@ -74,5 +66,13 @@
     "link": "https://www.infoq.com/news/2026/09/google-mantis-vulnerability-scan/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-09-07",
+    "summary": "<b><a href=\"https://arxiv.org/abs/2609.04290\">Evidence Integration in Large Language Models</a></b>  <b>簡單說明 </b>：過去LLM面對外部證據時往往直接覆蓋原有判斷，最新研究則透過分佈理論量化接收端的prior weight與evidence tilt，精準預測模型如何將外部資訊融入決策。 ",
+    "title": "Evidence Integration in Large Language Models",
+    "link": "https://arxiv.org/abs/2609.04290",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
