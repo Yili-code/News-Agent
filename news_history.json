@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-09-02",
-    "summary": "<b><a href=\"https://techcrunch.com/2026/09/01/sequoia-incubated-empirik-launches-with-21m-to-predict-outages-before-they-happen/\">Empirik推出以預測IT基礎設施故障為核心的平台</a></b>  <b>簡單說明 </b>： 過去IT維運依賴事後告警與手動排查，而新",
-    "title": "Sequoia-incubated Empirik launches with $21M to predict outages before they happen",
-    "link": "https://techcrunch.com/2026/09/01/sequoia-incubated-empirik-launches-with-21m-to-predict-outages-before-they-happen/",
-    "category": "新創募資與商業模式",
-    "source": "Startups | TechCrunch"
-  },
-  {
-    "date": "2026-09-02",
     "summary": "<b><a href=\"https://arxiv.org/abs/2609.00038\">trajectory-judge: What Outcome-Only LLM Judges Miss on Agent Trajectories</a></b>  <b>簡單說明 </b>： 傳統評估AI Agent只看終點結果對不對，而最新研究改為審查整段執行軌跡，能抓出過程錯誤但結果剛好對的盲點。  ",
     "title": "trajectory-judge: What Outcome-Only LLM Judges Miss on Agent Trajectories",
     "link": "https://arxiv.org/abs/2609.00038",
@@ -74,5 +66,13 @@
     "link": "https://arxiv.org/abs/2609.04290",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-09-08",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/netflix-flink-autoscaler/\">Netflix Moves Toward Open Source Flink Autoscaler for 30,000+ Streaming Jobs</a></b>  <b>簡單說明 </b>： 過去分散式串流運算依賴整個叢集層級的擴展策略，而最新",
+    "title": "Netflix Moves Toward Open Source Flink Autoscaler for 30,000+ Streaming Jobs",
+    "link": "https://www.infoq.com/news/2026/09/netflix-flink-autoscaler/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
