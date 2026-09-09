@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-09-03",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/openai-gpt-live/\">OpenAI Details GPT-Live’s Architecture for Continuous Stateful Voice Interaction</a></b>  <b>簡單說明 </b>： 過去即時語音服務常因將所有運算邏輯綁在單一管線而導致延遲過高，",
-    "title": "OpenAI Details GPT-Live’s Architecture for Continuous Stateful Voice Interaction",
-    "link": "https://www.infoq.com/news/2026/09/openai-gpt-live/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-09-03",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/cohere-multimodal-parse/?utm_campaign=infoq_content&utm_source=infoq_content&utm_medium=feed&utm_term=global\">Cohere’s Parse 5 Promises Efficient Multi-M",
     "title": "Cohere’s Parse 5 Promises Efficient Multi-Modal Information Extraction From Complex Documents",
     "link": "https://www.infoq.com/news/2026/09/cohere-multimodal-parse/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -72,6 +64,14 @@
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/gitlab-ai-sandbox-access/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">GitLab Warns That AI Agent Sandboxes Are Only as S",
     "title": "GitLab Warns That AI Agent Sandboxes Are Only as Secure as Their Network Access",
     "link": "https://www.infoq.com/news/2026/09/gitlab-ai-sandbox-access/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-09-09",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/hashicorp-packer-verification/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">HashiCorp Packer 1.16 Adds Native SLSA Proven",
+    "title": "HashiCorp Packer 1.16 Adds Native SLSA Provenance Generation and Verification for Machine Images",
+    "link": "https://www.infoq.com/news/2026/09/hashicorp-packer-verification/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
