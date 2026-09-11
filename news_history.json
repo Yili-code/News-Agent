@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-09-06",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/blume-docs-ai/\">Blume: Zero-Config Docs Framework That Turns a Markdown Folder into an AI-Ready Website</a></b>  <b>簡單說明 </b>： 過去開發者需要手動設定複雜的網站框架與SEO來建立說",
-    "title": "Blume: Zero-Config Docs Framework That Turns a Markdown Folder into an AI-Ready Website",
-    "link": "https://www.infoq.com/news/2026/09/blume-docs-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-09-06",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/figma-security-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">How Figma Uses AI Agents for Security</a></b>  <b>簡單說",
     "title": "How Figma Uses AI Agents for Security",
     "link": "https://www.infoq.com/news/2026/09/figma-security-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -76,6 +68,14 @@
     "summary": "<b><a href=\"https://arxiv.org/abs/2609.09166\">X-CoSD: Communication-Efficient Cross-Vocabulary Collaborative Speculative Decoding</a></b>  <b>簡單說明 </b>： 過去的協同推測解碼要求終端裝置與伺服器必須使用相同的詞彙表，且傳輸過程消耗大量頻寬；最新架構允",
     "title": "X-CoSD: Communication-Efficient Cross-Vocabulary Collaborative Speculative Decoding",
     "link": "https://arxiv.org/abs/2609.09166",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-09-11",
+    "summary": "<b><a href=\"https://arxiv.org/abs/2609.09338\">Osprey: Target-agnostic Pre-training Makes Stronger Drafters in Speculative Decoding</a></b>  <b>簡單說明 </b>： 傳統 Speculative Decoding 的草稿模型通常綁定單一大型模型且容易因工作負",
+    "title": "Osprey: Target-agnostic Pre-training Makes Stronger Drafters in Speculative Decoding",
+    "link": "https://arxiv.org/abs/2609.09338",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
   }
