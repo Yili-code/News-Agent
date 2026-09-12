@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-09-07",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/google-mantis-vulnerability-scan/\">Google Mantis: An Agentic Vulnerability Scanning Harness for Reducing False Positives</a></b>  <b>簡單說明 </b>： 傳統的漏洞掃描工具",
-    "title": "Google Mantis: An Agentic Vulnerability Scanning Harness for Reducing False Positives",
-    "link": "https://www.infoq.com/news/2026/09/google-mantis-vulnerability-scan/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-09-07",
     "summary": "<b><a href=\"https://arxiv.org/abs/2609.04290\">Evidence Integration in Large Language Models</a></b>  <b>簡單說明 </b>：過去LLM面對外部證據時往往直接覆蓋原有判斷，最新研究則透過分佈理論量化接收端的prior weight與evidence tilt，精準預測模型如何將外部資訊融入決策。 ",
     "title": "Evidence Integration in Large Language Models",
     "link": "https://arxiv.org/abs/2609.04290",
@@ -78,5 +70,13 @@
     "link": "https://arxiv.org/abs/2609.10715",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-09-12",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/netflix-conductor-4-workflow/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Netflix Reworks Conductor for 420 Million Mont",
+    "title": "Netflix Reworks Conductor for 420 Million Monthly Workflow Executions and 10X Larger Workflows",
+    "link": "https://www.infoq.com/news/2026/09/netflix-conductor-4-workflow/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
