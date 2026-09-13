@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-09-08",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/gitlab-ai-sandbox-access/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">GitLab Warns That AI Agent Sandboxes Are Only as S",
-    "title": "GitLab Warns That AI Agent Sandboxes Are Only as Secure as Their Network Access",
-    "link": "https://www.infoq.com/news/2026/09/gitlab-ai-sandbox-access/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-09-09",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/hashicorp-packer-verification/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">HashiCorp Packer 1.16 Adds Native SLSA Proven",
     "title": "HashiCorp Packer 1.16 Adds Native SLSA Provenance Generation and Verification for Machine Images",
@@ -76,6 +68,14 @@
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/ios-27-virtualization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Open-Source Project Brings Full iOS 27 Virtualization",
     "title": "Open-Source Project Brings Full iOS 27 Virtualization to Apple Silicon",
     "link": "https://www.infoq.com/news/2026/09/ios-27-virtualization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-09-13",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/github-hydrafusion/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">GitHub Copilot's Project HydraFusion Promises Frontier L",
+    "title": "GitHub Copilot's Project HydraFusion Promises Frontier Level Performance Through Multi-Model Routing",
+    "link": "https://www.infoq.com/news/2026/09/github-hydrafusion/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
