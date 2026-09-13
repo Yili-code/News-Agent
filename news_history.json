@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-09-08",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/netflix-flink-autoscaler/\">Netflix Moves Toward Open Source Flink Autoscaler for 30,000+ Streaming Jobs</a></b>  <b>簡單說明 </b>： 過去分散式串流運算依賴整個叢集層級的擴展策略，而最新",
-    "title": "Netflix Moves Toward Open Source Flink Autoscaler for 30,000+ Streaming Jobs",
-    "link": "https://www.infoq.com/news/2026/09/netflix-flink-autoscaler/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-09-08",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/gitlab-ai-sandbox-access/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">GitLab Warns That AI Agent Sandboxes Are Only as S",
     "title": "GitLab Warns That AI Agent Sandboxes Are Only as Secure as Their Network Access",
     "link": "https://www.infoq.com/news/2026/09/gitlab-ai-sandbox-access/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -76,6 +68,14 @@
     "summary": "<b><a href=\"https://www.infoq.com/presentations/knowledge-graphs-agentic-systems-patterns/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">From Retrieval to Reasoning: Bui",
     "title": "Presentation: From Retrieval to Reasoning: Building Production-Ready Agentic AI Systems with Knowledge Graphs",
     "link": "https://www.infoq.com/presentations/knowledge-graphs-agentic-systems-patterns/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-09-13",
+    "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/ios-27-virtualization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Open-Source Project Brings Full iOS 27 Virtualization",
+    "title": "Open-Source Project Brings Full iOS 27 Virtualization to Apple Silicon",
+    "link": "https://www.infoq.com/news/2026/09/ios-27-virtualization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
