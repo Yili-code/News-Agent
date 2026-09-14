@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-09-09",
-    "summary": "<b><a href=\"https://www.infoq.com/presentations/unikraft-microvm-sandboxes-cloud-scaling/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Fixing the AI Infra Scale Problem",
-    "title": "Presentation: Fixing the AI Infra Scale Problem by Stuffing 1M Sandboxes in a Single Server",
-    "link": "https://www.infoq.com/presentations/unikraft-microvm-sandboxes-cloud-scaling/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-09-10",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/meta-organizational-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Meta's Recipe for Building Agents as \"Organizati",
     "title": "Meta's Recipe for Building Agents as \"Organizational Second Brains\"",
@@ -78,5 +70,13 @@
     "link": "https://www.infoq.com/news/2026/09/meta-astryx-design-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-09-14",
+    "summary": "<b>新聞標題與連結</b> <a href=\"https://arxiv.org/abs/2609.11955\">R2VC: Modular Fact-Checking with Retrieval, Verification, and Confidence Calibration</a>  <b>發生什麼事</b> 傳統自動化事實查核多依賴端到端的 Prompt，將證據檢索、推理與不確定性評估",
+    "title": "R2VC: Modular Fact-Checking with Retrieval, Verification, and Confidence Calibration",
+    "link": "https://arxiv.org/abs/2609.11955",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
