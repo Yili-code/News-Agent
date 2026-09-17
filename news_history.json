@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-09-12",
-    "summary": "<b><a href=\"https://www.infoq.com/presentations/knowledge-graphs-agentic-systems-patterns/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">From Retrieval to Reasoning: Bui",
-    "title": "Presentation: From Retrieval to Reasoning: Building Production-Ready Agentic AI Systems with Knowledge Graphs",
-    "link": "https://www.infoq.com/presentations/knowledge-graphs-agentic-systems-patterns/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-09-13",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/ios-27-virtualization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Open-Source Project Brings Full iOS 27 Virtualization",
     "title": "Open-Source Project Brings Full iOS 27 Virtualization to Apple Silicon",
@@ -74,5 +66,9 @@
   {
     "date": "2026-09-16",
     "summary": "<b>發生什麼事</b> Shopify 宣佈全面放棄 React Native，將旗艦行動應用程式重構改寫為原生語言 Swift 與 Kotlin。其移動部門負責人表示，隨著 AI 模型的寫程式能力大幅提升，跨平台抽象層所帶來的維護優勢已低於雙端原生程式碼的效益，因此重新評估並調整了跨平台開發的架構取捨。  <b>技術核心</b> 此決策反映了軟體工程中抽象層的成本效益轉變。長久以來，React"
+  },
+  {
+    "date": "2026-09-17",
+    "summary": "<b>發生什麼事</b> Dropbox 宣佈將其內容處理平台 Riviera 從原本的檔案預覽服務，擴展為支援超過 300 種檔案格式與 100 多種轉換能力的通用內容處理平台。此平台目前每秒處理數十萬次轉換，並透過 API 提供非同步內容萃取功能，以支援搜尋、簽署、Dash 及 AI 與 RAG 工作流程。  <b>技術核心</b> 建構現代 RAG 系統與 AI 知識庫時，最大的工程瓶頸往往"
   }
 ]
