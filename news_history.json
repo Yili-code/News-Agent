@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-09-13",
-    "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/github-hydrafusion/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">GitHub Copilot's Project HydraFusion Promises Frontier L",
-    "title": "GitHub Copilot's Project HydraFusion Promises Frontier Level Performance Through Multi-Model Routing",
-    "link": "https://www.infoq.com/news/2026/09/github-hydrafusion/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-09-14",
     "summary": "<b><a href=\"https://www.infoq.com/news/2026/09/meta-astryx-design-system/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Meta Open-Sources Astryx, its Agent-Ready React D",
     "title": "Meta Open-Sources Astryx, its Agent-Ready React Design System",
@@ -70,5 +62,13 @@
     "link": "https://arxiv.org/abs/2609.17535",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-09-18",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/09/platform-artificial-intelligence/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Building an Internal Developer Platform with ",
+    "title": "Building an Internal Developer Platform with Artificial Intelligence",
+    "link": "https://www.infoq.com/news/2026/09/platform-artificial-intelligence/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
