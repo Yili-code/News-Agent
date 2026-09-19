@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-09-14",
-    "summary": "<b>新聞標題與連結</b> <a href=\"https://arxiv.org/abs/2609.11955\">R2VC: Modular Fact-Checking with Retrieval, Verification, and Confidence Calibration</a>  <b>發生什麼事</b> 傳統自動化事實查核多依賴端到端的 Prompt，將證據檢索、推理與不確定性評估",
-    "title": "R2VC: Modular Fact-Checking with Retrieval, Verification, and Confidence Calibration",
-    "link": "https://arxiv.org/abs/2609.11955",
-    "category": "LLM 與 AI 研究論文",
-    "source": "cs.CL updates on arXiv.org"
-  },
-  {
-    "date": "2026-09-14",
     "summary": "<b>新聞標題與連結</b> <a href=\"https://www.infoq.com/news/2026/09/10/agoda-price-cache-dragonflydb/\">Agoda Replaces 72-Shard SQL Server Price Cache with DragonflyDB</a>  <b>發生什麼事</b> Agoda 將其 1.5 TB 的飯店價格快取（",
     "title": "Agoda Replaces 72-Shard SQL Server Price Cache with DragonflyDB",
     "link": "https://www.infoq.com/news/2026/09/agoda-price-cache-dragonflydb/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -68,6 +60,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/09/ws02-agent-manager/?utm_campaign=infoq_content&utm_source=infoq_content&utm_medium=feed&utm_term=global\">WSO2 Releases Agent Manager as Enterprises Look to ",
     "title": "WSO2 Releases Agent Manager as Enterprises Look to Control Growing AI Agent Sprawl",
     "link": "https://www.infoq.com/news/2026/09/ws02-agent-manager/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-09-19",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/09/doordash-feature-flag-cleanup/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">DoorDash 使用多代理 LLM 系統自動清理超過 60,000 個 Feature Fla",
+    "title": "DoorDash Uses Multi Agent LLMs to Clean up 60,000 Feature Flags",
+    "link": "https://www.infoq.com/news/2026/09/doordash-feature-flag-cleanup/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
