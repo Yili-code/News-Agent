@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-09-16",
-    "summary": "<a href=\"https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/\">Meta now lets AI agents handle the boring parts of WhatsApp Business setup</a>  ",
-    "title": "Meta now lets AI agents handle the boring parts of WhatsApp Business setup",
-    "link": "https://techcrunch.com/2026/09/15/meta-now-lets-ai-agents-handle-the-boring-parts-of-whatsapp-business-setup/",
-    "category": "AI Agent、新創融資與產品動態",
-    "source": "AI News & Artificial Intelligence | TechCrunch"
-  },
-  {
-    "date": "2026-09-16",
     "summary": "<b>發生什麼事</b> Shopify 宣佈全面放棄 React Native，將旗艦行動應用程式重構改寫為原生語言 Swift 與 Kotlin。其移動部門負責人表示，隨著 AI 模型的寫程式能力大幅提升，跨平台抽象層所帶來的維護優勢已低於雙端原生程式碼的效益，因此重新評估並調整了跨平台開發的架構取捨。  <b>技術核心</b> 此決策反映了軟體工程中抽象層的成本效益轉變。長久以來，React"
   },
   {
@@ -68,6 +60,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/09/alibaba-opencodereview/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Alibaba Open Sources OpenCodeReview for AI-Assisted Cod",
     "title": "Alibaba Open Sources OpenCodeReview for AI-Assisted Code Review",
     "link": "https://www.infoq.com/news/2026/09/alibaba-opencodereview/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-09-21",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/09/bun-AI-rewrite-zig-rust-4-months/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Bun Rewrites 535K Lines of Zig into Rust in F",
+    "title": "Bun Rewrites 535K Lines of Zig into Rust in Four Months, Eliminates Numerous Memory Leaks",
+    "link": "https://www.infoq.com/news/2026/09/bun-AI-rewrite-zig-rust-4-months/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
