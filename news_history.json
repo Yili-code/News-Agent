@@ -1,10 +1,6 @@
 [
   {
     "date": "2026-09-17",
-    "summary": "<b>發生什麼事</b> Dropbox 宣佈將其內容處理平台 Riviera 從原本的檔案預覽服務，擴展為支援超過 300 種檔案格式與 100 多種轉換能力的通用內容處理平台。此平台目前每秒處理數十萬次轉換，並透過 API 提供非同步內容萃取功能，以支援搜尋、簽署、Dash 及 AI 與 RAG 工作流程。  <b>技術核心</b> 建構現代 RAG 系統與 AI 知識庫時，最大的工程瓶頸往往"
-  },
-  {
-    "date": "2026-09-17",
     "summary": "<a href=\"https://arxiv.org/abs/2609.17535\">DANTINOX: A Unified Framework for Multi-Paradigm Language Modeling</a>  <b>發生什麼事</b> 研究團隊推出開源函式庫 DantinoX，旨在整合目前語言生成模型中互相獨立的三大範式：自我迴歸解碼、離散遮罩擴散與連續流匹配。過去這三種方法各",
     "title": "DANTINOX: A Unified Framework for Multi-Paradigm Language Modeling",
     "link": "https://arxiv.org/abs/2609.17535",
@@ -74,5 +70,13 @@
     "link": "https://www.infoq.com/news/2026/09/uber-m3db-subcluster-sharding/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-09-22",
+    "summary": "<a href=\"https://arxiv.org/abs/2609.20824\">Do small language models know what they don't know?</a>  <b>發生什麼事</b> 研究人員探討如何利用基於熵的信心訊號，來提升運算規模在 30 億參數以下、且能完全在消費級硬體上執行的 Small Language Model 準確度。該研究評估了 tok",
+    "title": "Do small language models know what they don't know?",
+    "link": "https://arxiv.org/abs/2609.20824",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
