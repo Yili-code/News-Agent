@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-09-17",
-    "summary": "<a href=\"https://arxiv.org/abs/2609.17535\">DANTINOX: A Unified Framework for Multi-Paradigm Language Modeling</a>  <b>發生什麼事</b> 研究團隊推出開源函式庫 DantinoX，旨在整合目前語言生成模型中互相獨立的三大範式：自我迴歸解碼、離散遮罩擴散與連續流匹配。過去這三種方法各",
-    "title": "DANTINOX: A Unified Framework for Multi-Paradigm Language Modeling",
-    "link": "https://arxiv.org/abs/2609.17535",
-    "category": "LLM 與 AI 研究論文",
-    "source": "cs.CL updates on arXiv.org"
-  },
-  {
     "date": "2026-09-18",
     "summary": "<a href=\"https://www.infoq.com/news/2026/09/platform-artificial-intelligence/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Building an Internal Developer Platform with ",
     "title": "Building an Internal Developer Platform with Artificial Intelligence",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://arxiv.org/abs/2609.20824\">Do small language models know what they don't know?</a>  <b>發生什麼事</b> 研究人員探討如何利用基於熵的信心訊號，來提升運算規模在 30 億參數以下、且能完全在消費級硬體上執行的 Small Language Model 準確度。該研究評估了 tok",
     "title": "Do small language models know what they don't know?",
     "link": "https://arxiv.org/abs/2609.20824",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-09-22",
+    "summary": "<a href=\"https://arxiv.org/abs/2609.22094\">Summarize, Judge, Refine: Decoupled Content Understanding and Policy Learning for Multimodal Content Moderation</a>  <b>發生什麼事</b> 傳統的多媒體內容審查系統將多模態內容理解與政策分類耦合",
+    "title": "Summarize, Judge, Refine: Decoupled Content Understanding and Policy Learning for Multimodal Content Moderation",
+    "link": "https://arxiv.org/abs/2609.22094",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
   }
