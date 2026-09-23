@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-09-18",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/09/ws02-agent-manager/?utm_campaign=infoq_content&utm_source=infoq_content&utm_medium=feed&utm_term=global\">WSO2 Releases Agent Manager as Enterprises Look to ",
-    "title": "WSO2 Releases Agent Manager as Enterprises Look to Control Growing AI Agent Sprawl",
-    "link": "https://www.infoq.com/news/2026/09/ws02-agent-manager/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-09-19",
     "summary": "<a href=\"https://www.infoq.com/news/2026/09/doordash-feature-flag-cleanup/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">DoorDash 使用多代理 LLM 系統自動清理超過 60,000 個 Feature Fla",
     "title": "DoorDash Uses Multi Agent LLMs to Clean up 60,000 Feature Flags",
@@ -78,5 +70,13 @@
     "link": "https://www.infoq.com/news/2026/09/google-ax-orchestrator/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-09-23",
+    "summary": "<a href=\"https://arxiv.org/abs/2609.25008\">Training a Language Model End-to-End in Rust: An Experience Report</a>  <b>發生什麼事</b> 開發者在完全不使用 Python、PyTorch 與團隊支援的情況下，以 164 美元的租用 GPU 成本，在 Rust 中完成語言模型的端對端",
+    "title": "Training a Language Model End-to-End in Rust: An Experience Report",
+    "link": "https://arxiv.org/abs/2609.25008",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
