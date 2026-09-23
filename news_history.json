@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-09-18",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/09/platform-artificial-intelligence/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Building an Internal Developer Platform with ",
-    "title": "Building an Internal Developer Platform with Artificial Intelligence",
-    "link": "https://www.infoq.com/news/2026/09/platform-artificial-intelligence/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-09-18",
     "summary": "<a href=\"https://www.infoq.com/news/2026/09/ws02-agent-manager/?utm_campaign=infoq_content&utm_source=infoq_content&utm_medium=feed&utm_term=global\">WSO2 Releases Agent Manager as Enterprises Look to ",
     "title": "WSO2 Releases Agent Manager as Enterprises Look to Control Growing AI Agent Sprawl",
     "link": "https://www.infoq.com/news/2026/09/ws02-agent-manager/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -78,5 +70,13 @@
     "link": "https://arxiv.org/abs/2609.22094",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-09-23",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/09/google-ax-orchestrator/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Google Open-Sources AX a Kubernetes Style Orchestrator ",
+    "title": "Google Open-Sources AX a Kubernetes Style Orchestrator for Autonomous AI Agents",
+    "link": "https://www.infoq.com/news/2026/09/google-ax-orchestrator/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
