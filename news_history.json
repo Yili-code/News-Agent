@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-09-20",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/09/alibaba-opencodereview/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Alibaba Open Sources OpenCodeReview for AI-Assisted Cod",
-    "title": "Alibaba Open Sources OpenCodeReview for AI-Assisted Code Review",
-    "link": "https://www.infoq.com/news/2026/09/alibaba-opencodereview/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-09-21",
     "summary": "<a href=\"https://www.infoq.com/news/2026/09/bun-AI-rewrite-zig-rust-4-months/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Bun Rewrites 535K Lines of Zig into Rust in F",
     "title": "Bun Rewrites 535K Lines of Zig into Rust in Four Months, Eliminates Numerous Memory Leaks",
@@ -78,5 +70,13 @@
     "link": "https://arxiv.org/abs/2609.26913",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-09-25",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/09/aws-stateless-mcp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Stateless MCP Removes Session Affinity Requirements for AWS ",
+    "title": "Stateless MCP Removes Session Affinity Requirements for AWS Server Deployments",
+    "link": "https://www.infoq.com/news/2026/09/aws-stateless-mcp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
