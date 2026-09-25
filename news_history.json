@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-09-20",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/09/lambda-90-minute-timeout/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">AWS Lambda Pushes Serverless Toward Long-Running Work",
-    "title": "AWS Lambda Pushes Serverless Toward Long-Running Workloads",
-    "link": "https://www.infoq.com/news/2026/09/lambda-90-minute-timeout/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-09-20",
     "summary": "<a href=\"https://www.infoq.com/news/2026/09/alibaba-opencodereview/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Alibaba Open Sources OpenCodeReview for AI-Assisted Cod",
     "title": "Alibaba Open Sources OpenCodeReview for AI-Assisted Code Review",
     "link": "https://www.infoq.com/news/2026/09/alibaba-opencodereview/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://arxiv.org/abs/2609.26926\">Experts Rise Where LLMs Disagree: Using Cross-Model Disagreement to Target Expert Effort in LLM Codebook Revision for Large-Scale Annotation</a>  <b>發生什麼事</b",
     "title": "Experts Rise Where LLMs Disagree: Using Cross-Model Disagreement to Target Expert Effort in LLM Codebook Revision for Large-Scale Annotation",
     "link": "https://arxiv.org/abs/2609.26926",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-09-25",
+    "summary": "<a href=\"https://arxiv.org/abs/2609.26913\">COMED: The Missing Middle Between Routing and Collaboration in Multi-LLM Inference</a>  <b>發生什麼事</b> 現行的多模型推論系統通常採用兩種極端架構：單純的 Routing 在選擇初始模型後即終止，或密集的 Collab",
+    "title": "COMED: The Missing Middle Between Routing and Collaboration in Multi-LLM Inference",
+    "link": "https://arxiv.org/abs/2609.26913",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
   }
