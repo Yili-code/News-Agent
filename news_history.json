@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-09-22",
-    "summary": "<a href=\"https://arxiv.org/abs/2609.22094\">Summarize, Judge, Refine: Decoupled Content Understanding and Policy Learning for Multimodal Content Moderation</a>  <b>發生什麼事</b> 傳統的多媒體內容審查系統將多模態內容理解與政策分類耦合",
-    "title": "Summarize, Judge, Refine: Decoupled Content Understanding and Policy Learning for Multimodal Content Moderation",
-    "link": "https://arxiv.org/abs/2609.22094",
-    "category": "LLM 與 AI 研究論文",
-    "source": "cs.CL updates on arXiv.org"
-  },
-  {
     "date": "2026-09-23",
     "summary": "<a href=\"https://www.infoq.com/news/2026/09/google-ax-orchestrator/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Google Open-Sources AX a Kubernetes Style Orchestrator ",
     "title": "Google Open-Sources AX a Kubernetes Style Orchestrator for Autonomous AI Agents",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/09/docker-cloud-sandboxes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Docker Cloud Sandboxes Provide a Consistent Sandbox Abs",
     "title": "Docker Cloud Sandboxes Provide a Consistent Sandbox Abstraction Across Laptop and Cloud",
     "link": "https://www.infoq.com/news/2026/09/docker-cloud-sandboxes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-09-27",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/09/gke-pod-snapshots-benchmarks/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">GKE Pod Snapshots Cut Model Load Times, and Move ",
+    "title": "GKE Pod Snapshots Cut Model Load Times, and Move the Work to Snapshot Lifecycle Management",
+    "link": "https://www.infoq.com/news/2026/09/gke-pod-snapshots-benchmarks/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
