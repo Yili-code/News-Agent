@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-09-22",
-    "summary": "<a href=\"https://arxiv.org/abs/2609.20824\">Do small language models know what they don't know?</a>  <b>發生什麼事</b> 研究人員探討如何利用基於熵的信心訊號，來提升運算規模在 30 億參數以下、且能完全在消費級硬體上執行的 Small Language Model 準確度。該研究評估了 tok",
-    "title": "Do small language models know what they don't know?",
-    "link": "https://arxiv.org/abs/2609.20824",
-    "category": "LLM 與 AI 研究論文",
-    "source": "cs.CL updates on arXiv.org"
-  },
-  {
-    "date": "2026-09-22",
     "summary": "<a href=\"https://arxiv.org/abs/2609.22094\">Summarize, Judge, Refine: Decoupled Content Understanding and Policy Learning for Multimodal Content Moderation</a>  <b>發生什麼事</b> 傳統的多媒體內容審查系統將多模態內容理解與政策分類耦合",
     "title": "Summarize, Judge, Refine: Decoupled Content Understanding and Policy Learning for Multimodal Content Moderation",
     "link": "https://arxiv.org/abs/2609.22094",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/09/cobbledb-perplexity/\">Home Made CobbleDB Replaces DynamoDB at Perplexity to Cut Query Latency 5x and Reduce Cloud Storage</a>  <b>發生什麼事</b> Perplexity 將其搜尋基",
     "title": "Home Made CobbleDB Replaces DynamoDB at Perplexity to Cut Query Latency 5x and Reduce Cloud Storage",
     "link": "https://www.infoq.com/news/2026/09/cobbledb-perplexity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-09-27",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/09/docker-cloud-sandboxes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Docker Cloud Sandboxes Provide a Consistent Sandbox Abs",
+    "title": "Docker Cloud Sandboxes Provide a Consistent Sandbox Abstraction Across Laptop and Cloud",
+    "link": "https://www.infoq.com/news/2026/09/docker-cloud-sandboxes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
