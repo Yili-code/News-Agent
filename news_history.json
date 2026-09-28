@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-09-23",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/09/google-ax-orchestrator/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Google Open-Sources AX a Kubernetes Style Orchestrator ",
-    "title": "Google Open-Sources AX a Kubernetes Style Orchestrator for Autonomous AI Agents",
-    "link": "https://www.infoq.com/news/2026/09/google-ax-orchestrator/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-09-23",
     "summary": "<a href=\"https://arxiv.org/abs/2609.25008\">Training a Language Model End-to-End in Rust: An Experience Report</a>  <b>發生什麼事</b> 開發者在完全不使用 Python、PyTorch 與團隊支援的情況下，以 164 美元的租用 GPU 成本，在 Rust 中完成語言模型的端對端",
     "title": "Training a Language Model End-to-End in Rust: An Experience Report",
     "link": "https://arxiv.org/abs/2609.25008",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/09/gke-pod-snapshots-benchmarks/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">GKE Pod Snapshots Cut Model Load Times, and Move ",
     "title": "GKE Pod Snapshots Cut Model Load Times, and Move the Work to Snapshot Lifecycle Management",
     "link": "https://www.infoq.com/news/2026/09/gke-pod-snapshots-benchmarks/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-09-28",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/09/c-rust-rewrite/\">Google Rewrites Critical C Dependencies to Rust Using AI and Differential Fuzzing</a>  <b>發生什麼事</b> Google 安全團隊透過自動化遷移流程，將圖像處理庫 giflib 中的 l",
+    "title": "Google Rewrites Critical C Dependencies to Rust Using AI and Differential Fuzzing",
+    "link": "https://www.infoq.com/news/2026/09/c-rust-rewrite/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
