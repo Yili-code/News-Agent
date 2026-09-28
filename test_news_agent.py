@@ -1,6 +1,7 @@
 import os
 import tempfile
 import unittest
+from types import SimpleNamespace
 
 import news_agent
 
@@ -47,6 +48,33 @@ class NewsDeduplicationTests(unittest.TestCase):
 
         self.assertEqual([item['title'] for item in filtered], ['Same title', 'Fresh title'])
         self.assertEqual(len(filtered), 2)
+
+    def test_daily_report_prompt_requires_concise_english_output(self):
+        captured = {}
+
+        class FakeModels:
+            def generate_content(self, *, model, contents):
+                captured['model'] = model
+                captured['contents'] = contents
+                return SimpleNamespace(text='<b>What happened</b>\nA concise report.')
+
+        self.brain.client = SimpleNamespace(models=FakeModels())
+        self.brain.model_name = 'test-model'
+        news_items = [{
+            'category': 'AI',
+            'source': 'Example',
+            'title': 'A useful model update',
+            'link': 'https://example.com/model-update',
+            'summary': 'The update reduces inference cost.',
+        }]
+
+        report = self.brain.generate_daily_report(news_items)
+
+        self.assertEqual(report, '<b>What happened</b>\nA concise report.')
+        self.assertEqual(captured['model'], 'test-model')
+        self.assertIn('將整份簡報寫成自然、精確的英文', captured['contents'])
+        self.assertIn('120–180 個英文單字', captured['contents'])
+        self.assertIn('<b>Why this matters to me</b>', captured['contents'])
 
 
 if __name__ == '__main__':
