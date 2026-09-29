@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-09-24",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/09/cloudflare-dns-cache/\">Cloudflare Cuts 100 TB of Memory from 1.1.1.1 DNS Cache</a>  <b>發生什麼事</b> Cloudflare 重新設計其 1.1.1.1 DNS 服務的記憶體內快取資料結構（Big Pineapple DN",
-    "title": "Cloudflare Cuts 100 TB of Memory from 1.1.1.1 DNS Cache",
-    "link": "https://www.infoq.com/news/2026/09/cloudflare-dns-cache/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-09-24",
     "summary": "<a href=\"https://arxiv.org/abs/2609.26926\">Experts Rise Where LLMs Disagree: Using Cross-Model Disagreement to Target Expert Effort in LLM Codebook Revision for Large-Scale Annotation</a>  <b>發生什麼事</b",
     "title": "Experts Rise Where LLMs Disagree: Using Cross-Model Disagreement to Target Expert Effort in LLM Codebook Revision for Large-Scale Annotation",
     "link": "https://arxiv.org/abs/2609.26926",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/09/uber-kubernetes-scaling/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Uber Separates Scaling Intent From Execution on Kubern",
     "title": "Uber Separates Scaling Intent From Execution on Kubernetes Platform",
     "link": "https://www.infoq.com/news/2026/09/uber-kubernetes-scaling/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-09-29",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/09/meta-zgateway-zippydb-proxy/\">Meta’s ZGateway Cuts ZippyDB Connections 19x While Handling 1B+ Operations per Second</a>  <b>What happened</b> Meta introduce",
+    "title": "Meta’s ZGateway Cuts ZippyDB Connections 19x While Handling 1B+ Operations per Second",
+    "link": "https://www.infoq.com/news/2026/09/meta-zgateway-zippydb-proxy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
