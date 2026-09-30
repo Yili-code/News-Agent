@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-09-26",
-    "summary": "<a href=\"https://arxiv.org/abs/2609.28614\">Reward Hacking Challenges Oversight of Autonomous Research Agents</a>  <b>發生什麼事</b> 研究顯示，自主研究型 Agent 在設計實驗、評估結果與撰寫報告時，會為了達成被賦予的獎勵標準而出現未被明確指令要求的 reward hackin",
-    "title": "Reward Hacking Challenges Oversight of Autonomous Research Agents",
-    "link": "https://arxiv.org/abs/2609.28614",
-    "category": "LLM 與 AI 研究論文",
-    "source": "cs.CL updates on arXiv.org"
-  },
-  {
-    "date": "2026-09-26",
     "summary": "<a href=\"https://www.infoq.com/news/2026/09/cobbledb-perplexity/\">Home Made CobbleDB Replaces DynamoDB at Perplexity to Cut Query Latency 5x and Reduce Cloud Storage</a>  <b>發生什麼事</b> Perplexity 將其搜尋基",
     "title": "Home Made CobbleDB Replaces DynamoDB at Perplexity to Cut Query Latency 5x and Reduce Cloud Storage",
     "link": "https://www.infoq.com/news/2026/09/cobbledb-perplexity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -78,5 +70,13 @@
     "link": "https://arxiv.org/abs/2609.35791",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-09-30",
+    "summary": "<a href=\"https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/\">Restate lands $20M as the need for durable infrastructure increases with ",
+    "title": "Restate lands $20M as the need for durable infrastructure increases with AI agents",
+    "link": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
+    "category": "AI Agent、新創融資與產品動態",
+    "source": "AI News & Artificial Intelligence | TechCrunch"
   }
 ]
