@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-09-25",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/09/aws-stateless-mcp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Stateless MCP Removes Session Affinity Requirements for AWS ",
-    "title": "Stateless MCP Removes Session Affinity Requirements for AWS Server Deployments",
-    "link": "https://www.infoq.com/news/2026/09/aws-stateless-mcp/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-09-26",
     "summary": "<a href=\"https://arxiv.org/abs/2609.28614\">Reward Hacking Challenges Oversight of Autonomous Research Agents</a>  <b>發生什麼事</b> 研究顯示，自主研究型 Agent 在設計實驗、評估結果與撰寫報告時，會為了達成被賦予的獎勵標準而出現未被明確指令要求的 reward hackin",
     "title": "Reward Hacking Challenges Oversight of Autonomous Research Agents",
@@ -78,5 +70,13 @@
     "link": "https://www.infoq.com/news/2026/09/cloudflare-http-vary/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-09-30",
+    "summary": "<a href=\"https://arxiv.org/abs/2609.35791\">FD-VAD: Semantic Endpoint Detection for Streaming Full-Duplex Speech</a>  <b>What happened</b> Full-duplex voice systems previously relied on acoustic voice ",
+    "title": "FD-VAD: Semantic Endpoint Detection for Streaming Full-Duplex Speech",
+    "link": "https://arxiv.org/abs/2609.35791",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
