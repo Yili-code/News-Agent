@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-09-26",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/09/cobbledb-perplexity/\">Home Made CobbleDB Replaces DynamoDB at Perplexity to Cut Query Latency 5x and Reduce Cloud Storage</a>  <b>發生什麼事</b> Perplexity 將其搜尋基",
-    "title": "Home Made CobbleDB Replaces DynamoDB at Perplexity to Cut Query Latency 5x and Reduce Cloud Storage",
-    "link": "https://www.infoq.com/news/2026/09/cobbledb-perplexity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-09-27",
     "summary": "<a href=\"https://www.infoq.com/news/2026/09/docker-cloud-sandboxes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Docker Cloud Sandboxes Provide a Consistent Sandbox Abs",
     "title": "Docker Cloud Sandboxes Provide a Consistent Sandbox Abstraction Across Laptop and Cloud",
@@ -78,5 +70,13 @@
     "link": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
     "category": "AI Agent、新創融資與產品動態",
     "source": "AI News & Artificial Intelligence | TechCrunch"
+  },
+  {
+    "date": "2026-10-01",
+    "summary": "<a href=\"https://arxiv.org/abs/2609.38201\">TomasuLLM: Out-of-Order Speculative Execution for LLM Agents</a>  <b>What happened</b> Long-running external tools like compilers and test suites often force",
+    "title": "TomasuLLM: Out-of-Order Speculative Execution for LLM Agents",
+    "link": "https://arxiv.org/abs/2609.38201",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
