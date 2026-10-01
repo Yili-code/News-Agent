@@ -1,5 +1,82 @@
 # News Agent
 
+A scheduled news pipeline that turns software, AI, and startup feeds into a focused Telegram briefing.
+
+## Why it exists
+
+Following every feed creates activity, not understanding. News Agent is built for the daily window: collect a small set of relevant sources, reduce repeated topics, deprioritize hardware-only stories, and ask Gemini to produce one concise briefing.
+
+This is different from [Crypto Flash](https://github.com/Yili-code/Crypto-Flash), which monitors crypto and macro events for minutes-level delivery. News Agent tolerates more latency because its job is daily comprehension, not real-time market awareness.
+
+## What it does
+
+- Aggregates six feeds covering AI research, software engineering, agents, and startups.
+- Filters hardware-heavy stories unless they materially affect software or AI.
+- Uses recent briefing history to reduce repeated topics.
+- Generates a concise English report with Gemini.
+- Sends Telegram HTML, with a plain-text fallback if Telegram rejects the formatting.
+- Persists the 10 most recent briefing summaries for cross-run deduplication.
+- Runs on a GitHub Actions schedule and commits updated history back to the repository.
+
+## System flow
+
+```text
+Six RSS feeds
+      ↓
+parse → topic filter → history-aware deduplication
+      ↓
+Gemini selection and briefing
+      ↓
+Telegram delivery → persist recent summary history
+```
+
+## Quick start
+
+Requires Python 3.11 or newer.
+
+```bash
+git clone https://github.com/Yili-code/News-Agent.git
+cd News-Agent
+python -m venv .venv
+
+# Windows PowerShell
+.\.venv\Scripts\Activate.ps1
+
+# macOS / Linux
+# source .venv/bin/activate
+
+python -m pip install -r requirements.txt
+```
+
+Create `.env` in the repository root:
+
+```env
+GEMINI_API_KEY=your_api_key_here
+TELEGRAM_BOT_TOKEN=your_bot_token_here
+TELEGRAM_CHAT_ID=your_chat_id_here
+```
+
+Then run:
+
+```bash
+python news_agent.py
+```
+
+> [!CAUTION]
+> There is no dry-run mode. Running `news_agent.py` makes live RSS and Gemini requests and may send a real Telegram message to the configured chat.
+
+## Verification and limits
+
+```bash
+python -m unittest -v
+```
+
+The offline tests cover topic filtering and deduplication behavior. They do not prove current RSS availability, Gemini output quality, GitHub Actions scheduling, or Telegram delivery.
+
+`qa_agent.py` is an experimental Telegram question-and-answer poller. Its update offset is stored in a local JSON file, which is not durable across GitHub-hosted runners; do not treat it as a reliable hosted service without external state.
+
+## 中文說明
+
 完全免費、每天自動運行。
 一個新聞聚合與每日科技簡報系統，現在專注於 Telegram 推送。
 
@@ -141,4 +218,4 @@ news_agent/
 
 ---
 
-最後更新：2026-08-16
+最後更新：2026-10-01
