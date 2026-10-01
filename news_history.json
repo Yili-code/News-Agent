@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-09-27",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/09/docker-cloud-sandboxes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Docker Cloud Sandboxes Provide a Consistent Sandbox Abs",
-    "title": "Docker Cloud Sandboxes Provide a Consistent Sandbox Abstraction Across Laptop and Cloud",
-    "link": "https://www.infoq.com/news/2026/09/docker-cloud-sandboxes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-09-27",
     "summary": "<a href=\"https://www.infoq.com/news/2026/09/gke-pod-snapshots-benchmarks/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">GKE Pod Snapshots Cut Model Load Times, and Move ",
     "title": "GKE Pod Snapshots Cut Model Load Times, and Move the Work to Snapshot Lifecycle Management",
     "link": "https://www.infoq.com/news/2026/09/gke-pod-snapshots-benchmarks/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -78,5 +70,13 @@
     "link": "https://arxiv.org/abs/2609.38201",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-10-01",
+    "summary": "<a href=\"https://www.theinformation.com/articles/coding-agents-choosing-vercel-often-humans\">Why Coding Agents Are Choosing Vercel as Often as Humans Do</a>  <b>What happened</b> As software-writing A",
+    "title": "Why Coding Agents Are Choosing Vercel as Often as Humans Do",
+    "link": "https://www.theinformation.com/articles/coding-agents-choosing-vercel-often-humans",
+    "category": "AI 巨頭內幕與商業獨家",
+    "source": "The Information"
   }
 ]
