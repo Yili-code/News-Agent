@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-09-28",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/09/c-rust-rewrite/\">Google Rewrites Critical C Dependencies to Rust Using AI and Differential Fuzzing</a>  <b>發生什麼事</b> Google 安全團隊透過自動化遷移流程，將圖像處理庫 giflib 中的 l",
-    "title": "Google Rewrites Critical C Dependencies to Rust Using AI and Differential Fuzzing",
-    "link": "https://www.infoq.com/news/2026/09/c-rust-rewrite/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-09-28",
     "summary": "<a href=\"https://www.infoq.com/news/2026/09/uber-kubernetes-scaling/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Uber Separates Scaling Intent From Execution on Kubern",
     "title": "Uber Separates Scaling Intent From Execution on Kubernetes Platform",
     "link": "https://www.infoq.com/news/2026/09/uber-kubernetes-scaling/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/snapdragon-x2-linux/\">Qualcomm Unveils Linux Preview on Snapdragon X2 to Accelerate Upstream ARM Laptops</a>  <b>What happened</b> Qualcomm released an earl",
     "title": "Qualcomm Unveils Linux Preview on Snapdragon X2 to Accelerate Upstream ARM Laptops",
     "link": "https://www.infoq.com/news/2026/10/snapdragon-x2-linux/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-02",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/10/uber-eats-search-latency/\">Uber Eats Rebuilds Search Pipeline to Cut End-to-End Latency by 50%</a>  <b>What happened</b> Uber rebuilt its Uber Eats search p",
+    "title": "Uber Eats Rebuilds Search Pipeline to Cut End-to-End Latency by 50%",
+    "link": "https://www.infoq.com/news/2026/10/uber-eats-search-latency/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
