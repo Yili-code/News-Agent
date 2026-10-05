@@ -18,7 +18,7 @@ This repository is designed for a single configured Telegram chat. It is not a m
 
 ## Founder Morning
 
-The repository also contains [`founder/`](founder/README.md), YiLi's private entrepreneurship-research companion. It collects public startup discussions, ranks them against explicit preferences, produces evidence-bounded Chinese analysis, and serves the result through a private Cloudflare Worker and Telegram.
+The repository also contains [`founder/`](founder/README.md), YiLi's private entrepreneurship-research companion. It collects public startup discussions, ranks them against explicit preferences, produces evidence-bounded Chinese analysis, and serves the result through Google Cloud Run and Telegram.
 
 Founder Morning has separate credentials, storage, deployment, and schedules from the daily News Agent digest. Its workflow remains disabled unless `FOUNDER_ENABLED=true`; see [`founder/README.md`](founder/README.md) before configuring it.
 

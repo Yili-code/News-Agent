@@ -26,6 +26,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install -r requirements.txt
+          python -m pip install -r founder/requirements.txt
           python -m pip install pytest
 
       - name: Run tests
@@ -39,19 +40,14 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "24"
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: pip
+          cache-dependency-path: founder/requirements.txt
 
       - name: Verify Founder Morning
         run: |
-          node --check founder/worker.mjs
-          node --check founder/public/app.js
-          node --test founder/tests/worker.test.mjs
+          python -m pip install -r founder/requirements.txt
           python -m unittest discover -s founder/tests -p "test_*.py"
