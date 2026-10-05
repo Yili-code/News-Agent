@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-09-30",
-    "summary": "<a href=\"https://arxiv.org/abs/2609.35791\">FD-VAD: Semantic Endpoint Detection for Streaming Full-Duplex Speech</a>  <b>What happened</b> Full-duplex voice systems previously relied on acoustic voice ",
-    "title": "FD-VAD: Semantic Endpoint Detection for Streaming Full-Duplex Speech",
-    "link": "https://arxiv.org/abs/2609.35791",
-    "category": "LLM 與 AI 研究論文",
-    "source": "cs.CL updates on arXiv.org"
-  },
-  {
-    "date": "2026-09-30",
     "summary": "<a href=\"https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/\">Restate lands $20M as the need for durable infrastructure increases with ",
     "title": "Restate lands $20M as the need for durable infrastructure increases with AI agents",
     "link": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/pizza-bot-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Pizza Bot: Open-Source Inbox for Background AI Agents</a> ",
     "title": "Pizza Bot: Open-Source Inbox for Background AI Agents",
     "link": "https://www.infoq.com/news/2026/10/pizza-bot-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-05",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/10/android-security-state-libs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Google's Android Security State Libraries Enable C",
+    "title": "Google's Android Security State Libraries Enable Component-Level Security Verification",
+    "link": "https://www.infoq.com/news/2026/10/android-security-state-libs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
