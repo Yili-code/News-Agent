@@ -73,7 +73,6 @@ class TelegramClient:
         max_update_id = last_update_id
 
         for update in updates:
-            print(update.get("update_id"), update.get("message", {}).get("text"))
             current_update_id = update.get("update_id", 0)
             if current_update_id > max_update_id:
                 max_update_id = current_update_id

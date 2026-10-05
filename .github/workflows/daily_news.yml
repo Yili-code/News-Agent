@@ -5,6 +5,9 @@ on:
     - cron: '0 0,8 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   run-news-agent:
     runs-on: ubuntu-latest
