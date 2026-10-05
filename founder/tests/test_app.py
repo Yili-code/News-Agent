@@ -105,6 +105,7 @@ class FounderAppTests(unittest.TestCase):
             "cards": [
                 {
                     "id": "HN:1",
+                    "decision": "SAVE",
                     "evidence_ids": ["invented"],
                     **{
                         key: "需要驗證"
@@ -127,12 +128,46 @@ class FounderAppTests(unittest.TestCase):
         self.assertFalse(founder_app.valid_analysis(value, issue()["signals"]))
         value["cards"][0]["evidence_ids"] = ["HN:1"]
         self.assertTrue(founder_app.valid_analysis(value, issue()["signals"]))
+        value["cards"][0]["decision"] = "MAYBE"
+        self.assertFalse(founder_app.valid_analysis(value, issue()["signals"]))
 
-    def test_telegram_format_is_readable(self):
+    def test_telegram_source_only_tells_user_not_to_read_every_link(self):
         output = founder_app.format_telegram_issue(issue(), "https://founder.example")
         self.assertIn("拾題 / 2026-10-05", output)
-        self.assertIn("1. A founder problem\nhttps://example.com/item", output)
+        self.assertIn("今日結論：分析尚未完成，先不要逐篇閱讀。", output)
+        self.assertIn("1. 【待判斷】A founder problem\n來源：https://example.com/item", output)
         self.assertIn("https://founder.example", output)
+
+    def test_telegram_analyzed_issue_leads_with_one_action(self):
+        analyzed = issue()
+        analyzed["status"] = "analyzed"
+        analyzed["signals"][0]["analysis"] = {
+            "title_zh": "值得追蹤的創業問題",
+            "decision": "ACT",
+            "why": "能驗證目前產品是否解決真實需求。",
+            "action": "訪談一位目標使用者並記下一句原話。",
+        }
+
+        output = founder_app.format_telegram_issue(analyzed, "https://founder.example")
+
+        self.assertIn("今日只做一件事：執行 #1 的下一步；其餘先略過。", output)
+        self.assertIn("1. 【ACT】值得追蹤的創業問題", output)
+        self.assertIn("為什麼：能驗證目前產品是否解決真實需求。", output)
+        self.assertIn("下一步：訪談一位目標使用者並記下一句原話。", output)
+
+    def test_telegram_analyzed_issue_can_recommend_save_or_skip_all(self):
+        analyzed = issue()
+        analyzed["status"] = "analyzed"
+        analyzed["signals"][0]["analysis"] = {
+            "title_zh": "可留待日後追蹤",
+            "decision": "SAVE",
+            "why": "方向相關，但現在沒有立即驗證價值。",
+            "action": "保存到候選題目。",
+        }
+        self.assertIn("今天不必立即行動；若有餘裕，只保存 #1。", founder_app.format_telegram_issue(analyzed))
+
+        analyzed["signals"][0]["analysis"].update(decision="SKIP", action="不需處理")
+        self.assertIn("今天沒有值得投入的題目，全部略過即可。", founder_app.format_telegram_issue(analyzed))
 
 
 if __name__ == "__main__":

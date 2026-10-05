@@ -3,3 +3,4 @@ google-cloud-firestore==2.21.0
 google-genai==1.28.0
 gunicorn==23.0.0
 requests==2.32.3
+tzdata==2026.5
