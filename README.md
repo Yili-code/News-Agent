@@ -1,221 +1,229 @@
 # News Agent
 
-A scheduled news pipeline that turns software, AI, and startup feeds into a focused Telegram briefing.
+[![CI](https://github.com/Yili-code/News-Agent/actions/workflows/ci.yml/badge.svg)](https://github.com/Yili-code/News-Agent/actions/workflows/ci.yml)
 
-## Why it exists
+Turn six AI and software-engineering RSS feeds into one deduplicated, 30–45-second English brief delivered to Telegram with Gemini and GitHub Actions.
 
-Following every feed creates activity, not understanding. News Agent is built for the daily window: collect a small set of relevant sources, reduce repeated topics, deprioritize hardware-only stories, and ask Gemini to produce one concise briefing.
+News Agent is a small, self-hosted Python automation for developers and technical founders who want one high-signal story instead of another long link list. It fetches RSS metadata, removes repeated topics, asks Gemini to select and explain one story, sends the result through the Telegram Bot API, and keeps a short local history for the next run.
 
-This is different from [Crypto Flash](https://github.com/Yili-code/Crypto-Flash), which monitors crypto and macro events for minutes-level delivery. News Agent tolerates more latency because its job is daily comprehension, not real-time market awareness.
+> 中文簡介：從六個 AI、軟體工程與新創 RSS 來源擷取內容，去除近期重複主題，再由 Gemini 選出一則值得讀的新聞，整理成 30–45 秒可讀完的英文 Telegram brief。重點不是「收更多新聞」，而是每天少讀一點、理解更深一點。
+
+## Who it is for
+
+- Developers who want a compact AI and software-engineering news digest in Telegram.
+- Technical founders who want technical context separated from business inference.
+- Learners who want each story connected to an engineering or product decision.
+
+This repository is designed for a single configured Telegram chat. It is not a multi-user newsletter platform, a full-article scraper, or a guarantee that every feed will be available on every run.
+
+## Founder Morning
+
+The repository also contains [`founder/`](founder/README.md), YiLi's private entrepreneurship-research companion. It collects public startup discussions, ranks them against explicit preferences, produces evidence-bounded Chinese analysis, and serves the result through a private Cloudflare Worker and Telegram.
+
+Founder Morning has separate credentials, storage, deployment, and schedules from the daily News Agent digest. Its workflow remains disabled unless `FOUNDER_ENABLED=true`; see [`founder/README.md`](founder/README.md) before configuring it.
 
 ## What it does
 
-- Aggregates six feeds covering AI research, software engineering, agents, and startups.
-- Filters hardware-heavy stories unless they materially affect software or AI.
-- Uses recent briefing history to reduce repeated topics.
-- Generates a concise English report with Gemini.
-- Sends Telegram HTML, with a plain-text fallback if Telegram rejects the formatting.
-- Persists the 10 most recent briefing summaries for cross-run deduplication.
-- Runs on a GitHub Actions schedule and commits updated history back to the repository.
-
-## System flow
-
 ```text
-Six RSS feeds
-      ↓
-parse → topic filter → history-aware deduplication
-      ↓
-Gemini selection and briefing
-      ↓
-Telegram delivery → persist recent summary history
+6 RSS feeds
+    ↓
+fetch titles, links, and feed summaries
+    ↓
+filter hardware-only items + deduplicate recent topics
+    ↓
+Gemini selects one story and writes a structured English brief
+    ↓
+Telegram HTML message + 10-entry local history
 ```
+
+The generated brief uses these sections when the source material supports them:
+
+1. `What happened`
+2. `Technical core`
+3. `Founder perspective`
+4. `Why this matters to me`
+5. `One action today` — omitted when there is no useful 15-minute action
+
+The prompt explicitly separates reported facts from inference and asks the model not to invent technical details, customer evidence, or revenue claims. Because this is still LLM-generated text based on RSS summaries, important claims should be checked against the linked article.
+
+## News sources
+
+| Focus | Feed |
+| --- | --- |
+| LLM and NLP research | arXiv `cs.CL` |
+| AI industry reporting | The Information |
+| AI products and funding | TechCrunch AI |
+| Startup business models | TechCrunch Startups |
+| Enterprise AI and model evaluation | VentureBeat AI |
+| Software architecture and engineering | InfoQ |
+
+`is_hardware_heavy()` removes an item only when it contains hardware or supply-chain terms without software or AI context. The Gemini prompt then gives software engineering, model architecture, agents, product applications, and defensible business implications higher priority.
 
 ## Quick start
 
-Requires Python 3.11 or newer.
+### Requirements
+
+- Python 3.10 or newer; CI currently runs on Python 3.11
+- A [Gemini API key](https://ai.google.dev/gemini-api/docs/api-key)
+- A Telegram bot token from [BotFather](https://core.telegram.org/bots/features#botfather)
+- The target Telegram chat ID
+
+Gemini usage and GitHub Actions usage are subject to their providers' current pricing and quotas. This project does not claim that every deployment is free.
+
+### 1. Clone and install
 
 ```bash
 git clone https://github.com/Yili-code/News-Agent.git
 cd News-Agent
 python -m venv .venv
+```
 
+Activate the environment:
+
+```powershell
 # Windows PowerShell
 .\.venv\Scripts\Activate.ps1
+```
 
-# macOS / Linux
-# source .venv/bin/activate
+```bash
+# macOS or Linux
+source .venv/bin/activate
+```
 
+Then install the pinned dependencies:
+
+```bash
 python -m pip install -r requirements.txt
 ```
 
-Create `.env` in the repository root:
+### 2. Configure credentials
 
-```env
-GEMINI_API_KEY=your_api_key_here
-TELEGRAM_BOT_TOKEN=your_bot_token_here
-TELEGRAM_CHAT_ID=your_chat_id_here
+Copy the checked-in example without replacing any existing `.env` file:
+
+```powershell
+# Windows PowerShell
+Copy-Item .env.example .env
 ```
-
-Then run:
 
 ```bash
-python news_agent.py
+# macOS or Linux
+cp .env.example .env
 ```
 
-> [!CAUTION]
-> There is no dry-run mode. Running `news_agent.py` makes live RSS and Gemini requests and may send a real Telegram message to the configured chat.
+Fill in the three values:
 
-## Verification and limits
+```env
+GEMINI_API_KEY=replace_with_your_key
+TELEGRAM_BOT_TOKEN=replace_with_your_bot_token
+TELEGRAM_CHAT_ID=replace_with_your_chat_id
+```
+
+To find the chat ID, send a message to your new bot and inspect the `chat.id` value returned by Telegram's [`getUpdates`](https://core.telegram.org/bots/api#getupdates) method. For a group, add the bot to the group and send a message there first.
+
+### 3. Verify, then run
 
 ```bash
 python -m unittest -v
-```
-
-The offline tests cover topic filtering and deduplication behavior. They do not prove current RSS availability, Gemini output quality, GitHub Actions scheduling, or Telegram delivery.
-
-`qa_agent.py` is an experimental Telegram question-and-answer poller. Its update offset is stored in a local JSON file, which is not durable across GitHub-hosted runners; do not treat it as a reliable hosted service without external state.
-
-## 中文說明
-
-完全免費、每天自動運行。
-一個新聞聚合與每日科技簡報系統，現在專注於 Telegram 推送。
-
-## 功能概覽
-
-- 自動從 6 個科技新聞來源聚合新聞，並側重「軟體」而非「硬體」題材
-- 依據歷史內容去重，避免重複主題
-- 使用 Gemini 生成每日技術簡報
-- 以 Telegram HTML 格式發送到指定聊天
-- 保存最近 10 次簡報摘要到 `news_history.json`
-- GitHub Actions 可定時執行
-
-## 新聞來源
-
-系統聚合以下 6 個新聞源，主軸放在軟體工程、AI 演算法／模型架構、Agent 與新創動態：
-
-| 分類 | 來源 |
-|-----|------|
-| LLM 與 AI 研究論文 | arXiv (cs.CL) |
-| AI 巨頭內幕與商業獨家 | The Information |
-| AI Agent、新創融資與產品動態 | TechCrunch (AI) |
-| 新創募資與商業模式 | TechCrunch (Startups) |
-| 企業級 AI 應用與 LLM 模型評測 | VentureBeat |
-| 軟體架構與資工工程實務 | InfoQ |
-
-### 硬體新聞降權機制
-
-`news_agent.py` 內建一個關鍵字過濾器（`is_hardware_heavy`）：若一則新聞同時符合「純硬體關鍵字」（如晶圓、製程、封裝、資料中心土建等）且完全沒有出現任何軟體／AI 相關字眼（如 LLM、algorithm、framework、agent 等），就會在擷取階段直接捨棄。除此之外，送給 Gemini 的挑選 prompt 也明確要求優先軟體工程、演算法、Agent 與商業動態，並將純硬體規格新聞列為低優先度（除非該硬體突破直接、顯著改變了模型訓練或推理方式）。
-
-如果之後想調整強弱，可以編輯 `news_agent.py` 中的 `HARDWARE_ONLY_KEYWORDS` / `SOFTWARE_AI_CONTEXT_KEYWORDS` 兩份清單，或修改 `generate_daily_report` 裡的「優先領域／降低優先度」段落。
-
-## 前置需求
-
-- Python 3.8+
-- Gemini API Key
-- Telegram Bot Token
-- Telegram Chat ID
-
-## 安裝步驟
-
-### 1. 安裝依賴
-
-```bash
-pip install -r requirements.txt
-```
-
-### 2. 配置環境變數
-
-在專案根目錄建立 `.env`：
-
-```env
-GEMINI_API_KEY=your_api_key_here
-TELEGRAM_BOT_TOKEN=your_bot_token_here
-TELEGRAM_CHAT_ID=your_chat_id_here
-```
-
-### 3. 執行
-
-```bash
 python news_agent.py
 ```
 
-該命令會：
-1. 抓取最新 RSS 新聞
-2. 過濾與歷史相近內容
-3. 生成每日科技簡報
-4. 發送到 Telegram
-5. 儲存摘要到歷史紀錄
+The second command makes live RSS and Gemini requests and, when a new report is produced, sends a real message to the configured Telegram chat. There is currently no dry-run mode.
 
-## GitHub Actions
+## Example output shape
 
-專案已經配置每日自動執行工作流，位置在：
-
-- `.github/workflows/daily_news.yml`
-
-它會在每日固定時間觸發，並將最新的 `news_history.json` 提交回儲存庫。
-
-## 文件結構
+The exact content changes with the selected source. A Telegram message looks like this:
 
 ```text
-news_agent/
-├── news_agent.py          # 新聞聚合與 Telegram 推送
-├── news_history.json      # 簡報歷史記錄（自動生成）
-├── requirements.txt       # Python 依賴
-├── README.md              # 專案說明
-├── .env                   # 本地環境變數（不要提交）
-└── .github/
-    └── workflows/
-        └── daily_news.yml # 定時任務
+2026-09-28
+Linked English article title
+
+What happened
+One or two source-grounded sentences.
+
+Technical core
+The main mechanism or engineering trade-off.
+
+Founder perspective
+One clearly labelled business implication or hypothesis.
+
+Why this matters to me
+One concrete product or engineering decision this helps clarify.
 ```
 
-## 配置說明
+This is a format example, not a fabricated testimonial or a claim about a particular article. A real Telegram screenshot is intentionally not included until it can be captured from the current English-output version without exposing chat details.
 
-### `news_agent.py`
+## Automation with GitHub Actions
 
-- `limit_per_source`：每個 RSS 源每次拉取的新聞數量，預設為 3
-- `news_history.json`：保留最近 10 次摘要，做去重判斷
-- Telegram 推送：支援 HTML 格式；若格式化失敗，會自動降級為純文字
+The repository contains four workflows:
 
-## 安全建議
+| Workflow | Purpose | Trigger |
+| --- | --- | --- |
+| `ci.yml` | Run the test suite | Push to `main` and pull requests |
+| `daily_news.yml` | Generate and send the digest | `00:00` and `08:00` UTC, plus manual runs |
+| `qa_check.yml` | Poll the configured chat and react to news requests | Every 20 minutes, plus manual runs |
+| `founder_morning.yml` | Prepare and deliver the private Founder Morning research issue | Disabled unless `FOUNDER_ENABLED=true`; manual or scheduled |
 
-- 將 `.env` 保存在本地，不要上傳到版本控制
-- 定期更新 Gemini API Key 和 Telegram Bot Token
-- 不要在程式碼中直接寫死敏感資訊
+For your fork:
 
-## 故障排除
+1. Add `GEMINI_API_KEY`, `TELEGRAM_BOT_TOKEN`, and `TELEGRAM_CHAT_ID` under **Settings → Secrets and variables → Actions**.
+2. Enable Actions for the repository.
+3. Allow workflows to write repository contents if you want `daily_news.yml` to commit the updated `news_history.json`.
+4. Run **Daily Tech News Agent** manually once before relying on the schedule.
 
-### Telegram 發送失敗
+GitHub scheduled workflows can start later than the stated cron time. The two digest times correspond to 08:00 and 16:00 in Taiwan (`Asia/Taipei`).
 
-- 確認 `TELEGRAM_BOT_TOKEN` 與 `TELEGRAM_CHAT_ID` 正確
-- 確認 Bot 已加入目標群組或聊天，且有發送訊息權限
+### Q&A status
 
-### API 連線失敗
+`qa_agent.py` is an optional single-chat polling interface. It can classify a message as a news request and call the same digest pipeline. Run it locally with:
 
-- 確認 `GEMINI_API_KEY` 有效
-- 檢查網路連線是否正常
+```bash
+python qa_agent.py
+```
 
-### 中文顯示問題
+The hosted `qa_check.yml` workflow is experimental: GitHub-hosted runners are temporary, while the update offset is stored in `telegram_last_update_id.json` and is not committed by that workflow. That boundary must be redesigned before the scheduled Q&A path should be described as durable or exactly-once.
 
-- 使用 UTF-8 編碼環境
-- 確認 Telegram 客戶端支援顯示 HTML 內容
+## Configuration and project structure
 
-## 依賴套件
+```text
+News-Agent/
+├── .github/workflows/
+│   ├── ci.yml                 # tests
+│   ├── daily_news.yml         # scheduled digest
+│   ├── qa_check.yml           # experimental Telegram polling
+│   └── founder_morning.yml     # private research workflow
+├── .env.example               # credential names only
+├── founder/                   # private Founder Morning app and pipeline
+├── news_agent.py              # fetch, filter, deduplicate, summarize, deliver
+├── qa_agent.py                # optional Telegram request listener
+├── news_history.json          # rolling 10-entry deduplication history
+├── telegram_last_update_id.json
+├── test_news_agent.py
+└── requirements.txt
+```
 
-| 套件 | 版本 | 用途 |
-|------|------|------|
-| google-genai | 1.28.0 | Gemini API 調用（google-generativeai 已棄用，改用官方統一 SDK） |
-| requests | 2.32.3 | HTTP 請求 |
-| feedparser | 6.0.11 | RSS 解析 |
-| python-dotenv | 1.0.1 | 環境變數管理 |
+Useful customization points in `news_agent.py`:
 
-## 日誌
+- `NEWS_SOURCES`: RSS categories and URLs
+- `NewsFetcher(limit_per_source=3)`: maximum entries read from each feed per run
+- `HARDWARE_ONLY_KEYWORDS` and `SOFTWARE_AI_CONTEXT_KEYWORDS`: first-pass topic filter
+- `AgentBrain.generate_daily_report()`: selection, structure, language, and length instructions
+- `AgentBrain.history_file`: rolling history used by deduplication
 
-程式透過 Python Logging 記錄執行情況：
+## Known limitations
 
-- INFO：正常流程
-- WARNING：非關鍵警告
-- ERROR：關鍵錯誤
+- Feed availability and feed summaries are controlled by third parties; one failed source does not stop the other sources.
+- The agent reads RSS-provided metadata, not necessarily the full linked article.
+- Deduplication is heuristic and only compares against the rolling 10-entry history.
+- The history file stores only the first 200 characters of each generated report plus selected-source metadata.
+- Telegram HTML falls back to plain text if Telegram rejects the markup.
+- There is no dry-run, configurable feed file, package release, or stable public API yet.
 
----
+## Contributing
 
-最後更新：2026-10-01
+Focused bug reports and small pull requests are welcome. Start with [CONTRIBUTING.md](CONTRIBUTING.md), and use the repository's issue forms so a report includes enough evidence to reproduce.
+
+Please never include API keys, bot tokens, private chat IDs, or unredacted Telegram screenshots in an issue or pull request.
+
+## License
+
+No open-source license has been selected yet. Until the maintainer chooses one, normal copyright restrictions apply. This is a real adoption constraint rather than an implied permission to reuse the code.

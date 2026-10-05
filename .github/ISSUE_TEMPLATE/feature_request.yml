@@ -1,0 +1,40 @@
+name: Improvement proposal
+description: Propose a focused improvement tied to a concrete user problem.
+title: "[Proposal]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: What becomes difficult, unreliable, or unclear today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the smallest change that solves the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or validation plan
+      description: How would we know the change helped without relying on a marketing claim?
+    validations:
+      required: true
+  - type: dropdown
+    id: tradeoff
+    attributes:
+      label: Main trade-off
+      options:
+        - More setup or configuration
+        - More API usage or cost
+        - More maintenance complexity
+        - Changed output behavior
+        - Security or privacy impact
+        - No material trade-off identified
+    validations:
+      required: true

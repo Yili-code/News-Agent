@@ -1,0 +1,59 @@
+name: Bug report
+description: Report a reproducible failure in fetching, deduplication, Gemini output, Telegram delivery, or automation.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Do not paste API keys, bot tokens, private chat IDs, or unredacted Telegram update payloads.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the observed behavior and what you expected instead.
+    validations:
+      required: true
+  - type: dropdown
+    id: path
+    attributes:
+      label: Affected path
+      options:
+        - RSS fetching
+        - Filtering or deduplication
+        - Gemini generation
+        - Telegram delivery
+        - GitHub Actions
+        - Q&A polling
+        - Documentation or setup
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python version, and whether this ran locally or in GitHub Actions.
+      placeholder: Windows 11, Python 3.11, local
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+      description: List the smallest sequence that reproduces the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Redacted logs or workflow link
+      description: Remove all credentials and private chat data before posting.
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed credentials, private chat IDs, and private message content.
+          required: true
