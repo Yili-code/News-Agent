@@ -1,0 +1,17 @@
+name = "news-agent-social-editor"
+main = "worker.mjs"
+compatibility_date = "2026-09-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "news-agent-social-editor"
+database_id = "REPLACE_WITH_YOUR_D1_ID"
+migrations_dir = "migrations"
+
+[ai]
+binding = "AI"
+
+[vars]
+AI_MODEL = "@cf/qwen/qwen3-30b-a3b-fp8"
+# Use a currently supported YYYYMM LinkedIn API version.
+LINKEDIN_VERSION = "REPLACE_WITH_SUPPORTED_VERSION"

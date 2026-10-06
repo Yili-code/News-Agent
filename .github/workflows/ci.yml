@@ -51,3 +51,31 @@ jobs:
         run: |
           python -m pip install -r founder/requirements.txt
           python -m unittest discover -s founder/tests -p "test_*.py"
+
+  social-editor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Verify Private Social Editor
+        run: |
+          node --check social/worker.mjs
+          node --test social/tests/worker.test.mjs
+          python -m unittest -v test_social_pipeline.py

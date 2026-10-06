@@ -20,7 +20,15 @@ This repository is designed for a single configured Telegram chat. It is not a m
 
 The repository also contains [`founder/`](founder/README.md), YiLi's private entrepreneurship-research companion. It collects public startup discussions, ranks them against explicit preferences, produces evidence-bounded Chinese analysis, and serves the result through Google Cloud Run and Telegram.
 
-Founder Morning has separate credentials, storage, deployment, and schedules from the daily News Agent digest. Its workflow remains disabled unless `FOUNDER_ENABLED=true`; see [`founder/README.md`](founder/README.md) before configuring it.
+Founder Morning uses an isolated named Firestore database, Secret Manager credentials, and a separate Cloud Run service. Its workflow remains disabled unless `FOUNDER_ENABLED=true`; see [`founder/README.md`](founder/README.md) before configuring it.
+
+## Private Social Editor
+
+The repository also contains [`social/`](social/README.md), a private editorial workflow for Threads and LinkedIn. A scheduled job selects at most one source-grounded story, then Telegram asks YiLi for a genuine reaction. Workers AI may skip it, ask one follow-up, or prepare separate restrained drafts for each platform.
+
+The editor never publishes merely because a model likes a story. A Telegram approval button is required for each publishing action, and no response means no post. Threads and LinkedIn results are stored independently so partial or ambiguous delivery is not represented as full success.
+
+The workflow is disabled unless `SOCIAL_EDITOR_ENABLED=true`. Its Worker, D1 database, Telegram webhook, OAuth tokens, and deployment are separate from the existing digest and Founder Morning services.
 
 ## What it does
 
@@ -154,7 +162,7 @@ This is a format example, not a fabricated testimonial or a claim about a partic
 
 ## Automation with GitHub Actions
 
-The repository contains four workflows:
+The repository contains five workflows:
 
 | Workflow | Purpose | Trigger |
 | --- | --- | --- |
@@ -162,6 +170,7 @@ The repository contains four workflows:
 | `daily_news.yml` | Generate and send the digest | `00:00` and `08:00` UTC, plus manual runs |
 | `qa_check.yml` | Poll the configured chat and react to news requests | Every 20 minutes, plus manual runs |
 | `founder_morning.yml` | Prepare and deliver the private Founder Morning research issue | Disabled unless `FOUNDER_ENABLED=true`; manual or scheduled |
+| `social_editor.yml` | Select one candidate for the private Telegram editorial workflow | Disabled unless `SOCIAL_EDITOR_ENABLED=true`; daily or manual |
 
 For your fork:
 
@@ -190,9 +199,11 @@ News-Agent/
 │   ├── ci.yml                 # tests
 │   ├── daily_news.yml         # scheduled digest
 │   ├── qa_check.yml           # experimental Telegram polling
-│   └── founder_morning.yml     # private research workflow
+│   ├── founder_morning.yml     # private research workflow
+│   └── social_editor.yml       # private editorial candidate schedule
 ├── .env.example               # credential names only
 ├── founder/                   # private Founder Morning app and pipeline
+├── social/                    # private Telegram-to-social editorial workflow
 ├── news_agent.py              # fetch, filter, deduplicate, summarize, deliver
 ├── qa_agent.py                # optional Telegram request listener
 ├── news_history.json          # rolling 10-entry deduplication history
@@ -217,6 +228,7 @@ Useful customization points in `news_agent.py`:
 - The history file stores only the first 200 characters of each generated report plus selected-source metadata.
 - Telegram HTML falls back to plain text if Telegram rejects the markup.
 - There is no dry-run, configurable feed file, package release, or stable public API yet.
+- The Social Editor has mocked local coverage but no verified production Threads or LinkedIn publication yet.
 
 ## Contributing
 
