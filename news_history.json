@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-10-03",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/envoy-gateway-1-9-1/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Envoy Gateway 1.9.1 Tightens Security and Addresses a Diff",
-    "title": "Envoy Gateway 1.9.1 Tightens Security and Addresses a Difficult Upgrade Path",
-    "link": "https://www.infoq.com/news/2026/10/envoy-gateway-1-9-1/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-10-03",
     "summary": "<a href=\"https://www.infoq.com/presentations/doordash-genai-platform-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Building GenAI Platform at DoorDash</a> ",
     "title": "Presentation: Building GenAI Platform at DoorDash",
     "link": "https://www.infoq.com/presentations/doordash-genai-platform-architecture/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/grab-counter-aerospike-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Grab Redesigns Counter Service Storage for 50",
     "title": "Grab Redesigns Counter Service Storage for 50% Lower P99 Latency",
     "link": "https://www.infoq.com/news/2026/10/grab-counter-aerospike-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-08",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/10/clef-decision-models/\">Cloudflare Open Sources Decision Models for AI Agents</a>  <b>What happened</b> Cloudflare released Clef, open-weight AI models desig",
+    "title": "Cloudflare Open Sources Decision Models for AI Agents",
+    "link": "https://www.infoq.com/news/2026/10/clef-decision-models/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
