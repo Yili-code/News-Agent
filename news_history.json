@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-10-04",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/open-APPA-zero-security-breach/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">New Archestra's OpenAPPA Saturates Two Major Se",
-    "title": "New Archestra's OpenAPPA Saturates Two Major Security Benchmarks with a 0% Attack Success Rate",
-    "link": "https://www.infoq.com/news/2026/10/open-APPA-zero-security-breach/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-10-04",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/pizza-bot-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Pizza Bot: Open-Source Inbox for Background AI Agents</a> ",
     "title": "Pizza Bot: Open-Source Inbox for Background AI Agents",
     "link": "https://www.infoq.com/news/2026/10/pizza-bot-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -78,5 +70,13 @@
     "link": "https://arxiv.org/abs/2610.10550",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-10-09",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/10/github-copilot-rust-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Github Migrates Copilot Runtime to Rust with AI-",
+    "title": "Github Migrates Copilot Runtime to Rust with AI-Assisted Rewrite",
+    "link": "https://www.infoq.com/news/2026/10/github-copilot-rust-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
