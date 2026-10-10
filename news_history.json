@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-10-05",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/android-security-state-libs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Google's Android Security State Libraries Enable C",
-    "title": "Google's Android Security State Libraries Enable Component-Level Security Verification",
-    "link": "https://www.infoq.com/news/2026/10/android-security-state-libs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-10-05",
     "summary": "<a href=\"https://www.infoq.com/articles/platform-engineering-playbook-production-llms/\">Article: The Platform Engineering Playbook for Production LLMs</a>  <b>What happened</b> An engineer resolved ag",
     "title": "Article: The Platform Engineering Playbook for Production LLMs",
     "link": "https://www.infoq.com/articles/platform-engineering-playbook-production-llms/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -78,5 +70,13 @@
     "link": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
     "category": "AI Agent、新創融資與產品動態",
     "source": "AI News & Artificial Intelligence | TechCrunch"
+  },
+  {
+    "date": "2026-10-10",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/10/shopify-web-components/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Shopify Upgrades Checkout Blocks to Polaris Web Compone",
+    "title": "Shopify Upgrades Checkout Blocks to Polaris Web Components, Cutting Bundle Sizes up to 85%",
+    "link": "https://www.infoq.com/news/2026/10/shopify-web-components/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
