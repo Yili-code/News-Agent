@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-10-04",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/pizza-bot-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Pizza Bot: Open-Source Inbox for Background AI Agents</a> ",
-    "title": "Pizza Bot: Open-Source Inbox for Background AI Agents",
-    "link": "https://www.infoq.com/news/2026/10/pizza-bot-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-10-05",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/android-security-state-libs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Google's Android Security State Libraries Enable C",
     "title": "Google's Android Security State Libraries Enable Component-Level Security Verification",
@@ -78,5 +70,13 @@
     "link": "https://www.infoq.com/news/2026/10/github-copilot-rust-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-10",
+    "summary": "<a href=\"https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/\">Anthropic Cuts Live Internet Access for Int",
+    "title": "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
+    "link": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
+    "category": "AI Agent、新創融資與產品動態",
+    "source": "AI News & Artificial Intelligence | TechCrunch"
   }
 ]
