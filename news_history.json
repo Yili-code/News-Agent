@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-10-06",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/opentelemetry-kubernetes-observ/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">OpenTelemetry Makes Kubernetes Attributes Proc",
-    "title": "OpenTelemetry Makes Kubernetes Attributes Processor Stable as Observability Schema Matures",
-    "link": "https://www.infoq.com/news/2026/10/opentelemetry-kubernetes-observ/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-10-07",
     "summary": "<a href=\"https://arxiv.org/abs/2610.06902\">Tree Navigation Without LLM Summaries: A Matched-Cost Study of Hierarchical Retrieval for Long-Document QA</a>  <b>What happened</b> Traditional RAPTOR-style",
     "title": "Tree Navigation Without LLM Summaries: A Matched-Cost Study of Hierarchical Retrieval for Long-Document QA",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/context-language-models/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Context Language Models: Self-Managing Context to Impr",
     "title": "Context Language Models: Self-Managing Context to Improve Performance and Reduce Compute Costs",
     "link": "https://www.infoq.com/news/2026/10/context-language-models/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-12",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/10/gremlin-foresight-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Foresight AI Brings Gremlin Agents to Reliability Enginee",
+    "title": "Foresight AI Brings Gremlin Agents to Reliability Engineering",
+    "link": "https://www.infoq.com/news/2026/10/gremlin-foresight-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
