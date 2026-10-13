@@ -1,6 +1,0 @@
-.local
-.dev.vars
-__pycache__
-*.py[cod]
-tests
-wrangler.toml
