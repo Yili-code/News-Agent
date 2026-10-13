@@ -150,12 +150,12 @@ class FounderAppTests(unittest.TestCase):
 
         output = founder_app.format_telegram_issue(analyzed, "https://founder.example")
 
-        self.assertIn("今日只做一件事：執行 #1 的下一步；其餘先略過。", output)
-        self.assertIn("1. 【ACT】值得追蹤的創業問題", output)
+        self.assertIn("今日行動（5 分鐘）：訪談一位目標使用者並記下一句原話。", output)
+        self.assertIn("【ACT】值得追蹤的創業問題", output)
         self.assertIn("為什麼：能驗證目前產品是否解決真實需求。", output)
         self.assertIn("下一步：訪談一位目標使用者並記下一句原話。", output)
 
-    def test_telegram_analyzed_issue_can_recommend_save_or_skip_all(self):
+    def test_telegram_save_is_automatic_and_skip_is_never_delivered(self):
         analyzed = issue()
         analyzed["status"] = "analyzed"
         analyzed["signals"][0]["analysis"] = {
@@ -164,10 +164,72 @@ class FounderAppTests(unittest.TestCase):
             "why": "方向相關，但現在沒有立即驗證價值。",
             "action": "保存到候選題目。",
         }
-        self.assertIn("今天不必立即行動；若有餘裕，只保存 #1。", founder_app.format_telegram_issue(analyzed))
+        analyzed["signals"].append(
+            {
+                "id": "PH:2",
+                "title": "A distracting product launch",
+                "topic": "Product",
+                "url": "https://example.com/product",
+                "excerpt": "A product without demand evidence",
+                "analysis": {
+                    "title_zh": "不需處理的產品發布",
+                    "decision": "SKIP",
+                    "why": "只有產品資訊，沒有需求證據。",
+                    "action": "不需處理",
+                },
+            }
+        )
 
-        analyzed["signals"][0]["analysis"].update(decision="SKIP", action="不需處理")
-        self.assertIn("今天沒有值得投入的題目，全部略過即可。", founder_app.format_telegram_issue(analyzed))
+        output = founder_app.format_telegram_issue(analyzed, "https://founder.example")
+
+        self.assertIn("今日無需行動。已自動保存 1 個候選題目，之後再研究即可。", output)
+        self.assertIn("【已保存】可留待日後追蹤", output)
+        self.assertIn("你現在不需要做任何事。", output)
+        self.assertIn("查看候選題目：https://founder.example", output)
+        self.assertNotIn("SKIP", output)
+        self.assertNotIn("不需處理的產品發布", output)
+        self.assertNotIn("https://example.com/product", output)
+
+    def test_all_skipped_issue_contains_no_topics_or_links(self):
+        analyzed = issue()
+        analyzed["status"] = "analyzed"
+        analyzed["signals"][0]["analysis"] = {
+            "title_zh": "不需處理的題目",
+            "decision": "SKIP",
+            "why": "與目前目標無關。",
+            "action": "不需處理",
+        }
+
+        output = founder_app.format_telegram_issue(analyzed, "https://founder.example")
+
+        self.assertIn("今日無需行動。沒有值得投入時間的題目。", output)
+        self.assertNotIn("不需處理的題目", output)
+        self.assertNotIn("https://example.com/item", output)
+        self.assertNotIn("https://founder.example", output)
+
+    def test_save_decision_creates_candidate_without_overwriting_owner_feedback(self):
+        analyzed = issue()
+        analyzed["status"] = "analyzed"
+        analyzed["signals"][0]["analysis"] = {
+            "title_zh": "可留待日後追蹤",
+            "decision": "SAVE",
+            "why": "方向相關，但現在沒有立即驗證價值。",
+            "action": "保存到候選題目。",
+        }
+
+        self.assertEqual(self.client.post("/internal/issues", json=analyzed, headers=self.job_headers()).status_code, 200)
+        self.login()
+        state = self.client.get("/api/state").get_json()
+        self.assertEqual(state["feedback"][0]["signal_id"], "HN:1")
+        self.assertEqual(state["feedback"][0]["saved"], 1)
+
+        explicit = {"id": "HN:1", "reaction": "skip", "saved": False, "note": "Already reviewed"}
+        self.assertEqual(self.client.post("/api/feedback", json=explicit).status_code, 200)
+        self.store.save_recommendation("HN:1", "later")
+        state = self.client.get("/api/state").get_json()
+        self.assertEqual(state["feedback"][0]["reaction"], "skip")
+        self.assertEqual(state["feedback"][0]["saved"], 0)
+        self.assertEqual(state["feedback"][0]["note"], "Already reviewed")
 
 
 if __name__ == "__main__":

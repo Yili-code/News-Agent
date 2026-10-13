@@ -7,6 +7,7 @@ YiLi 的個人創業研究工具。每日 15 分鐘，週日 30 分鐘：公開�
 - HN Ask/Show、Product Hunt Atom、DEV 公開 API；單一來源失敗可降級。
 - 近七天候選、已讀期別去重、明確偏好排序、保留陌生主題。
 - 中文分析區分來源描述、推論、收費假設、未知、反證與具體行動；AI 格式或引用 ID 不合格時只顯示原文。
+- Telegram 只顯示需要行動或已保存的題目；`SKIP` 不佔用注意力，`SAVE` 會自動進入候選題目，只有 `ACT` 要求立即行動。
 - 私人登入、30 天 HttpOnly session、登出撤銷、登入限流、跨站寫入阻擋。
 - SQLite 本機預覽、Firestore production persistence、Telegram delivery claim，避免可確認的重複發送。
 - GitHub Actions 預備、發送、補跑；未設定 `FOUNDER_ENABLED=true` 時不執行。

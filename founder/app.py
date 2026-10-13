@@ -101,40 +101,49 @@ def short_line(value, limit):
 def format_telegram_issue(issue, site_url=""):
     analyzed = issue.get("status") == "analyzed"
     decisions = [signal.get("analysis", {}).get("decision") for signal in issue["signals"]]
+    actionable = [signal for signal in issue["signals"] if signal.get("analysis", {}).get("decision") == "ACT"]
+    saved = [signal for signal in issue["signals"] if signal.get("analysis", {}).get("decision") == "SAVE"]
 
     if not analyzed or any(decision not in {"ACT", "SAVE", "SKIP"} for decision in decisions):
         conclusion = "今日結論：分析尚未完成，先不要逐篇閱讀。"
-    elif "ACT" in decisions:
-        focus = decisions.index("ACT") + 1
-        conclusion = f"今日只做一件事：執行 #{focus} 的下一步；其餘先略過。"
-    elif "SAVE" in decisions:
-        focus = decisions.index("SAVE") + 1
-        conclusion = f"今天不必立即行動；若有餘裕，只保存 #{focus}。"
+    elif actionable:
+        analysis = actionable[0]["analysis"]
+        minutes = 30 if issue["kind"] == "weekly" else 5
+        conclusion = f"今日行動（{minutes} 分鐘）：{short_line(analysis.get('action'), 180)}"
+    elif saved:
+        conclusion = f"今日無需行動。已自動保存 {len(saved)} 個候選題目，之後再研究即可。"
     else:
-        conclusion = "今天沒有值得投入的題目，全部略過即可。"
+        conclusion = "今日無需行動。沒有值得投入時間的題目。"
 
     signal_blocks = []
     for index, signal in enumerate(issue["signals"], 1):
         analysis = signal.get("analysis", {})
         title = short_line(analysis.get("title_zh") or signal["title"], 140)
-        if analyzed and analysis.get("decision") in {"ACT", "SAVE", "SKIP"}:
+        if analyzed and analysis.get("decision") == "ACT":
             signal_blocks.append(
-                f"{index}. 【{analysis['decision']}】{title}\n"
+                f"【ACT】{title}\n"
                 f"為什麼：{short_line(analysis.get('why'), 180)}\n"
                 f"下一步：{short_line(analysis.get('action'), 180)}\n"
                 f"來源：{short_line(signal['url'], 500)}"
             )
-        else:
+        elif analyzed and analysis.get("decision") == "SAVE":
+            signal_blocks.append(
+                f"【已保存】{title}\n"
+                f"保留原因：{short_line(analysis.get('why'), 180)}\n"
+                "你現在不需要做任何事。"
+            )
+        elif not analyzed or analysis.get("decision") not in {"ACT", "SAVE", "SKIP"}:
             signal_blocks.append(f"{index}. 【待判斷】{title}\n來源：{short_line(signal['url'], 500)}")
 
     blocks = [
         f"拾題 / {issue['date']}\n" + ("本週研究 · 30 分鐘" if issue["kind"] == "weekly" else "今日探索 · 15 分鐘"),
         conclusion,
         *signal_blocks,
-        "判斷包含待驗證假設，採取行動前請對照來源。" if analyzed else "分析完成前，這些連結只代表候選線索。",
+        "判斷包含待驗證假設，採取行動前請對照來源。" if actionable else "",
     ]
-    if safe_url(site_url):
-        blocks.append(f"打開研究筆記：{site_url}")
+    if safe_url(site_url) and (not analyzed or actionable or saved):
+        label = "打開研究筆記" if actionable or not analyzed else "查看候選題目"
+        blocks.append(f"{label}：{site_url}")
     return "\n\n".join(block for block in blocks if block)[:3900]
 
 
@@ -281,7 +290,12 @@ def internal(name):
     if name == "issues":
         if not valid_issue(value):
             return jsonify(error="Invalid issue"), 400
-        store.save_issue(value, utc_now())
+        updated = utc_now()
+        store.save_issue(value, updated)
+        if value.get("status") == "analyzed":
+            for signal in value["signals"]:
+                if signal.get("analysis", {}).get("decision") == "SAVE":
+                    store.save_recommendation(signal["id"], updated)
         return jsonify(ok=True)
     return jsonify(error="Not found"), 404
 

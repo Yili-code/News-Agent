@@ -97,6 +97,14 @@ class SQLiteStore:
             )
             return True
 
+    def save_recommendation(self, signal_id, updated):
+        """Save a model-recommended candidate without overwriting owner feedback."""
+        with self.lock, self.db:
+            self.db.execute(
+                "INSERT OR IGNORE INTO feedback(signal_id,reaction,saved,note,updated) VALUES(?,'',1,'',?)",
+                (signal_id, updated),
+            )
+
     def claim_ai(self, day):
         with self.lock, self.db:
             row = self.db.execute("SELECT calls FROM ai_budget WHERE day=?", (day,)).fetchone()
@@ -208,6 +216,21 @@ class FirestoreStore:
             {"signal_id": value["id"], "reaction": value["reaction"], "saved": value["saved"], "note": value["note"], "updated": updated}
         )
         return True
+
+    def save_recommendation(self, signal_id, updated):
+        """Save a model-recommended candidate without overwriting owner feedback."""
+        ref = self.db.collection("feedback").document(_key(signal_id))
+        transaction = self.db.transaction()
+
+        @self.firestore.transactional
+        def save_if_absent(tx):
+            if not ref.get(transaction=tx).exists:
+                tx.set(
+                    ref,
+                    {"signal_id": signal_id, "reaction": "", "saved": True, "note": "", "updated": updated},
+                )
+
+        save_if_absent(transaction)
 
     def claim_ai(self, day):
         ref = self.db.collection("ai_budget").document(day)
