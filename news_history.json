@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-10-09",
-    "summary": "<a href=\"https://arxiv.org/abs/2610.10550\">Diffu-LoRA: A Novel Low-Rank Adaptation for Personalized Diffusion Models</a>  <b>What happened</b> Personalizing text-to-image diffusion models usually requ",
-    "title": "Diffu-LoRA: A Novel Low-Rank Adaptation for Personalized Diffusion Models",
-    "link": "https://arxiv.org/abs/2610.10550",
-    "category": "LLM 與 AI 研究論文",
-    "source": "cs.CL updates on arXiv.org"
-  },
-  {
-    "date": "2026-10-09",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/github-copilot-rust-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Github Migrates Copilot Runtime to Rust with AI-",
     "title": "Github Migrates Copilot Runtime to Rust with AI-Assisted Rewrite",
     "link": "https://www.infoq.com/news/2026/10/github-copilot-rust-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -78,5 +70,13 @@
     "link": "https://arxiv.org/abs/2610.12569",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-10-14",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/10/antigravity-sdk-local-models/\">Google Antigravity SDK Adds Local Model Support for Greater Token Efficiency and Code Privacy</a>  <b>What happened</b> Googl",
+    "title": "Google Antigravity SDK Adds Local Model Support for Greater Token Efficiency and Code Privacy",
+    "link": "https://www.infoq.com/news/2026/10/antigravity-sdk-local-models/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
