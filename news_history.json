@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-10-08",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/clef-decision-models/\">Cloudflare Open Sources Decision Models for AI Agents</a>  <b>What happened</b> Cloudflare released Clef, open-weight AI models desig",
-    "title": "Cloudflare Open Sources Decision Models for AI Agents",
-    "link": "https://www.infoq.com/news/2026/10/clef-decision-models/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-10-09",
     "summary": "<a href=\"https://arxiv.org/abs/2610.10550\">Diffu-LoRA: A Novel Low-Rank Adaptation for Personalized Diffusion Models</a>  <b>What happened</b> Personalizing text-to-image diffusion models usually requ",
     "title": "Diffu-LoRA: A Novel Low-Rank Adaptation for Personalized Diffusion Models",
@@ -78,5 +70,13 @@
     "link": "https://www.infoq.com/articles/liquid-clustering-lakehouse-layout/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-14",
+    "summary": "<a href=\"https://arxiv.org/abs/2610.12569\">SWE-Duel: Towards a Self-Scaling Arena for Coding Agents</a>  <b>What happened</b> Traditional coding benchmarks suffer from data contamination and task satu",
+    "title": "SWE-Duel: Towards a Self-Scaling Arena for Coding Agents",
+    "link": "https://arxiv.org/abs/2610.12569",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
