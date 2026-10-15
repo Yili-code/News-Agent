@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-10-10",
-    "summary": "<a href=\"https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/\">Anthropic Cuts Live Internet Access for Int",
-    "title": "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
-    "link": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
-    "category": "AI Agent、新創融資與產品動態",
-    "source": "AI News & Artificial Intelligence | TechCrunch"
-  },
-  {
-    "date": "2026-10-10",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/shopify-web-components/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Shopify Upgrades Checkout Blocks to Polaris Web Compone",
     "title": "Shopify Upgrades Checkout Blocks to Polaris Web Components, Cutting Bundle Sizes up to 85%",
     "link": "https://www.infoq.com/news/2026/10/shopify-web-components/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -78,5 +70,13 @@
     "link": "https://techcrunch.com/2026/10/14/cedardb-wants-one-database-to-handle-both-transactions-and-analytics-as-ai-agents-raise-the-stakes/",
     "category": "新創募資與商業模式",
     "source": "Startups | TechCrunch"
+  },
+  {
+    "date": "2026-10-15",
+    "summary": "<a href=\"https://arxiv.org/abs/2610.18881\">Following the Flow the Law Requires: Training Voice Agents to Transfer to Unseen Regulated Procedures in Debt Collection</a>  <b>What happened</b> Voice agen",
+    "title": "Following the Flow the Law Requires: Training Voice Agents to Transfer to Unseen Regulated Procedures in Debt Collection",
+    "link": "https://arxiv.org/abs/2610.18881",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
