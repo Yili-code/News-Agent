@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-10-09",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/github-copilot-rust-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Github Migrates Copilot Runtime to Rust with AI-",
-    "title": "Github Migrates Copilot Runtime to Rust with AI-Assisted Rewrite",
-    "link": "https://www.infoq.com/news/2026/10/github-copilot-rust-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-10-10",
     "summary": "<a href=\"https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/\">Anthropic Cuts Live Internet Access for Int",
     "title": "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
@@ -78,5 +70,13 @@
     "link": "https://www.infoq.com/news/2026/10/antigravity-sdk-local-models/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-15",
+    "summary": "<a href=\"https://techcrunch.com/2026/10/14/cedardb-wants-one-database-to-handle-both-transactions-and-analytics-as-ai-agents-raise-the-stakes/\">CedarDB wants one database to handle both transactions a",
+    "title": "CedarDB wants one database to handle both transactions and analytics, as AI agents raise the stakes",
+    "link": "https://techcrunch.com/2026/10/14/cedardb-wants-one-database-to-handle-both-transactions-and-analytics-as-ai-agents-raise-the-stakes/",
+    "category": "新創募資與商業模式",
+    "source": "Startups | TechCrunch"
   }
 ]
