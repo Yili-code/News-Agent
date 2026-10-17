@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-10-12",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/gremlin-foresight-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Foresight AI Brings Gremlin Agents to Reliability Enginee",
-    "title": "Foresight AI Brings Gremlin Agents to Reliability Engineering",
-    "link": "https://www.infoq.com/news/2026/10/gremlin-foresight-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-10-12",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Spotify More Than Doubled Monthly Code Changes as ",
     "title": "Spotify More Than Doubled Monthly Code Changes as AI Accelerated Development",
     "link": "https://www.infoq.com/news/2026/10/spotify-ai-quality-controls/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -78,5 +70,13 @@
     "link": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
     "category": "AI Agent、新創融資與產品動態",
     "source": "AI News & Artificial Intelligence | TechCrunch"
+  },
+  {
+    "date": "2026-10-17",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/10/reverse-engineer-anything/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Reverse Engineer Anything Project Brings AI Agents t",
+    "title": "Reverse Engineer Anything Project Brings AI Agents to Binary Analysis",
+    "link": "https://www.infoq.com/news/2026/10/reverse-engineer-anything/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
