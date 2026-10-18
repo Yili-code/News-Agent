@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-10-13",
-    "summary": "<a href=\"https://www.infoq.com/articles/liquid-clustering-lakehouse-layout/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">When Should You Use Liquid Clustering? Benchmar",
-    "title": "Article: When Should You Use Liquid Clustering? Benchmarking Lakehouse Layout Strategies",
-    "link": "https://www.infoq.com/articles/liquid-clustering-lakehouse-layout/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-10-14",
     "summary": "<a href=\"https://arxiv.org/abs/2610.12569\">SWE-Duel: Towards a Self-Scaling Arena for Coding Agents</a>  <b>What happened</b> Traditional coding benchmarks suffer from data contamination and task satu",
     "title": "SWE-Duel: Towards a Self-Scaling Arena for Coding Agents",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/amazon-acquires-ducklabs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Amazon Acquires DuckLabs and Integrates DuckDB in Ama",
     "title": "Amazon Acquires DuckLabs and Integrates DuckDB in Amazon Aurora PostgreSQL",
     "link": "https://www.infoq.com/news/2026/10/amazon-acquires-ducklabs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-18",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/10/aws-sovereign-cloud-exercise/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">AWS Will Run Its European Sovereign Cloud Without",
+    "title": "AWS Will Run Its European Sovereign Cloud Without the Global Backbone for Several Hours",
+    "link": "https://www.infoq.com/news/2026/10/aws-sovereign-cloud-exercise/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
