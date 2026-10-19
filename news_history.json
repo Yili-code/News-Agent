@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-10-14",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/antigravity-sdk-local-models/\">Google Antigravity SDK Adds Local Model Support for Greater Token Efficiency and Code Privacy</a>  <b>What happened</b> Googl",
-    "title": "Google Antigravity SDK Adds Local Model Support for Greater Token Efficiency and Code Privacy",
-    "link": "https://www.infoq.com/news/2026/10/antigravity-sdk-local-models/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-10-15",
     "summary": "<a href=\"https://techcrunch.com/2026/10/14/cedardb-wants-one-database-to-handle-both-transactions-and-analytics-as-ai-agents-raise-the-stakes/\">CedarDB wants one database to handle both transactions a",
     "title": "CedarDB wants one database to handle both transactions and analytics, as AI agents raise the stakes",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/get-started-pyrefly-python\">Google Adopts Pyrefly for Faster, More Accurate Python Type Checking</a>  <b>What happened</b> Google replaced its legacy Python",
     "title": "Google Adopts Pyrefly for Faster, More Accurate Python Type Checking",
     "link": "https://www.infoq.com/news/2026/10/google-pyrefly-python/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-19",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/10/pinterest-event-time-partition/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Pinterest Uses Event Time Watermarks to Finaliz",
+    "title": "Pinterest Uses Event Time Watermarks to Finalize Petabyte Scale Data Partitions",
+    "link": "https://www.infoq.com/news/2026/10/pinterest-event-time-partition/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
