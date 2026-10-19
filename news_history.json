@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-10-14",
-    "summary": "<a href=\"https://arxiv.org/abs/2610.12569\">SWE-Duel: Towards a Self-Scaling Arena for Coding Agents</a>  <b>What happened</b> Traditional coding benchmarks suffer from data contamination and task satu",
-    "title": "SWE-Duel: Towards a Self-Scaling Arena for Coding Agents",
-    "link": "https://arxiv.org/abs/2610.12569",
-    "category": "LLM 與 AI 研究論文",
-    "source": "cs.CL updates on arXiv.org"
-  },
-  {
-    "date": "2026-10-14",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/antigravity-sdk-local-models/\">Google Antigravity SDK Adds Local Model Support for Greater Token Efficiency and Code Privacy</a>  <b>What happened</b> Googl",
     "title": "Google Antigravity SDK Adds Local Model Support for Greater Token Efficiency and Code Privacy",
     "link": "https://www.infoq.com/news/2026/10/antigravity-sdk-local-models/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/aws-sovereign-cloud-exercise/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">AWS Will Run Its European Sovereign Cloud Without",
     "title": "AWS Will Run Its European Sovereign Cloud Without the Global Backbone for Several Hours",
     "link": "https://www.infoq.com/news/2026/10/aws-sovereign-cloud-exercise/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-19",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/10/get-started-pyrefly-python\">Google Adopts Pyrefly for Faster, More Accurate Python Type Checking</a>  <b>What happened</b> Google replaced its legacy Python",
+    "title": "Google Adopts Pyrefly for Faster, More Accurate Python Type Checking",
+    "link": "https://www.infoq.com/news/2026/10/google-pyrefly-python/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
