@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-10-15",
-    "summary": "<a href=\"https://techcrunch.com/2026/10/14/cedardb-wants-one-database-to-handle-both-transactions-and-analytics-as-ai-agents-raise-the-stakes/\">CedarDB wants one database to handle both transactions a",
-    "title": "CedarDB wants one database to handle both transactions and analytics, as AI agents raise the stakes",
-    "link": "https://techcrunch.com/2026/10/14/cedardb-wants-one-database-to-handle-both-transactions-and-analytics-as-ai-agents-raise-the-stakes/",
-    "category": "新創募資與商業模式",
-    "source": "Startups | TechCrunch"
-  },
-  {
-    "date": "2026-10-15",
     "summary": "<a href=\"https://arxiv.org/abs/2610.18881\">Following the Flow the Law Requires: Training Voice Agents to Transfer to Unseen Regulated Procedures in Debt Collection</a>  <b>What happened</b> Voice agen",
     "title": "Following the Flow the Law Requires: Training Voice Agents to Transfer to Unseen Regulated Procedures in Debt Collection",
     "link": "https://arxiv.org/abs/2610.18881",
@@ -78,5 +70,13 @@
     "link": "https://www.infoq.com/news/2026/10/pinterest-event-time-partition/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-20",
+    "summary": "<a href=\"https://arxiv.org/abs/2610.22428\">Embeddings Are Overpriced? A Frozen 16 MB Vocabulary for Small and Ternary Language Models</a>  <b>What happened</b> Researchers show that the vocabulary emb",
+    "title": "Embeddings Are Overpriced? A Frozen 16 MB Vocabulary for Small and Ternary Language Models",
+    "link": "https://arxiv.org/abs/2610.22428",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
