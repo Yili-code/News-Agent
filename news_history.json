@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-10-15",
-    "summary": "<a href=\"https://arxiv.org/abs/2610.18881\">Following the Flow the Law Requires: Training Voice Agents to Transfer to Unseen Regulated Procedures in Debt Collection</a>  <b>What happened</b> Voice agen",
-    "title": "Following the Flow the Law Requires: Training Voice Agents to Transfer to Unseen Regulated Procedures in Debt Collection",
-    "link": "https://arxiv.org/abs/2610.18881",
-    "category": "LLM 與 AI 研究論文",
-    "source": "cs.CL updates on arXiv.org"
-  },
-  {
     "date": "2026-10-16",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/instagram-compose-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Instagram Modernized its UI with an AI-Native Arch",
     "title": "Instagram Modernized its UI with an AI-Native Architecture, Cutting Token Costs by 33%",
@@ -78,5 +70,13 @@
     "link": "https://arxiv.org/abs/2610.22428",
     "category": "LLM 與 AI 研究論文",
     "source": "cs.CL updates on arXiv.org"
+  },
+  {
+    "date": "2026-10-20",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/10/github-runner-controller-0-15/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">GitHub Actions Runner Controller 0.15.0 Targets ",
+    "title": "GitHub Actions Runner Controller 0.15.0 Targets Reliability at Scale",
+    "link": "https://www.infoq.com/news/2026/10/github-runner-controller-0-15/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
