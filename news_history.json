@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-10-16",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/instagram-compose-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Instagram Modernized its UI with an AI-Native Arch",
-    "title": "Instagram Modernized its UI with an AI-Native Architecture, Cutting Token Costs by 33%",
-    "link": "https://www.infoq.com/news/2026/10/instagram-compose-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-10-16",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/grafana-slo-ai-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Grafana Applies SLOs and Error Budgets to AI Agent Behavi",
     "title": "Grafana Applies SLOs and Error Budgets to AI Agent Behaviour",
     "link": "https://www.infoq.com/news/2026/10/grafana-slo-ai-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/github-runner-controller-0-15/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">GitHub Actions Runner Controller 0.15.0 Targets ",
     "title": "GitHub Actions Runner Controller 0.15.0 Targets Reliability at Scale",
     "link": "https://www.infoq.com/news/2026/10/github-runner-controller-0-15/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-21",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/10/tornadovm-7-gpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">TornadoVM 7 Enables GPU-Native Workloads From Java Application",
+    "title": "TornadoVM 7 Enables GPU-Native Workloads From Java Applications",
+    "link": "https://www.infoq.com/news/2026/10/tornadovm-7-gpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
