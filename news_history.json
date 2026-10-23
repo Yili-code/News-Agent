@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-10-18",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/aws-sovereign-cloud-exercise/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">AWS Will Run Its European Sovereign Cloud Without",
-    "title": "AWS Will Run Its European Sovereign Cloud Without the Global Backbone for Several Hours",
-    "link": "https://www.infoq.com/news/2026/10/aws-sovereign-cloud-exercise/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-10-19",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/get-started-pyrefly-python\">Google Adopts Pyrefly for Faster, More Accurate Python Type Checking</a>  <b>What happened</b> Google replaced its legacy Python",
     "title": "Google Adopts Pyrefly for Faster, More Accurate Python Type Checking",
@@ -78,5 +70,13 @@
     "link": "https://www.infoq.com/news/2026/10/jellyfish-ai-productivity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-23",
+    "summary": "<a href=\"https://arxiv.org/abs/2610.30154\">baseVultra: Compact Nonlinear Recurrence with Reallocated Capacity</a>  <b>What happened</b> Traditional recurrent cells heavily rely on LSTM and GRU gate tr",
+    "title": "baseVultra: Compact Nonlinear Recurrence with Reallocated Capacity",
+    "link": "https://arxiv.org/abs/2610.30154",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
