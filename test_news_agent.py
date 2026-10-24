@@ -73,8 +73,12 @@ class NewsDeduplicationTests(unittest.TestCase):
         self.assertEqual(report, '<b>What happened</b>\nA concise report.')
         self.assertEqual(captured['model'], 'test-model')
         self.assertIn('將整份簡報寫成自然、精確的英文', captured['contents'])
-        self.assertIn('120–180 個英文單字', captured['contents'])
-        self.assertIn('<b>Why this matters to me</b>', captured['contents'])
+        self.assertIn('60–90 個英文單字', captured['contents'])
+        self.assertIn('不加段落標題、條列或開場白', captured['contents'])
+        self.assertIn('反直覺發現或清楚工程取捨', captured['contents'])
+        self.assertIn('區分來源事實與推論', captured['contents'])
+        self.assertNotIn('<b>Founder perspective</b>', captured['contents'])
+        self.assertNotIn('<b>One action today</b>', captured['contents'])
 
 
 if __name__ == '__main__':

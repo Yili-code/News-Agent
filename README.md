@@ -2,11 +2,11 @@
 
 [![CI](https://github.com/Yili-code/News-Agent/actions/workflows/ci.yml/badge.svg)](https://github.com/Yili-code/News-Agent/actions/workflows/ci.yml)
 
-Turn six AI and software-engineering RSS feeds into one deduplicated, 30–45-second English brief delivered to Telegram with Gemini and GitHub Actions.
+Turn six AI and software-engineering RSS feeds into one deduplicated, 60–90-word English brief delivered to Telegram with Gemini and GitHub Actions.
 
 News Agent is a small, self-hosted Python automation for developers and technical founders who want one high-signal story instead of another long link list. It fetches RSS metadata, removes repeated topics, asks Gemini to select and explain one story, sends the result through the Telegram Bot API, and keeps a short local history for the next run.
 
-> 中文簡介：從六個 AI、軟體工程與新創 RSS 來源擷取內容，去除近期重複主題，再由 Gemini 選出一則值得讀的新聞，整理成 30–45 秒可讀完的英文 Telegram brief。重點不是「收更多新聞」，而是每天少讀一點、理解更深一點。
+> 中文簡介：從六個 AI、軟體工程與新創 RSS 來源擷取內容，去除近期重複主題，再由 Gemini 選出一則值得讀的新聞，整理成 60–90 個英文單字的的英文 Telegram brief。重點不是「收更多新聞」，而是每天少讀一點、理解更深一點。
 
 ## Who it is for
 
@@ -33,18 +33,18 @@ fetch titles, links, and feed summaries
     ↓
 filter hardware-only items + deduplicate recent topics
     ↓
-Gemini selects one story and writes a structured English brief
+Gemini selects one story and writes a three-paragraph English brief
     ↓
 Telegram HTML message + 10-entry local history
 ```
 
-The generated brief uses these sections when the source material supports them:
+The prompt requests 60–90 English words, including the linked title, followed by three short paragraphs without section headings:
 
-1. `What happened`
-2. `Technical core`
-3. `Founder perspective`
-4. `Why this matters to me`
-5. `One action today` — omitted when there is no useful 15-minute action
+1. The concrete change worth noticing.
+2. One revealing mechanism or engineering tradeoff.
+3. The practical engineering or product decision it changes, and when it applies.
+
+Selection favors explainable changes and surprising findings over company fame or funding headlines. There is no mandatory founder section or daily exercise. Word count is a model instruction, not a deterministic output limit.
 
 The prompt explicitly separates reported facts from inference and asks the model not to invent technical details, customer evidence, or revenue claims. Because this is still LLM-generated text based on RSS summaries, important claims should be checked against the linked article.
 
