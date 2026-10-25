@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-10-20",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/github-runner-controller-0-15/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">GitHub Actions Runner Controller 0.15.0 Targets ",
-    "title": "GitHub Actions Runner Controller 0.15.0 Targets Reliability at Scale",
-    "link": "https://www.infoq.com/news/2026/10/github-runner-controller-0-15/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-10-21",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/tornadovm-7-gpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">TornadoVM 7 Enables GPU-Native Workloads From Java Application",
     "title": "TornadoVM 7 Enables GPU-Native Workloads From Java Applications",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/data-agent-kit-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Google’s Data Agent Kit Hits GA, Splitting Agent Guardrails ",
     "title": "Google’s Data Agent Kit Hits GA, Splitting Agent Guardrails Between Skills and IAM",
     "link": "https://www.infoq.com/news/2026/10/data-agent-kit-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-25",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/10/cloudflare-hashing-optimization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Cloudflare Reclaims 100 TB of RAM by Optimizin",
+    "title": "Cloudflare Reclaims 100 TB of RAM by Optimizing Consistent Hashing",
+    "link": "https://www.infoq.com/news/2026/10/cloudflare-hashing-optimization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
