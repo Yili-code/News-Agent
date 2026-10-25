@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-10-21",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/tornadovm-7-gpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">TornadoVM 7 Enables GPU-Native Workloads From Java Application",
-    "title": "TornadoVM 7 Enables GPU-Native Workloads From Java Applications",
-    "link": "https://www.infoq.com/news/2026/10/tornadovm-7-gpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-10-21",
     "summary": "<a href=\"https://www.theinformation.com/briefings/deepseek-open-sources-framework-behind-high-margin-ai-inference\">DeepSeek Open-Sources Framework Behind Its High-Margin AI Inference</a>  <b>What happ",
     "title": "DeepSeek Open-Sources Framework Behind Its High-Margin AI Inference",
     "link": "https://www.theinformation.com/briefings/deepseek-open-sources-framework-behind-high-margin-ai-inference",
@@ -78,5 +70,13 @@
     "link": "https://www.infoq.com/news/2026/10/cloudflare-hashing-optimization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-25",
+    "summary": "<a href=\"https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/\">Block’s new voice model sounds eerily human</a>  Block's new voice model is capable of running locally on consum",
+    "title": "Block’s new voice model sounds eerily human",
+    "link": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+    "category": "AI Agent、新創融資與產品動態",
+    "source": "AI News & Artificial Intelligence | TechCrunch"
   }
 ]
