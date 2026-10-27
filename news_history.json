@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-10-22",
-    "summary": "<a href=\"https://www.infoq.com/presentations/actors-for-production-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Actors for Agents: Patterns for Production AI",
-    "title": "Presentation: Actors for Agents: Patterns for Production AI",
-    "link": "https://www.infoq.com/presentations/actors-for-production-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-10-23",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/jellyfish-ai-productivity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Study Finds AI-generated Code Fails to Boost Product",
     "title": "Study Finds AI-generated Code Fails to Boost Productivity Due to Downstream Bottlenecks",
@@ -74,5 +66,13 @@
     "link": "https://www.infoq.com/news/2026/10/readyon-four-layer-isolation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-27",
+    "summary": "<a href=\"https://arxiv.org/abs/2610.31681\">Rethinking Structured Generation: Can Graph-Based Reasoning Resolve Ambiguity?</a>  Structured generation is traditionally formulated as a deterministic mapp",
+    "title": "Rethinking Structured Generation: Can Graph-Based Reasoning Resolve Ambiguity?",
+    "link": "https://arxiv.org/abs/2610.31681",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
