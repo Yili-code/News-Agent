@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-10-23",
-    "summary": "<a href=\"https://arxiv.org/abs/2610.30154\">baseVultra: Compact Nonlinear Recurrence with Reallocated Capacity</a>  <b>What happened</b> Traditional recurrent cells heavily rely on LSTM and GRU gate tr",
-    "title": "baseVultra: Compact Nonlinear Recurrence with Reallocated Capacity",
-    "link": "https://arxiv.org/abs/2610.30154",
-    "category": "LLM 與 AI 研究論文",
-    "source": "cs.CL updates on arXiv.org"
-  },
-  {
     "date": "2026-10-24",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/csiro-serverless-genomic-variant/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">CSIRO Uses Serverless Architecture to Query 1",
     "title": "CSIRO Uses Serverless Architecture to Query 100x More Genomic Variants on AWS",
@@ -70,5 +62,13 @@
   {
     "date": "2026-10-27",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/anthropic-source-control/\">Anthropic Migrates Monorepo to Scion for AI Workloads</a>  Anthropic replaced Git with Scion, shifting repository operations to t"
+  },
+  {
+    "date": "2026-10-28",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/10/uber-cpu-stateful-workloads/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Uber Moves beyond CPU Cores with Performance-Aware",
+    "title": "Uber Moves beyond CPU Cores with Performance-Aware Scheduling for Stateful Workloads",
+    "link": "https://www.infoq.com/news/2026/10/uber-cpu-stateful-workloads/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
