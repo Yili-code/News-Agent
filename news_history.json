@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-10-24",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/data-agent-kit-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Google’s Data Agent Kit Hits GA, Splitting Agent Guardrails ",
-    "title": "Google’s Data Agent Kit Hits GA, Splitting Agent Guardrails Between Skills and IAM",
-    "link": "https://www.infoq.com/news/2026/10/data-agent-kit-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-10-25",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/cloudflare-hashing-optimization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Cloudflare Reclaims 100 TB of RAM by Optimizin",
     "title": "Cloudflare Reclaims 100 TB of RAM by Optimizing Consistent Hashing",
@@ -68,6 +60,14 @@
     "summary": "<a href=\"https://www.infoq.com/presentations/self-hosted-observability-stack-tradeoffs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Wrangling Telemetry at Scale: A Gui",
     "title": "Presentation: Wrangling Telemetry at Scale: A Guide to Self-Hosted Observability",
     "link": "https://www.infoq.com/presentations/self-hosted-observability-stack-tradeoffs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-29",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/10/anthropic-code-review/\">Anthropic Says Nobody Needs a Mental Model of Claude Code. Practitioners Are Testing That</a>  Anthropic revealed that Claude writes",
+    "title": "Anthropic Says Nobody Needs a Mental Model of Claude Code. Practitioners Are Testing That",
+    "link": "https://www.infoq.com/news/2026/10/anthropic-code-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
