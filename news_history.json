@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-10-25",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/cloudflare-hashing-optimization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Cloudflare Reclaims 100 TB of RAM by Optimizin",
-    "title": "Cloudflare Reclaims 100 TB of RAM by Optimizing Consistent Hashing",
-    "link": "https://www.infoq.com/news/2026/10/cloudflare-hashing-optimization/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-10-25",
     "summary": "<a href=\"https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/\">Block’s new voice model sounds eerily human</a>  Block's new voice model is capable of running locally on consum",
     "title": "Block’s new voice model sounds eerily human",
     "link": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
@@ -68,6 +60,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/anthropic-code-review/\">Anthropic Says Nobody Needs a Mental Model of Claude Code. Practitioners Are Testing That</a>  Anthropic revealed that Claude writes",
     "title": "Anthropic Says Nobody Needs a Mental Model of Claude Code. Practitioners Are Testing That",
     "link": "https://www.infoq.com/news/2026/10/anthropic-code-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-30",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/10/bug0-agent-testing-cached-replay/\">Bug0 Releases QA Agent to Automate Regression Testing With Cached Playwright Replays</a>  Bug0 introduced a source-availa",
+    "title": "Bug0 Releases QA Agent to Automate Regression Testing With Cached Playwright Replays",
+    "link": "https://www.infoq.com/news/2026/10/bug0-agent-testing-cached-replay/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
