@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-10-25",
-    "summary": "<a href=\"https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/\">Block’s new voice model sounds eerily human</a>  Block's new voice model is capable of running locally on consum",
-    "title": "Block’s new voice model sounds eerily human",
-    "link": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
-    "category": "AI Agent、新創融資與產品動態",
-    "source": "AI News & Artificial Intelligence | TechCrunch"
-  },
-  {
     "date": "2026-10-26",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/google-meta-torchtpu/\">Google and Meta Open-Source TorchTPU for Native PyTorch on TPUs</a>  Google and Meta jointly open-sourced TorchTPU to provide a nativ"
   },
@@ -68,6 +60,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/bug0-agent-testing-cached-replay/\">Bug0 Releases QA Agent to Automate Regression Testing With Cached Playwright Replays</a>  Bug0 introduced a source-availa",
     "title": "Bug0 Releases QA Agent to Automate Regression Testing With Cached Playwright Replays",
     "link": "https://www.infoq.com/news/2026/10/bug0-agent-testing-cached-replay/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-30",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/10/doordash-ai-grocery-reorder/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">DoorDash Cuts Grocery Reorder Latency from 16 to 2",
+    "title": "DoorDash Cuts Grocery Reorder Latency from 16 to 2 Seconds with AI Agents",
+    "link": "https://www.infoq.com/news/2026/10/doordash-ai-grocery-reorder/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
