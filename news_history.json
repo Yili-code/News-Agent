@@ -1,10 +1,6 @@
 [
   {
     "date": "2026-10-26",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/google-meta-torchtpu/\">Google and Meta Open-Source TorchTPU for Native PyTorch on TPUs</a>  Google and Meta jointly open-sourced TorchTPU to provide a nativ"
-  },
-  {
-    "date": "2026-10-26",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/readyon-four-layer-isolation/\">Readyon Builds Four Layer Tenant Isolation for Multi Tenant Amazon EKS</a>  ReadyOn detailed a four-layer multi-tenant isolat",
     "title": "Readyon Builds Four Layer Tenant Isolation for Multi Tenant Amazon EKS",
     "link": "https://www.infoq.com/news/2026/10/readyon-four-layer-isolation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -68,6 +64,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/doordash-ai-grocery-reorder/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">DoorDash Cuts Grocery Reorder Latency from 16 to 2",
     "title": "DoorDash Cuts Grocery Reorder Latency from 16 to 2 Seconds with AI Agents",
     "link": "https://www.infoq.com/news/2026/10/doordash-ai-grocery-reorder/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-10-31",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/10/netflix-gpu-distributed-systems/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Netflix Treats GPU Reliability as a Distribute",
+    "title": "Netflix Treats GPU Reliability as a Distributed Systems Problem",
+    "link": "https://www.infoq.com/news/2026/10/netflix-gpu-distributed-systems/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
