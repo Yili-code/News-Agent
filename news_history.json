@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-10-28",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/uber-cpu-stateful-workloads/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Uber Moves beyond CPU Cores with Performance-Aware",
-    "title": "Uber Moves beyond CPU Cores with Performance-Aware Scheduling for Stateful Workloads",
-    "link": "https://www.infoq.com/news/2026/10/uber-cpu-stateful-workloads/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-10-28",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/airbnb-chronon-recommendation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Airbnb Cuts Recommendation Staleness from 2 Days",
     "title": "Airbnb Cuts Recommendation Staleness from 2 Days to Seconds with Chronon",
     "link": "https://www.infoq.com/news/2026/10/airbnb-chronon-recommendation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/aws-capacity-sold-out/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">AWS Capacity Largely Sold Out Through 2027</a>  Amazon r",
     "title": "AWS Capacity Largely Sold Out Through 2027, With On Demand Headroom Reserved",
     "link": "https://www.infoq.com/news/2026/11/aws-capacity-sold-out/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-02",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/11/aws-s3-file-transfer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">AWS Releases File Mover Express for S3 Transfers</a>  AWS",
+    "title": "File Mover Express: AWS Releases Open-Source Tool for S3 File Transfers",
+    "link": "https://www.infoq.com/news/2026/11/aws-s3-file-transfer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
