@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-10-28",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/airbnb-chronon-recommendation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Airbnb Cuts Recommendation Staleness from 2 Days",
-    "title": "Airbnb Cuts Recommendation Staleness from 2 Days to Seconds with Chronon",
-    "link": "https://www.infoq.com/news/2026/10/airbnb-chronon-recommendation/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-10-29",
     "summary": "<a href=\"https://www.infoq.com/presentations/self-hosted-observability-stack-tradeoffs/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Wrangling Telemetry at Scale: A Gui",
     "title": "Presentation: Wrangling Telemetry at Scale: A Guide to Self-Hosted Observability",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/aws-s3-file-transfer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">AWS Releases File Mover Express for S3 Transfers</a>  AWS",
     "title": "File Mover Express: AWS Releases Open-Source Tool for S3 File Transfers",
     "link": "https://www.infoq.com/news/2026/11/aws-s3-file-transfer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-02",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Google and Meta Open-source TorchTPU to Bring Nat",
+    "title": "Google and Meta Open-source TorchTPU to Bring Native PyTorch Support to Google TPUs",
+    "link": "https://www.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
