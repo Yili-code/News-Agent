@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-10-29",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/anthropic-code-review/\">Anthropic Says Nobody Needs a Mental Model of Claude Code. Practitioners Are Testing That</a>  Anthropic revealed that Claude writes",
-    "title": "Anthropic Says Nobody Needs a Mental Model of Claude Code. Practitioners Are Testing That",
-    "link": "https://www.infoq.com/news/2026/10/anthropic-code-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-10-30",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/bug0-agent-testing-cached-replay/\">Bug0 Releases QA Agent to Automate Regression Testing With Cached Playwright Replays</a>  Bug0 introduced a source-availa",
     "title": "Bug0 Releases QA Agent to Automate Regression Testing With Cached Playwright Replays",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/uber-mcp-gateway-ai-agents/\">Uber Builds MCP Gateway to Govern Access to 800+ Servers and 5,000+ AI Agent Tools</a>  Uber has developed a centralized Model ",
     "title": "Uber Builds MCP Gateway to Govern Access to 800+ Servers and 5,000+ AI Agent Tools",
     "link": "https://www.infoq.com/news/2026/11/uber-mcp-gateway-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-03",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/11/11/linkedin-opentelemetry-journey/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">LinkedIn Uses OpenTelemetry to Trace the Mem",
+    "title": "LinkedIn Uses OpenTelemetry to Trace the Member Journey from Tap to Backend",
+    "link": "https://www.infoq.com/news/2026/11/linkedin-opentelemetry-journey/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
