@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-10-30",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/doordash-ai-grocery-reorder/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">DoorDash Cuts Grocery Reorder Latency from 16 to 2",
-    "title": "DoorDash Cuts Grocery Reorder Latency from 16 to 2 Seconds with AI Agents",
-    "link": "https://www.infoq.com/news/2026/10/doordash-ai-grocery-reorder/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-10-31",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/netflix-gpu-distributed-systems/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Netflix Treats GPU Reliability as a Distribute",
     "title": "Netflix Treats GPU Reliability as a Distributed Systems Problem",
@@ -78,5 +70,13 @@
     "link": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
     "category": "AI Agent、新創融資與產品動態",
     "source": "AI News & Artificial Intelligence | TechCrunch"
+  },
+  {
+    "date": "2026-11-04",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/11/inkitt-one-shot-pr-creator-agent/\">Inkitt Builds a One-Shot PR Creator with Resumable Agent Orchestration</a>  Inkitt has built an event-driven orchestrator",
+    "title": "Inkitt Builds a One-Shot PR Creator with Resumable Agent Orchestration",
+    "link": "https://www.infoq.com/news/2026/11/inkitt-one-shot-pr-creator-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
