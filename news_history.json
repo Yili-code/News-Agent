@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-10-31",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/10/k8s-confidential-containers/\">Kubernetes Confidential Containers Get Fortanix Attestation and Key Management</a>  Fortanix integrated workload attestation w",
-    "title": "Kubernetes Confidential Containers Get Fortanix Attestation and Key Management",
-    "link": "https://www.infoq.com/news/2026/10/k8s-confidential-containers/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-11-01",
     "summary": "<a href=\"https://www.infoq.com/news/2026/10/cf-pq-geokey-manager/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Cloudflare Replaces Attribute-Based Encryption in GeoKey ",
     "title": "Cloudflare’s Post-Quantum GeoKey Manager Enters Closed Beta Without Attribute-Based Encryption",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/introducing-amazon-ecs-gateway/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Amazon ECS Gateway Arrives with Generated Hostn",
     "title": "Amazon ECS Gateway Arrives with Generated Hostnames and No Custom Domain Support",
     "link": "https://www.infoq.com/news/2026/11/introducing-amazon-ecs-gateway/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-06",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/11/gcp-api-gateway-streaming/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Google Cloud API Gateway Introduces Streaming Suppor",
+    "title": "Google Cloud API Gateway Introduces Streaming Support for Real-Time and AI-Powered Applications",
+    "link": "https://www.infoq.com/news/2026/11/gcp-api-gateway-streaming/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
