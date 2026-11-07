@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-11-02",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/11/aws-s3-file-transfer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">AWS Releases File Mover Express for S3 Transfers</a>  AWS",
-    "title": "File Mover Express: AWS Releases Open-Source Tool for S3 File Transfers",
-    "link": "https://www.infoq.com/news/2026/11/aws-s3-file-transfer/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-11-02",
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Google and Meta Open-source TorchTPU to Bring Nat",
     "title": "Google and Meta Open-source TorchTPU to Bring Native PyTorch Support to Google TPUs",
     "link": "https://www.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -74,5 +66,13 @@
   {
     "date": "2026-11-07",
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/06/typescript-7-1-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">TypeScript 7.1 Beta Restores Compiler API and Optimizes"
+  },
+  {
+    "date": "2026-11-07",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/11/06/grab-ai-generated-code-safety/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">How Grab Improved Mobile App Stability by Saf",
+    "title": "How Grab Improved Mobile App Stability by Safely Handling Surge in AI-Generated Code Changes",
+    "link": "https://www.infoq.com/news/2026/11/grab-ai-generated-code-safety/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
   }
 ]
