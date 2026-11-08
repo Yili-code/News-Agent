@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-11-02",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Google and Meta Open-source TorchTPU to Bring Nat",
-    "title": "Google and Meta Open-source TorchTPU to Bring Native PyTorch Support to Google TPUs",
-    "link": "https://www.infoq.com/news/2026/11/torchtpu-native-pythorch-tpu/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-11-03",
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/uber-mcp-gateway-ai-agents/\">Uber Builds MCP Gateway to Govern Access to 800+ Servers and 5,000+ AI Agent Tools</a>  Uber has developed a centralized Model ",
     "title": "Uber Builds MCP Gateway to Govern Access to 800+ Servers and 5,000+ AI Agent Tools",
@@ -72,6 +64,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/06/grab-ai-generated-code-safety/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">How Grab Improved Mobile App Stability by Saf",
     "title": "How Grab Improved Mobile App Stability by Safely Handling Surge in AI-Generated Code Changes",
     "link": "https://www.infoq.com/news/2026/11/grab-ai-generated-code-safety/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-08",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/11/postgresql-vector-search/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Open Source pg_vectorsearch Brings More Scalable Vect",
+    "title": "Open Source pg_vectorsearch Brings More Scalable Vector Search to PostgreSQL",
+    "link": "https://www.infoq.com/news/2026/11/postgresql-vector-search/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
