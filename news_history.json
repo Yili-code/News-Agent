@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-11-03",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/11/11/linkedin-opentelemetry-journey/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">LinkedIn Uses OpenTelemetry to Trace the Mem",
-    "title": "LinkedIn Uses OpenTelemetry to Trace the Member Journey from Tap to Backend",
-    "link": "https://www.infoq.com/news/2026/11/linkedin-opentelemetry-journey/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-11-04",
     "summary": "<a href=\"https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/\">Anthropic builds FlashProve to verify AI model identities</a>  Anthropic is developing FlashPr",
     "title": "Anthropic is working on a system to prove AI models’ identity",
@@ -72,6 +64,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/06/cloudflare-d1-control-plane/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Cloudflare Scales D1 Control Plane to Millions ",
     "title": "Cloudflare Scales D1 Control Plane to Millions of Databases",
     "link": "https://www.infoq.com/news/2026/11/cloudflare-d1-control-plane/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-09",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/11/06/typescript-7-1-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Entire's Git Forge Rethinks Git Collaboration for Codin",
+    "title": "Entire's Git Forge Rethinks Git Collaboration for Coding Agents",
+    "link": "https://www.infoq.com/news/2026/11/entire-git-forge-coding-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
