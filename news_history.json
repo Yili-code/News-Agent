@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-11-04",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/11/inkitt-one-shot-pr-creator-agent/\">Inkitt Builds a One-Shot PR Creator with Resumable Agent Orchestration</a>  Inkitt has built an event-driven orchestrator",
-    "title": "Inkitt Builds a One-Shot PR Creator with Resumable Agent Orchestration",
-    "link": "https://www.infoq.com/news/2026/11/inkitt-one-shot-pr-creator-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-11-05",
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/introducing-amazon-ecs-gateway/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Amazon ECS Gateway Arrives with Generated Hostn",
     "title": "Amazon ECS Gateway Arrives with Generated Hostnames and No Custom Domain Support",
@@ -72,6 +64,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/cloudflare-merkle-certificates/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Cloudflare Develops Public Certificate Authorit",
     "title": "Cloudflare Develops Public Certificate Authority for Post-Quantum Web Security",
     "link": "https://www.infoq.com/news/2026/11/cloudflare-merkle-certificates/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-10",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/11/06/typescript-7-1-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Pinterest and Intel Take Open-Source Profiling to Inter",
+    "title": "Pinterest and Intel Take Open-Source Profiling to Internet Scale",
+    "link": "https://www.infoq.com/news/2026/11/pinterest-intel-profiling/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
