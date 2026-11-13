@@ -1,10 +1,6 @@
 [
   {
     "date": "2026-11-07",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/11/06/typescript-7-1-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">TypeScript 7.1 Beta Restores Compiler API and Optimizes"
-  },
-  {
-    "date": "2026-11-07",
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/06/grab-ai-generated-code-safety/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">How Grab Improved Mobile App Stability by Saf",
     "title": "How Grab Improved Mobile App Stability by Safely Handling Surge in AI-Generated Code Changes",
     "link": "https://www.infoq.com/news/2026/11/grab-ai-generated-code-safety/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -72,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/tech-debt-learning-doing/\">Technical Debt is Social; it is the Price of Learning by Doing</a>  Technical debt is increasingly driven by AI-accelerated code ",
     "title": "Technical Debt is Social; it is the Price of Learning by Doing",
     "link": "https://www.infoq.com/news/2026/11/tech-debt-learning-doing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-13",
+    "summary": "<a href=\"https://www.infoq.com/presentations/explainable-ai-llm-agent-decisions/\">Presentation: Opening the Black Box: Critical Explainability for AI Agent Tool Selection with Kiji Inspector</a>  Data",
+    "title": "Presentation: Opening the Black Box: Critical Explainability for AI Agent Tool Selection with Kiji Inspector",
+    "link": "https://www.infoq.com/presentations/explainable-ai-llm-agent-decisions/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
