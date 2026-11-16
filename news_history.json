@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-11-11",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/11/google-agent-distraction/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Google Finds that Technical Debt Can Derail Coding Ag",
-    "title": "Google Finds that Technical Debt Can Derail Coding Agents Through \"Agent Distraction\"",
-    "link": "https://www.infoq.com/news/2026/11/google-agent-distraction/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-11-12",
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/06/typescript-7-1-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">GitHub Makes Agentic Workflows Generally Available with",
     "title": "GitHub Makes Agentic Workflows Generally Available with Isolation and Budget Controls",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/uber-secure-ai-framework/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Uber's Secure AI Framework Governs Autonomous AI Agen",
     "title": "Uber's Secure AI Framework Governs Autonomous AI Agents across Their Lifecycle",
     "link": "https://www.infoq.com/news/2026/11/uber-secure-ai-framework/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-16",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/11/uber-legal-redlining-agent/\">Uber's Legal AI Agent Cuts Contract Review Time by 20% with Rules and RAG</a>  Uber deployed a legal redlining agent built with",
+    "title": "Uber’s Legal AI Agent Cuts Contract Review Time by 20% with Rules and RAG",
+    "link": "https://www.infoq.com/news/2026/11/uber-legal-redlining-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
