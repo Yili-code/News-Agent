@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-11-12",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/11/06/typescript-7-1-beta/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">GitHub Makes Agentic Workflows Generally Available with",
-    "title": "GitHub Makes Agentic Workflows Generally Available with Isolation and Budget Controls",
-    "link": "https://www.infoq.com/news/2026/11/github-agentic-workflows-ga/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-11-12",
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/tech-debt-learning-doing/\">Technical Debt is Social; it is the Price of Learning by Doing</a>  Technical debt is increasingly driven by AI-accelerated code ",
     "title": "Technical Debt is Social; it is the Price of Learning by Doing",
     "link": "https://www.infoq.com/news/2026/11/tech-debt-learning-doing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/uber-legal-redlining-agent/\">Uber's Legal AI Agent Cuts Contract Review Time by 20% with Rules and RAG</a>  Uber deployed a legal redlining agent built with",
     "title": "Uber’s Legal AI Agent Cuts Contract Review Time by 20% with Rules and RAG",
     "link": "https://www.infoq.com/news/2026/11/uber-legal-redlining-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-17",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/11/airbnb-castle/\">Airbnb Introduces CASTLE for Training Natural Language Search Models with Synthetic Data</a>  Airbnb researchers released CASTLE, a framewor",
+    "title": "Airbnb Introduces CASTLE for Training Natural Language Search Models with Synthetic Data",
+    "link": "https://www.infoq.com/news/2026/11/airbnb-castle/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
