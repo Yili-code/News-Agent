@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-11-12",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/11/tech-debt-learning-doing/\">Technical Debt is Social; it is the Price of Learning by Doing</a>  Technical debt is increasingly driven by AI-accelerated code ",
-    "title": "Technical Debt is Social; it is the Price of Learning by Doing",
-    "link": "https://www.infoq.com/news/2026/11/tech-debt-learning-doing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-11-13",
     "summary": "<a href=\"https://www.infoq.com/presentations/explainable-ai-llm-agent-decisions/\">Presentation: Opening the Black Box: Critical Explainability for AI Agent Tool Selection with Kiji Inspector</a>  Data",
     "title": "Presentation: Opening the Black Box: Critical Explainability for AI Agent Tool Selection with Kiji Inspector",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/airbnb-castle/\">Airbnb Introduces CASTLE for Training Natural Language Search Models with Synthetic Data</a>  Airbnb researchers released CASTLE, a framewor",
     "title": "Airbnb Introduces CASTLE for Training Natural Language Search Models with Synthetic Data",
     "link": "https://www.infoq.com/news/2026/11/airbnb-castle/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-17",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/11/quik-2-streaming/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Qwik 2.0 RC: Replaces HTML Comment Markers for Faster Reactiv",
+    "title": "Qwik 2.0 RC: Replaces HTML Comment Markers for Faster Reactivity and Out-of-Order Streaming",
+    "link": "https://www.infoq.com/news/2026/11/quik-2-streaming/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
