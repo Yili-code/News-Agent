@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-11-14",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/11/compute-engine-api-versioning/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Google Cloud Moves the Compute Engine API to Imm",
-    "title": "Google Cloud Moves the Compute Engine API to Immutable Date-Based Versions",
-    "link": "https://www.infoq.com/news/2026/11/compute-engine-api-versioning/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-11-15",
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/cohere-open-weight-egress-risk/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Cohere Finding Shows Self-Hosted Open-Weight Mo",
     "title": "Cohere Finding Shows Self-Hosted Open-Weight Models Still Need Egress Controls",
@@ -78,5 +70,13 @@
     "link": "https://www.infoq.com/news/2026/11/discord-rust-rewrite-gpui-zed/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-19",
+    "summary": "<a href=\"https://arxiv.org/abs/2611.21641\">RAW: Refusal Aversion in the Wild, A Causal Measurement Method for Deployed LLMs</a>  Deployed LLMs frequently refuse user requests, yet consumer-facing plat",
+    "title": "RAW: Refusal Aversion in the Wild, A Causal Measurement Method for Deployed LLMs",
+    "link": "https://arxiv.org/abs/2611.21641",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
