@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-11-16",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/11/uber-secure-ai-framework/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Uber's Secure AI Framework Governs Autonomous AI Agen",
-    "title": "Uber's Secure AI Framework Governs Autonomous AI Agents across Their Lifecycle",
-    "link": "https://www.infoq.com/news/2026/11/uber-secure-ai-framework/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-11-16",
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/uber-legal-redlining-agent/\">Uber's Legal AI Agent Cuts Contract Review Time by 20% with Rules and RAG</a>  Uber deployed a legal redlining agent built with",
     "title": "Uber’s Legal AI Agent Cuts Contract Review Time by 20% with Rules and RAG",
     "link": "https://www.infoq.com/news/2026/11/uber-legal-redlining-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -74,5 +66,9 @@
     "link": "https://www.infoq.com/news/2026/11/uber-go-translation-cache/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-21",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/11/gke-kernel-network-bug/\">Google Traced GKE API Timeouts to a Linux Kernel TCP Bug</a>  Google revealed how three interacting bugs across GKE, Private Servic"
   }
 ]
