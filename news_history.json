@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-11-17",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/11/airbnb-castle/\">Airbnb Introduces CASTLE for Training Natural Language Search Models with Synthetic Data</a>  Airbnb researchers released CASTLE, a framewor",
-    "title": "Airbnb Introduces CASTLE for Training Natural Language Search Models with Synthetic Data",
-    "link": "https://www.infoq.com/news/2026/11/airbnb-castle/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-11-17",
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/quik-2-streaming/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Qwik 2.0 RC: Replaces HTML Comment Markers for Faster Reactiv",
     "title": "Qwik 2.0 RC: Replaces HTML Comment Markers for Faster Reactivity and Out-of-Order Streaming",
     "link": "https://www.infoq.com/news/2026/11/quik-2-streaming/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -68,6 +60,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/grafana-13-3-shared-variables/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Grafana 13.3 Adds Shared Dashboard Variables and",
     "title": "Grafana 13.3 Adds Shared Dashboard Variables and Notebooks",
     "link": "https://www.infoq.com/news/2026/11/grafana-13-3-shared-variables/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-22",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/11/google-agent-compute-engine/\">Google Announces Agent Compute Engine for Secure AI Agent Execution</a>  Google introduced Agent Compute Engine, a managed ser",
+    "title": "Google Announces Agent Compute Engine for Secure AI Agent Execution",
+    "link": "https://www.infoq.com/news/2026/11/google-agent-compute-engine/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
