@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-11-17",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/11/quik-2-streaming/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Qwik 2.0 RC: Replaces HTML Comment Markers for Faster Reactiv",
-    "title": "Qwik 2.0 RC: Replaces HTML Comment Markers for Faster Reactivity and Out-of-Order Streaming",
-    "link": "https://www.infoq.com/news/2026/11/quik-2-streaming/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-11-18",
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/shopify-remote-ai-dev/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Shopify Uses Remote Dev Environments to Offload AI Mobil",
     "title": "How Shopify Orchestrates AI-Powered Mobile App Development Without Overloading Developers' Machines",
@@ -68,6 +60,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/google-agent-compute-engine/\">Google Announces Agent Compute Engine for Secure AI Agent Execution</a>  Google introduced Agent Compute Engine, a managed ser",
     "title": "Google Announces Agent Compute Engine for Secure AI Agent Execution",
     "link": "https://www.infoq.com/news/2026/11/google-agent-compute-engine/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-23",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/\">Claude Code Has Been Leaking Secrets through its \"Don't Ask Again\" Feature</a>  Apiiro discovered that Claude Code exposed ove",
+    "title": "Claude Code Has Been Leaking Secrets through its \"Don't Ask Again\" Feature",
+    "link": "https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
