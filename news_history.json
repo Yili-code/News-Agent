@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-11-18",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/11/shopify-remote-ai-dev/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Shopify Uses Remote Dev Environments to Offload AI Mobil",
-    "title": "How Shopify Orchestrates AI-Powered Mobile App Development Without Overloading Developers' Machines",
-    "link": "https://www.infoq.com/news/2026/11/shopify-remote-ai-dev/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-11-18",
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/linkedin-celeborn-remote-shuffle/\">LinkedIn Cuts Daily Spark Shuffle Fetch Failures from 750 to 20 with Apache Celeborn</a>  LinkedIn integrated Apache Cele",
     "title": "LinkedIn Cuts Daily Spark Shuffle Fetch Failures from 750 to 20 with Apache Celeborn",
     "link": "https://www.infoq.com/news/2026/11/linkedin-celeborn-remote-shuffle/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -68,6 +60,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/\">Claude Code Has Been Leaking Secrets through its \"Don't Ask Again\" Feature</a>  Apiiro discovered that Claude Code exposed ove",
     "title": "Claude Code Has Been Leaking Secrets through its \"Don't Ask Again\" Feature",
     "link": "https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-24",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/11/qcon-sf-openai-lessons/\">QCon San Francisco 2026: Lessons from Building a $100M Product in Six Weeks at OpenAI</a>  OpenAI built the ChatGPT ads product in ",
+    "title": "QCon San Francisco 2026: Lessons from Building a $100M Product in Six Weeks at OpenAI",
+    "link": "https://www.infoq.com/news/2026/11/qcon-sf-openai-lessons/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
