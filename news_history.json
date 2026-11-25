@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-11-19",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/11/discord-rust-rewrite-gpui-zed/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Discord Rewrites Desktop and Mobile Clients in R",
-    "title": "Discord Rewrites Desktop and Mobile Clients in Rust Using Zed's GPU-Accelerated Rendering Framework",
-    "link": "https://www.infoq.com/news/2026/11/discord-rust-rewrite-gpui-zed/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-11-19",
     "summary": "<a href=\"https://arxiv.org/abs/2611.21641\">RAW: Refusal Aversion in the Wild, A Causal Measurement Method for Deployed LLMs</a>  Deployed LLMs frequently refuse user requests, yet consumer-facing plat",
     "title": "RAW: Refusal Aversion in the Wild, A Causal Measurement Method for Deployed LLMs",
     "link": "https://arxiv.org/abs/2611.21641",
@@ -68,6 +60,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/aws-lambda-30-minute-timeout/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">AWS Lambda Doubles Its Timeout to 30 Minutes Afte",
     "title": "AWS Lambda Doubles Its Timeout to 30 Minutes After Eight Years at 15",
     "link": "https://www.infoq.com/news/2026/11/aws-lambda-30-minute-timeout/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-25",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/11/github-css-migration/\">GitHub Ditches CSS-in-JS for CSS Modules, Reports 55% Faster SSR After Three-Year Migration</a>  GitHub completed a three-year migrat",
+    "title": "GitHub Ditches CSS-in-JS for CSS Modules, Reports 55% Faster SSR After Three-Year Migration",
+    "link": "https://www.infoq.com/news/2026/11/github-css-migration/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
