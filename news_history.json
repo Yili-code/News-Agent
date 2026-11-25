@@ -1,13 +1,5 @@
 [
   {
-    "date": "2026-11-18",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/11/linkedin-celeborn-remote-shuffle/\">LinkedIn Cuts Daily Spark Shuffle Fetch Failures from 750 to 20 with Apache Celeborn</a>  LinkedIn integrated Apache Cele",
-    "title": "LinkedIn Cuts Daily Spark Shuffle Fetch Failures from 750 to 20 with Apache Celeborn",
-    "link": "https://www.infoq.com/news/2026/11/linkedin-celeborn-remote-shuffle/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
     "date": "2026-11-19",
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/discord-rust-rewrite-gpui-zed/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Discord Rewrites Desktop and Mobile Clients in R",
     "title": "Discord Rewrites Desktop and Mobile Clients in Rust Using Zed's GPU-Accelerated Rendering Framework",
@@ -68,6 +60,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/qcon-sf-openai-lessons/\">QCon San Francisco 2026: Lessons from Building a $100M Product in Six Weeks at OpenAI</a>  OpenAI built the ChatGPT ads product in ",
     "title": "QCon San Francisco 2026: Lessons from Building a $100M Product in Six Weeks at OpenAI",
     "link": "https://www.infoq.com/news/2026/11/qcon-sf-openai-lessons/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-25",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/11/aws-lambda-30-minute-timeout/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">AWS Lambda Doubles Its Timeout to 30 Minutes Afte",
+    "title": "AWS Lambda Doubles Its Timeout to 30 Minutes After Eight Years at 15",
+    "link": "https://www.infoq.com/news/2026/11/aws-lambda-30-minute-timeout/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
