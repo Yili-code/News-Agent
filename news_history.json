@@ -1,9 +1,5 @@
 [
   {
-    "date": "2026-11-20",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/11/asp-net-11-release/\">.NET 11 Introduces ASP.NET Core Updates with Union Types and Default Zstandard</a>  Microsoft has released ASP.NET Core in .NET 11, fea"
-  },
-  {
     "date": "2026-11-21",
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/uber-go-translation-cache/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Uber Cuts Translation Cache Memory by up to 90% Whil",
     "title": "Uber Cuts Translation Cache Memory by up to 90% While Keeping P99 Latency Below 1 MS",
@@ -70,5 +66,13 @@
     "link": "https://www.infoq.com/news/2026/11/mock-service-worker-v3/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-26",
+    "summary": "<a href=\"https://arxiv.org/abs/2611.33174\">MGMem: An Efficient, Deterministic, and Provenance-Preserving Framework for Long-Horizon Agent Memory</a>  Long-horizon LLM agents often fail because traditi",
+    "title": "MGMem: An Efficient, Deterministic, and Provenance-Preserving Framework for Long-Horizon Agent Memory",
+    "link": "https://arxiv.org/abs/2611.33174",
+    "category": "LLM 與 AI 研究論文",
+    "source": "cs.CL updates on arXiv.org"
   }
 ]
