@@ -1,14 +1,6 @@
 [
   {
     "date": "2026-11-22",
-    "summary": "<a href=\"https://www.infoq.com/news/2026/11/grafana-13-3-shared-variables/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Grafana 13.3 Adds Shared Dashboard Variables and",
-    "title": "Grafana 13.3 Adds Shared Dashboard Variables and Notebooks",
-    "link": "https://www.infoq.com/news/2026/11/grafana-13-3-shared-variables/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
-    "category": "軟體架構與資工工程實務",
-    "source": "InfoQ"
-  },
-  {
-    "date": "2026-11-22",
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/google-agent-compute-engine/\">Google Announces Agent Compute Engine for Secure AI Agent Execution</a>  Google introduced Agent Compute Engine, a managed ser",
     "title": "Google Announces Agent Compute Engine for Secure AI Agent Execution",
     "link": "https://www.infoq.com/news/2026/11/google-agent-compute-engine/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
@@ -76,6 +68,14 @@
     "summary": "<a href=\"https://www.infoq.com/news/2026/11/uber-agent-spend-steady/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Meta Brings Code Review Auto-Approval More Mainstream ",
     "title": "Meta Brings Code Review Auto-Approval More Mainstream with PyTorch GreenLight",
     "link": "https://www.infoq.com/news/2026/11/uber-agent-spend-steady/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+    "category": "軟體架構與資工工程實務",
+    "source": "InfoQ"
+  },
+  {
+    "date": "2026-11-28",
+    "summary": "<a href=\"https://www.infoq.com/news/2026/11/netflix-quasar-api-impact/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global\">Netflix Builds Quasar to Measure the Blast Radius of",
+    "title": "Netflix Builds Quasar to Measure the Blast Radius of Library API Changes",
+    "link": "https://www.infoq.com/news/2026/11/netflix-quasar-api-impact/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
     "category": "軟體架構與資工工程實務",
     "source": "InfoQ"
   }
